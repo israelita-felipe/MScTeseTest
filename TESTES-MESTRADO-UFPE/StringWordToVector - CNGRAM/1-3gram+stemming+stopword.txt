@@ -1,0 +1,2115 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.LibSVM -- -S 0 -K 2 -D 3 -G 0.005 -R 0.0 -N 0.5 -M 40.0 -C 5.0 -E 0.001 -P 0.05 -B -model "C:\\Program Files\\Weka-3-8" -seed 1
+Relation:     relations.triples.sentences.txt-weka.filters.unsupervised.attribute.NumericToBinary-R5-weka.filters.unsupervised.attribute.StringToWordVector-R1,2,3,4-W100000-prune-rate-1.0-N0-stemmerweka.core.stemmers.LovinsStemmer-stopwords-handlerweka.core.stopwords.Rainbow-M1-tokenizerweka.core.tokenizers.CharacterNGramTokenizer -max 3 -min 1
+Instances:    244
+Attributes:   2068
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+Attribute mappings:
+
+Model attributes           	    Incoming attributes
+---------------------------	    ----------------
+(nominal) class_binarized  	--> 1 (nominal) class_binarized
+(numeric)                  	--> 4 (numeric)    
+(numeric)                  	--> 4 (numeric)    
+(numeric)                  	--> 4 (numeric)    
+(numeric)   (              	--> 579 (numeric) (  
+(numeric)   )              	--> 65 (numeric) )  
+(numeric)  #               	--> 45 (numeric) # 
+(numeric)  #               	--> 45 (numeric) # 
+(numeric)  (               	--> 579 (numeric) (  
+(numeric)  (               	--> 579 (numeric) (  
+(numeric)  )               	--> 65 (numeric) )  
+(numeric)  )               	--> 65 (numeric) )  
+(numeric)  ,               	--> 67 (numeric) , 
+(numeric)  ,               	--> 67 (numeric) , 
+(numeric)  .               	--> 71 (numeric) . 
+(numeric)  .               	--> 71 (numeric) . 
+(numeric)  1               	--> 638 (numeric) 1 
+(numeric)  10              	--> 643 (numeric) 10 
+(numeric)  17              	--> 88 (numeric) 17 
+(numeric)  19              	--> 89 (numeric) 19
+(numeric)  2               	--> 665 (numeric) 2 
+(numeric)  20              	--> 673 (numeric) 20 
+(numeric)  5               	--> 95 (numeric) 5 
+(numeric)  5               	--> 95 (numeric) 5 
+(numeric)  ad              	--> 804 (numeric) ad 
+(numeric)  cc              	--> 148 (numeric) cc 
+(numeric)  cd              	--> 150 (numeric) cd 
+(numeric)  ch              	--> 154 (numeric) ch 
+(numeric)  cr              	--> 158 (numeric) cr
+(numeric)  dt              	--> 178 (numeric) dt 
+(numeric)  ed              	--> 193 (numeric) ed 
+(numeric)  en              	--> 1080 (numeric) en 
+(numeric)  jj              	--> 264 (numeric) jj 
+(numeric)  mr              	--> 283 (numeric) mr
+(numeric)  np              	--> 314 (numeric) np 
+(numeric)  pr              	--> 356 (numeric) pr
+(numeric)  sc              	--> 391 (numeric) sc
+(numeric)  sh              	--> 395 (numeric) sh 
+(numeric)  sp              	--> 399 (numeric) sp
+(numeric)  st              	--> 1825 (numeric) st 
+(numeric)  vb              	--> 1959 (numeric) vb 
+(numeric)  vp              	--> 433 (numeric) vp 
+(numeric)  wr              	--> 439 (numeric) wr
+(numeric) #                	--> 45 (numeric) # 
+(numeric) #                	--> 45 (numeric) # 
+(numeric) # #              	--> 46 (numeric) # #
+(numeric) # )              	--> 47 (numeric) # )
+(numeric) $                	--> 448 (numeric)  $ 
+(numeric) $                	--> 448 (numeric)  $ 
+(numeric) $ h              	--> 50 (numeric) $ h
+(numeric) (                	--> 579 (numeric) (  
+(numeric) (                	--> 579 (numeric) (  
+(numeric) ( #              	--> 53 (numeric) ( #
+(numeric) ( ,              	--> 54 (numeric) ( ,
+(numeric) ( .              	--> 55 (numeric) ( .
+(numeric) ( c              	--> 56 (numeric) ( c
+(numeric) ( d              	--> 57 (numeric) ( d
+(numeric) ( j              	--> 58 (numeric) ( j
+(numeric) ( n              	--> 59 (numeric) ( n
+(numeric) ( p              	--> 60 (numeric) ( p
+(numeric) ( r              	--> 61 (numeric) ( r
+(numeric) ( v              	--> 62 (numeric) ( v
+(numeric) )                	--> 65 (numeric) )  
+(numeric) )                	--> 65 (numeric) )  
+(numeric) )                	--> 65 (numeric) )  
+(numeric) ,                	--> 67 (numeric) , 
+(numeric) ,                	--> 67 (numeric) , 
+(numeric) , )              	--> 68 (numeric) , )
+(numeric) , ,              	--> 69 (numeric) , ,
+(numeric) .                	--> 71 (numeric) . 
+(numeric) .                	--> 71 (numeric) . 
+(numeric) . )              	--> 72 (numeric) . )
+(numeric) . .              	--> 73 (numeric) . .
+(numeric) /                	--> 74 (numeric) /
+(numeric) /m               	--> 75 (numeric) /m
+(numeric) /mu              	--> 76 (numeric) /mu
+(numeric) 0                	--> 452 (numeric)  0 
+(numeric) 0                	--> 452 (numeric)  0 
+(numeric) 0 )              	--> 79 (numeric) 0 )
+(numeric) 00               	--> 453 (numeric)  00
+(numeric) 00               	--> 453 (numeric)  00
+(numeric) 09               	--> 83 (numeric) 09 
+(numeric) 09               	--> 83 (numeric) 09 
+(numeric) 1                	--> 638 (numeric) 1 
+(numeric) 10               	--> 643 (numeric) 10 
+(numeric) 109              	--> 86 (numeric) 109
+(numeric) 17               	--> 88 (numeric) 17 
+(numeric) 17               	--> 88 (numeric) 17 
+(numeric) 19               	--> 89 (numeric) 19
+(numeric) 199              	--> 90 (numeric) 199
+(numeric) 2                	--> 665 (numeric) 2 
+(numeric) 20               	--> 673 (numeric) 20 
+(numeric) 200              	--> 93 (numeric) 200
+(numeric) 5                	--> 95 (numeric) 5 
+(numeric) 5                	--> 95 (numeric) 5 
+(numeric) 5 )              	--> 96 (numeric) 5 )
+(numeric) 7                	--> 481 (numeric)  7
+(numeric) 7                	--> 481 (numeric)  7
+(numeric) 7 )              	--> 99 (numeric) 7 )
+(numeric) 8                	--> 101 (numeric) 8 
+(numeric) 8                	--> 101 (numeric) 8 
+(numeric) 8 )              	--> 102 (numeric) 8 )
+(numeric) 9                	--> 484 (numeric)  9
+(numeric) 9                	--> 484 (numeric)  9
+(numeric) 9 )              	--> 105 (numeric) 9 )
+(numeric) 98               	--> 107 (numeric) 98 
+(numeric) 98               	--> 107 (numeric) 98 
+(numeric) 99               	--> 108 (numeric) 99
+(numeric) 998              	--> 109 (numeric) 998
+(numeric) a )              	--> 110 (numeric) a )
+(numeric) ac               	--> 797 (numeric) ac 
+(numeric) ach              	--> 112 (numeric) ach
+(numeric) ad               	--> 804 (numeric) ad 
+(numeric) adj              	--> 114 (numeric) adj
+(numeric) af               	--> 810 (numeric) af 
+(numeric) aff              	--> 116 (numeric) aff
+(numeric) ak               	--> 828 (numeric) ak 
+(numeric) al               	--> 498 (numeric)  al
+(numeric) al               	--> 498 (numeric)  al
+(numeric) ang              	--> 120 (numeric) ang
+(numeric) ar               	--> 500 (numeric)  ar
+(numeric) ar               	--> 500 (numeric)  ar
+(numeric) ard              	--> 123 (numeric) ard
+(numeric) arn              	--> 124 (numeric) arn
+(numeric) art              	--> 125 (numeric) art
+(numeric) ary              	--> 126 (numeric) ary
+(numeric) ash              	--> 127 (numeric) ash
+(numeric) ast              	--> 128 (numeric) ast
+(numeric) ay               	--> 130 (numeric) ay 
+(numeric) ay               	--> 130 (numeric) ay 
+(numeric) ba               	--> 131 (numeric) ba
+(numeric) bac              	--> 132 (numeric) bac
+(numeric) bar              	--> 133 (numeric) bar
+(numeric) bd               	--> 135 (numeric) bd 
+(numeric) bd               	--> 135 (numeric) bd 
+(numeric) ber              	--> 136 (numeric) ber
+(numeric) bi               	--> 137 (numeric) bi
+(numeric) bil              	--> 138 (numeric) bil
+(numeric) bn               	--> 140 (numeric) bn 
+(numeric) bn               	--> 140 (numeric) bn 
+(numeric) bo               	--> 141 (numeric) bo
+(numeric) bz               	--> 143 (numeric) bz 
+(numeric) bz               	--> 143 (numeric) bz 
+(numeric) c )              	--> 144 (numeric) c )
+(numeric) ca               	--> 938 (numeric) ca 
+(numeric) cal              	--> 146 (numeric) cal
+(numeric) cc               	--> 148 (numeric) cc 
+(numeric) cc               	--> 148 (numeric) cc 
+(numeric) cd               	--> 150 (numeric) cd 
+(numeric) cd               	--> 150 (numeric) cd 
+(numeric) ce               	--> 152 (numeric) ce 
+(numeric) ce               	--> 152 (numeric) ce 
+(numeric) ch               	--> 154 (numeric) ch 
+(numeric) ch               	--> 154 (numeric) ch 
+(numeric) chu              	--> 155 (numeric) chu
+(numeric) ci               	--> 156 (numeric) ci
+(numeric) con              	--> 157 (numeric) con
+(numeric) cr               	--> 158 (numeric) cr
+(numeric) ct               	--> 971 (numeric) ct 
+(numeric) ctu              	--> 160 (numeric) ctu
+(numeric) d )              	--> 161 (numeric) d )
+(numeric) d 1              	--> 162 (numeric) d 1
+(numeric) d 2              	--> 163 (numeric) d 2
+(numeric) d 5              	--> 164 (numeric) d 5
+(numeric) d b              	--> 165 (numeric) d b
+(numeric) d d              	--> 166 (numeric) d d
+(numeric) de               	--> 168 (numeric) de 
+(numeric) de               	--> 168 (numeric) de 
+(numeric) ded              	--> 169 (numeric) ded
+(numeric) deg              	--> 170 (numeric) deg
+(numeric) di               	--> 171 (numeric) di
+(numeric) dir              	--> 172 (numeric) dir
+(numeric) dj               	--> 173 (numeric) dj
+(numeric) djp              	--> 174 (numeric) djp
+(numeric) ds               	--> 176 (numeric) ds 
+(numeric) ds               	--> 176 (numeric) ds 
+(numeric) dt               	--> 178 (numeric) dt 
+(numeric) dt               	--> 178 (numeric) dt 
+(numeric) du               	--> 512 (numeric)  du
+(numeric) dus              	--> 180 (numeric) dus
+(numeric) dw               	--> 181 (numeric) dw
+(numeric) dy               	--> 183 (numeric) dy 
+(numeric) dy               	--> 183 (numeric) dy 
+(numeric) e )              	--> 184 (numeric) e )
+(numeric) ea               	--> 1037 (numeric) ea 
+(numeric) eak              	--> 186 (numeric) eak
+(numeric) eal              	--> 187 (numeric) eal
+(numeric) ear              	--> 188 (numeric) ear
+(numeric) ec               	--> 513 (numeric)  ec
+(numeric) ecr              	--> 190 (numeric) ecr
+(numeric) ect              	--> 191 (numeric) ect
+(numeric) ed               	--> 193 (numeric) ed 
+(numeric) ed               	--> 193 (numeric) ed 
+(numeric) edw              	--> 194 (numeric) edw
+(numeric) ee               	--> 196 (numeric) ee 
+(numeric) ee               	--> 196 (numeric) ee 
+(numeric) egr              	--> 197 (numeric) egr
+(numeric) el               	--> 1071 (numeric) el 
+(numeric) en               	--> 1080 (numeric) en 
+(numeric) enc              	--> 200 (numeric) enc
+(numeric) eng              	--> 201 (numeric) eng
+(numeric) enr              	--> 202 (numeric) enr
+(numeric) ens              	--> 203 (numeric) ens
+(numeric) er               	--> 205 (numeric) er 
+(numeric) er               	--> 205 (numeric) er 
+(numeric) ern              	--> 206 (numeric) ern
+(numeric) ers              	--> 207 (numeric) ers
+(numeric) es               	--> 517 (numeric)  es
+(numeric) es               	--> 517 (numeric)  es
+(numeric) esw              	--> 210 (numeric) esw
+(numeric) f )              	--> 211 (numeric) f )
+(numeric) ff               	--> 1139 (numeric) ff 
+(numeric) ffn              	--> 213 (numeric) ffn
+(numeric) fn               	--> 214 (numeric) fn
+(numeric) fo               	--> 215 (numeric) fo
+(numeric) ga               	--> 216 (numeric) ga
+(numeric) gat              	--> 217 (numeric) gat
+(numeric) ge               	--> 219 (numeric) ge 
+(numeric) ge               	--> 219 (numeric) ge 
+(numeric) gi               	--> 220 (numeric) gi
+(numeric) gir              	--> 221 (numeric) gir
+(numeric) gl               	--> 524 (numeric)  gl
+(numeric) gov              	--> 223 (numeric) gov
+(numeric) gr               	--> 525 (numeric)  gr
+(numeric) gt               	--> 225 (numeric) gt
+(numeric) h )              	--> 226 (numeric) h )
+(numeric) ha               	--> 227 (numeric) ha
+(numeric) han              	--> 228 (numeric) han
+(numeric) har              	--> 229 (numeric) har
+(numeric) hel              	--> 230 (numeric) hel
+(numeric) hen              	--> 231 (numeric) hen
+(numeric) hes              	--> 232 (numeric) hes
+(numeric) hil              	--> 233 (numeric) hil
+(numeric) hin              	--> 234 (numeric) hin
+(numeric) ho               	--> 1218 (numeric) ho 
+(numeric) hom              	--> 236 (numeric) hom
+(numeric) hot              	--> 237 (numeric) hot
+(numeric) hu               	--> 528 (numeric)  hu
+(numeric) hur              	--> 239 (numeric) hur
+(numeric) ia               	--> 1240 (numeric) ia 
+(numeric) ial              	--> 241 (numeric) ial
+(numeric) ic               	--> 243 (numeric) ic 
+(numeric) ic               	--> 243 (numeric) ic 
+(numeric) id               	--> 529 (numeric)  id
+(numeric) id               	--> 529 (numeric)  id
+(numeric) ien              	--> 246 (numeric) ien
+(numeric) il               	--> 1267 (numeric) il 
+(numeric) im               	--> 1272 (numeric) im 
+(numeric) ind              	--> 249 (numeric) ind
+(numeric) ing              	--> 250 (numeric) ing
+(numeric) int              	--> 251 (numeric) int
+(numeric) io               	--> 1280 (numeric) io 
+(numeric) ion              	--> 253 (numeric) ion
+(numeric) ir               	--> 1288 (numeric) ir 
+(numeric) ish              	--> 255 (numeric) ish
+(numeric) ist              	--> 256 (numeric) ist
+(numeric) ith              	--> 257 (numeric) ith
+(numeric) iv               	--> 258 (numeric) iv
+(numeric) j p              	--> 259 (numeric) j p
+(numeric) j w              	--> 260 (numeric) j w
+(numeric) ja               	--> 261 (numeric) ja
+(numeric) jaf              	--> 262 (numeric) jaf
+(numeric) jj               	--> 264 (numeric) jj 
+(numeric) jj               	--> 264 (numeric) jj 
+(numeric) jp               	--> 266 (numeric) jp 
+(numeric) jp               	--> 266 (numeric) jp 
+(numeric) ke               	--> 1344 (numeric) ke 
+(numeric) ker              	--> 268 (numeric) ker
+(numeric) l )              	--> 269 (numeric) l )
+(numeric) la               	--> 1362 (numeric) la 
+(numeric) lat              	--> 271 (numeric) lat
+(numeric) lb               	--> 272 (numeric) lb
+(numeric) le               	--> 1374 (numeric) le 
+(numeric) lec              	--> 274 (numeric) lec
+(numeric) li               	--> 275 (numeric) li
+(numeric) lit              	--> 276 (numeric) lit
+(numeric) llb              	--> 277 (numeric) llb
+(numeric) lo               	--> 278 (numeric) lo
+(numeric) lor              	--> 279 (numeric) lor
+(numeric) ma               	--> 1423 (numeric) ma 
+(numeric) mo               	--> 281 (numeric) mo
+(numeric) mon              	--> 282 (numeric) mon
+(numeric) mr               	--> 283 (numeric) mr
+(numeric) mu               	--> 539 (numeric)  mu
+(numeric) mus              	--> 285 (numeric) mus
+(numeric) n )              	--> 286 (numeric) n )
+(numeric) n b              	--> 287 (numeric) n b
+(numeric) n c              	--> 288 (numeric) n c
+(numeric) n d              	--> 289 (numeric) n d
+(numeric) n f              	--> 290 (numeric) n f
+(numeric) n h              	--> 291 (numeric) n h
+(numeric) n l              	--> 292 (numeric) n l
+(numeric) n m              	--> 293 (numeric) n m
+(numeric) n n              	--> 294 (numeric) n n
+(numeric) n p              	--> 295 (numeric) n p
+(numeric) n w              	--> 296 (numeric) n w
+(numeric) na               	--> 298 (numeric) na 
+(numeric) na               	--> 298 (numeric) na 
+(numeric) nar              	--> 299 (numeric) nar
+(numeric) nc               	--> 300 (numeric) nc
+(numeric) ndu              	--> 301 (numeric) ndu
+(numeric) ne               	--> 303 (numeric) ne 
+(numeric) ne               	--> 303 (numeric) ne 
+(numeric) ng               	--> 1500 (numeric) ng 
+(numeric) ngl              	--> 305 (numeric) ngl
+(numeric) ngr              	--> 306 (numeric) ngr
+(numeric) ngt              	--> 307 (numeric) ngt
+(numeric) ni               	--> 1507 (numeric) ni 
+(numeric) niv              	--> 309 (numeric) niv
+(numeric) nn               	--> 311 (numeric) nn 
+(numeric) nn               	--> 311 (numeric) nn 
+(numeric) nnp              	--> 312 (numeric) nnp
+(numeric) np               	--> 314 (numeric) np 
+(numeric) np               	--> 314 (numeric) np 
+(numeric) nr               	--> 315 (numeric) nr
+(numeric) nry              	--> 316 (numeric) nry
+(numeric) ns               	--> 318 (numeric) ns 
+(numeric) ns               	--> 318 (numeric) ns 
+(numeric) nt               	--> 1533 (numeric) nt 
+(numeric) ntr              	--> 320 (numeric) ntr
+(numeric) oa               	--> 1553 (numeric) oa 
+(numeric) oar              	--> 322 (numeric) oar
+(numeric) ob               	--> 1555 (numeric) ob 
+(numeric) og               	--> 324 (numeric) og
+(numeric) oi               	--> 325 (numeric) oi
+(numeric) oic              	--> 326 (numeric) oic
+(numeric) ol               	--> 543 (numeric)  ol
+(numeric) ol               	--> 543 (numeric)  ol
+(numeric) om               	--> 1573 (numeric) om 
+(numeric) ong              	--> 330 (numeric) ong
+(numeric) ont              	--> 331 (numeric) ont
+(numeric) oo               	--> 332 (numeric) oo
+(numeric) oot              	--> 333 (numeric) oot
+(numeric) os               	--> 335 (numeric) os 
+(numeric) os               	--> 335 (numeric) os 
+(numeric) ot               	--> 545 (numeric)  ot
+(numeric) ot               	--> 545 (numeric)  ot
+(numeric) ov               	--> 547 (numeric)  ov
+(numeric) p b              	--> 339 (numeric) p b
+(numeric) p g              	--> 340 (numeric) p g
+(numeric) p h              	--> 341 (numeric) p h
+(numeric) p j              	--> 342 (numeric) p j
+(numeric) p m              	--> 343 (numeric) p m
+(numeric) p r              	--> 344 (numeric) p r
+(numeric) p u              	--> 345 (numeric) p u
+(numeric) p w              	--> 346 (numeric) p w
+(numeric) p y              	--> 347 (numeric) p y
+(numeric) p$               	--> 349 (numeric) p$ 
+(numeric) p$               	--> 349 (numeric) p$ 
+(numeric) pe               	--> 1647 (numeric) pe 
+(numeric) pi               	--> 351 (numeric) pi
+(numeric) po               	--> 352 (numeric) po
+(numeric) pol              	--> 353 (numeric) pol
+(numeric) pp               	--> 355 (numeric) pp 
+(numeric) pp               	--> 355 (numeric) pp 
+(numeric) pr               	--> 356 (numeric) pr
+(numeric) prp              	--> 357 (numeric) prp
+(numeric) r )              	--> 358 (numeric) r )
+(numeric) ra               	--> 1689 (numeric) ra 
+(numeric) ran              	--> 360 (numeric) ran
+(numeric) rar              	--> 361 (numeric) rar
+(numeric) rc               	--> 362 (numeric) rc
+(numeric) rch              	--> 363 (numeric) rch
+(numeric) rec              	--> 364 (numeric) rec
+(numeric) reg              	--> 365 (numeric) reg
+(numeric) rel              	--> 366 (numeric) rel
+(numeric) rer              	--> 367 (numeric) rer
+(numeric) res              	--> 368 (numeric) res
+(numeric) ri               	--> 369 (numeric) ri
+(numeric) rim              	--> 370 (numeric) rim
+(numeric) rit              	--> 371 (numeric) rit
+(numeric) rn               	--> 1738 (numeric) rn 
+(numeric) ro               	--> 1740 (numeric) ro 
+(numeric) rob              	--> 374 (numeric) rob
+(numeric) rp               	--> 557 (numeric)  rp
+(numeric) rp               	--> 557 (numeric)  rp
+(numeric) rp$              	--> 377 (numeric) rp$
+(numeric) rs               	--> 1756 (numeric) rs 
+(numeric) rs.              	--> 379 (numeric) rs.
+(numeric) rt               	--> 381 (numeric) rt 
+(numeric) rt               	--> 381 (numeric) rt 
+(numeric) ry               	--> 383 (numeric) ry 
+(numeric) ry               	--> 383 (numeric) ry 
+(numeric) ry/              	--> 384 (numeric) ry/
+(numeric) s )              	--> 385 (numeric) s )
+(numeric) s c              	--> 386 (numeric) s c
+(numeric) s r              	--> 387 (numeric) s r
+(numeric) s t              	--> 388 (numeric) s t
+(numeric) s.               	--> 390 (numeric) s. 
+(numeric) s.               	--> 390 (numeric) s. 
+(numeric) sc               	--> 391 (numeric) sc
+(numeric) se               	--> 1794 (numeric) se 
+(numeric) sec              	--> 393 (numeric) sec
+(numeric) sh               	--> 395 (numeric) sh 
+(numeric) sh               	--> 395 (numeric) sh 
+(numeric) si               	--> 396 (numeric) si
+(numeric) sic              	--> 397 (numeric) sic
+(numeric) sit              	--> 398 (numeric) sit
+(numeric) sp               	--> 399 (numeric) sp
+(numeric) st               	--> 1825 (numeric) st 
+(numeric) str              	--> 401 (numeric) str
+(numeric) stu              	--> 402 (numeric) stu
+(numeric) sw               	--> 403 (numeric) sw
+(numeric) t )              	--> 404 (numeric) t )
+(numeric) t t              	--> 405 (numeric) t t
+(numeric) ta               	--> 406 (numeric) ta
+(numeric) tar              	--> 407 (numeric) tar
+(numeric) te               	--> 409 (numeric) te 
+(numeric) te               	--> 409 (numeric) te 
+(numeric) ten              	--> 410 (numeric) ten
+(numeric) ter              	--> 411 (numeric) ter
+(numeric) ti               	--> 412 (numeric) ti
+(numeric) tic              	--> 413 (numeric) tic
+(numeric) tim              	--> 414 (numeric) tim
+(numeric) tol              	--> 415 (numeric) tol
+(numeric) ton              	--> 416 (numeric) ton
+(numeric) tor              	--> 417 (numeric) tor
+(numeric) tr               	--> 564 (numeric)  tr
+(numeric) tu               	--> 565 (numeric)  tu
+(numeric) tud              	--> 420 (numeric) tud
+(numeric) tur              	--> 421 (numeric) tur
+(numeric) ud               	--> 422 (numeric) ud
+(numeric) udy              	--> 423 (numeric) udy
+(numeric) ur               	--> 424 (numeric) ur
+(numeric) urc              	--> 425 (numeric) urc
+(numeric) ust              	--> 426 (numeric) ust
+(numeric) vb               	--> 1959 (numeric) vb 
+(numeric) vbd              	--> 428 (numeric) vbd
+(numeric) vbn              	--> 429 (numeric) vbn
+(numeric) vbz              	--> 430 (numeric) vbz
+(numeric) ver              	--> 431 (numeric) ver
+(numeric) vp               	--> 433 (numeric) vp 
+(numeric) vp               	--> 433 (numeric) vp 
+(numeric) wa               	--> 434 (numeric) wa
+(numeric) war              	--> 435 (numeric) war
+(numeric) wi               	--> 436 (numeric) wi
+(numeric) win              	--> 437 (numeric) win
+(numeric) wit              	--> 438 (numeric) wit
+(numeric) wr               	--> 439 (numeric) wr
+(numeric) y )              	--> 440 (numeric) y )
+(numeric) y/               	--> 441 (numeric) y/
+(numeric) y/m              	--> 442 (numeric) y/m
+(numeric) yo               	--> 443 (numeric) yo
+(numeric) yog              	--> 444 (numeric) yog
+(numeric) z b              	--> 445 (numeric) z b
+(numeric) z h              	--> 446 (numeric) z h
+(numeric)  $               	--> 448 (numeric)  $ 
+(numeric)  $               	--> 448 (numeric)  $ 
+(numeric)  +               	--> 590 (numeric) + 
+(numeric)  +               	--> 590 (numeric) + 
+(numeric)  0               	--> 452 (numeric)  0 
+(numeric)  0               	--> 452 (numeric)  0 
+(numeric)  00              	--> 453 (numeric)  00
+(numeric)  1               	--> 638 (numeric) 1 
+(numeric)  1.              	--> 640 (numeric) 1.
+(numeric)  11              	--> 645 (numeric) 11 
+(numeric)  12              	--> 647 (numeric) 12 
+(numeric)  15              	--> 652 (numeric) 15 
+(numeric)  18              	--> 658 (numeric) 18 
+(numeric)  2               	--> 665 (numeric) 2 
+(numeric)  2.              	--> 669 (numeric) 2.
+(numeric)  23              	--> 676 (numeric) 23 
+(numeric)  3               	--> 680 (numeric) 3 
+(numeric)  3               	--> 680 (numeric) 3 
+(numeric)  3.              	--> 682 (numeric) 3.
+(numeric)  3/              	--> 687 (numeric) 3/
+(numeric)  30              	--> 689 (numeric) 30
+(numeric)  35              	--> 695 (numeric) 35
+(numeric)  4               	--> 698 (numeric) 4 
+(numeric)  4-              	--> 700 (numeric) 4-
+(numeric)  4.              	--> 702 (numeric) 4.
+(numeric)  45              	--> 709 (numeric) 45 
+(numeric)  50              	--> 711 (numeric) 50 
+(numeric)  51              	--> 713 (numeric) 51
+(numeric)  52              	--> 715 (numeric) 52
+(numeric)  56              	--> 717 (numeric) 56
+(numeric)  6               	--> 721 (numeric) 6 
+(numeric)  6               	--> 721 (numeric) 6 
+(numeric)  6.              	--> 723 (numeric) 6.
+(numeric)  60              	--> 726 (numeric) 60 
+(numeric)  7               	--> 481 (numeric)  7
+(numeric)  70              	--> 738 (numeric) 70
+(numeric)  75              	--> 743 (numeric) 75 
+(numeric)  9               	--> 484 (numeric)  9
+(numeric)  96              	--> 763 (numeric) 96
+(numeric)  :               	--> 775 (numeric) : 
+(numeric)  :               	--> 775 (numeric) : 
+(numeric)  ;               	--> 780 (numeric) ; 
+(numeric)  ;               	--> 780 (numeric) ; 
+(numeric)  `               	--> 786 (numeric) ` 
+(numeric)  `               	--> 786 (numeric) ` 
+(numeric)  ``              	--> 790 (numeric) `` 
+(numeric)  a.              	--> 791 (numeric) a.
+(numeric)  ab              	--> 793 (numeric) ab
+(numeric)  ac              	--> 797 (numeric) ac 
+(numeric)  af              	--> 810 (numeric) af 
+(numeric)  ag              	--> 813 (numeric) ag 
+(numeric)  al              	--> 498 (numeric)  al
+(numeric)  ap              	--> 837 (numeric) ap
+(numeric)  ar              	--> 500 (numeric)  ar
+(numeric)  au              	--> 851 (numeric) au
+(numeric)  av              	--> 856 (numeric) av
+(numeric)  aw              	--> 859 (numeric) aw 
+(numeric)  bh              	--> 901 (numeric) bh
+(numeric)  bl              	--> 908 (numeric) bl
+(numeric)  br              	--> 922 (numeric) br 
+(numeric)  bu              	--> 929 (numeric) bu
+(numeric)  c$              	--> 937 (numeric) c$ 
+(numeric)  cl              	--> 961 (numeric) cl
+(numeric)  cu              	--> 973 (numeric) cu
+(numeric)  dr              	--> 1029 (numeric) dr
+(numeric)  du              	--> 512 (numeric)  du
+(numeric)  ec              	--> 513 (numeric)  ec
+(numeric)  ef              	--> 1059 (numeric) ef
+(numeric)  el              	--> 1071 (numeric) el 
+(numeric)  em              	--> 1076 (numeric) em
+(numeric)  es              	--> 517 (numeric)  es
+(numeric)  eu              	--> 1109 (numeric) eu
+(numeric)  ev              	--> 1113 (numeric) ev
+(numeric)  fl              	--> 1146 (numeric) fl
+(numeric)  fr              	--> 1150 (numeric) fr
+(numeric)  fu              	--> 1153 (numeric) fu
+(numeric)  fw              	--> 1156 (numeric) fw 
+(numeric)  gl              	--> 524 (numeric)  gl
+(numeric)  gr              	--> 525 (numeric)  gr
+(numeric)  gu              	--> 1194 (numeric) gu
+(numeric)  hk              	--> 1211 (numeric) hk
+(numeric)  hu              	--> 528 (numeric)  hu
+(numeric)  id              	--> 529 (numeric)  id
+(numeric)  im              	--> 1272 (numeric) im 
+(numeric)  ir              	--> 1288 (numeric) ir 
+(numeric)  ju              	--> 1336 (numeric) ju
+(numeric)  kn              	--> 1355 (numeric) kn
+(numeric)  ku              	--> 1360 (numeric) ku
+(numeric)  lu              	--> 1409 (numeric) lu
+(numeric)  m2              	--> 1422 (numeric) m2 
+(numeric)  mc              	--> 1433 (numeric) mc
+(numeric)  md              	--> 1437 (numeric) md 
+(numeric)  mu              	--> 539 (numeric)  mu
+(numeric)  nu              	--> 1537 (numeric) nu
+(numeric)  nx              	--> 1542 (numeric) nx 
+(numeric)  ob              	--> 1555 (numeric) ob 
+(numeric)  ol              	--> 543 (numeric)  ol
+(numeric)  op              	--> 1590 (numeric) op 
+(numeric)  ot              	--> 545 (numeric)  ot
+(numeric)  ou              	--> 1610 (numeric) ou
+(numeric)  ov              	--> 547 (numeric)  ov
+(numeric)  ow              	--> 1618 (numeric) ow 
+(numeric)  pd              	--> 1645 (numeric) pd
+(numeric)  ph              	--> 1651 (numeric) ph 
+(numeric)  pl              	--> 1657 (numeric) pl
+(numeric)  pm              	--> 1660 (numeric) pm 
+(numeric)  pu              	--> 1674 (numeric) pu
+(numeric)  qp              	--> 1681 (numeric) qp 
+(numeric)  qu              	--> 1682 (numeric) qu
+(numeric)  rb              	--> 1702 (numeric) rb 
+(numeric)  rp              	--> 557 (numeric)  rp
+(numeric)  ru              	--> 1762 (numeric) ru
+(numeric)  sb              	--> 1792 (numeric) sb
+(numeric)  sm              	--> 1811 (numeric) sm
+(numeric)  sn              	--> 1812 (numeric) sn
+(numeric)  su              	--> 1828 (numeric) su
+(numeric)  sy              	--> 1832 (numeric) sy
+(numeric)  tr              	--> 564 (numeric)  tr
+(numeric)  tu              	--> 565 (numeric)  tu
+(numeric)  tv              	--> 1882 (numeric) tv 
+(numeric)  tw              	--> 1883 (numeric) tw
+(numeric)  uc              	--> 1898 (numeric) uc
+(numeric)  wd              	--> 1979 (numeric) wd 
+(numeric)  wh              	--> 1987 (numeric) wh
+(numeric)  wp              	--> 2003 (numeric) wp 
+(numeric)  wu              	--> 2009 (numeric) wu 
+(numeric)  yu              	--> 2046 (numeric) yu
+(numeric) $ $              	--> 574 (numeric) $ $
+(numeric) $ )              	--> 575 (numeric) $ )
+(numeric) $ c              	--> 576 (numeric) $ c
+(numeric) $ m              	--> 577 (numeric) $ m
+(numeric) $ w              	--> 578 (numeric) $ w
+(numeric) (                	--> 579 (numeric) (  
+(numeric) ( $              	--> 580 (numeric) ( $
+(numeric) ( :              	--> 581 (numeric) ( :
+(numeric) ( `              	--> 582 (numeric) ( `
+(numeric) ( f              	--> 583 (numeric) ( f
+(numeric) ( m              	--> 584 (numeric) ( m
+(numeric) ( q              	--> 585 (numeric) ( q
+(numeric) ( t              	--> 586 (numeric) ( t
+(numeric) ( u              	--> 587 (numeric) ( u
+(numeric) ( w              	--> 588 (numeric) ( w
+(numeric) +                	--> 590 (numeric) + 
+(numeric) +                	--> 590 (numeric) + 
+(numeric) + )              	--> 591 (numeric) + )
+(numeric) -                	--> 592 (numeric) -
+(numeric) -1               	--> 594 (numeric) -1 
+(numeric) -1               	--> 594 (numeric) -1 
+(numeric) -b               	--> 595 (numeric) -b
+(numeric) -f               	--> 596 (numeric) -f
+(numeric) -h               	--> 597 (numeric) -h
+(numeric) -hu              	--> 598 (numeric) -hu
+(numeric) -hy              	--> 599 (numeric) -hy
+(numeric) -i               	--> 600 (numeric) -i
+(numeric) -in              	--> 601 (numeric) -in
+(numeric) -m               	--> 602 (numeric) -m
+(numeric) -y               	--> 603 (numeric) -y
+(numeric) .0               	--> 605 (numeric) .0 
+(numeric) .0               	--> 605 (numeric) .0 
+(numeric) .00              	--> 606 (numeric) .00
+(numeric) .1               	--> 608 (numeric) .1 
+(numeric) .1               	--> 608 (numeric) .1 
+(numeric) .16              	--> 609 (numeric) .16
+(numeric) .4               	--> 611 (numeric) .4 
+(numeric) .4               	--> 611 (numeric) .4 
+(numeric) .5               	--> 613 (numeric) .5 
+(numeric) .5               	--> 613 (numeric) .5 
+(numeric) .56              	--> 614 (numeric) .56
+(numeric) .6               	--> 615 (numeric) .6
+(numeric) .61              	--> 616 (numeric) .61
+(numeric) .7               	--> 617 (numeric) .7
+(numeric) .75              	--> 618 (numeric) .75
+(numeric) .9               	--> 620 (numeric) .9 
+(numeric) .9               	--> 620 (numeric) .9 
+(numeric) .m               	--> 621 (numeric) .m
+(numeric) .m.              	--> 622 (numeric) .m.
+(numeric) /3               	--> 623 (numeric) /3
+(numeric) /32              	--> 624 (numeric) /32
+(numeric) /8               	--> 626 (numeric) /8 
+(numeric) /8               	--> 626 (numeric) /8 
+(numeric) 0-               	--> 627 (numeric) 0-
+(numeric) 0-y              	--> 628 (numeric) 0-y
+(numeric) 0.               	--> 629 (numeric) 0.
+(numeric) 0.0              	--> 630 (numeric) 0.0
+(numeric) 0/               	--> 631 (numeric) 0/
+(numeric) 0/3              	--> 632 (numeric) 0/3
+(numeric) 000              	--> 633 (numeric) 000
+(numeric) 003              	--> 634 (numeric) 003
+(numeric) 009              	--> 635 (numeric) 009
+(numeric) 03               	--> 637 (numeric) 03 
+(numeric) 03               	--> 637 (numeric) 03 
+(numeric) 1                	--> 638 (numeric) 1 
+(numeric) 1 )              	--> 639 (numeric) 1 )
+(numeric) 1.               	--> 640 (numeric) 1.
+(numeric) 1.0              	--> 641 (numeric) 1.0
+(numeric) 1.9              	--> 642 (numeric) 1.9
+(numeric) 10               	--> 643 (numeric) 10 
+(numeric) 11               	--> 645 (numeric) 11 
+(numeric) 11               	--> 645 (numeric) 11 
+(numeric) 12               	--> 647 (numeric) 12 
+(numeric) 12               	--> 647 (numeric) 12 
+(numeric) 12-              	--> 648 (numeric) 12-
+(numeric) 12.              	--> 649 (numeric) 12.
+(numeric) 120              	--> 650 (numeric) 120
+(numeric) 15               	--> 652 (numeric) 15 
+(numeric) 15               	--> 652 (numeric) 15 
+(numeric) 16               	--> 654 (numeric) 16 
+(numeric) 16               	--> 654 (numeric) 16 
+(numeric) 165              	--> 655 (numeric) 165
+(numeric) 167              	--> 656 (numeric) 167
+(numeric) 18               	--> 658 (numeric) 18 
+(numeric) 18               	--> 658 (numeric) 18 
+(numeric) 18-              	--> 659 (numeric) 18-
+(numeric) 191              	--> 660 (numeric) 191
+(numeric) 194              	--> 661 (numeric) 194
+(numeric) 196              	--> 662 (numeric) 196
+(numeric) 197              	--> 663 (numeric) 197
+(numeric) 198              	--> 664 (numeric) 198
+(numeric) 2                	--> 665 (numeric) 2 
+(numeric) 2 )              	--> 666 (numeric) 2 )
+(numeric) 2-               	--> 667 (numeric) 2-
+(numeric) 2-m              	--> 668 (numeric) 2-m
+(numeric) 2.               	--> 669 (numeric) 2.
+(numeric) 2.1              	--> 670 (numeric) 2.1
+(numeric) 2.4              	--> 671 (numeric) 2.4
+(numeric) 2.5              	--> 672 (numeric) 2.5
+(numeric) 20               	--> 673 (numeric) 20 
+(numeric) 20-              	--> 674 (numeric) 20-
+(numeric) 23               	--> 676 (numeric) 23 
+(numeric) 23               	--> 676 (numeric) 23 
+(numeric) 25               	--> 678 (numeric) 25 
+(numeric) 25               	--> 678 (numeric) 25 
+(numeric) 3                	--> 680 (numeric) 3 
+(numeric) 3                	--> 680 (numeric) 3 
+(numeric) 3 )              	--> 681 (numeric) 3 )
+(numeric) 3.               	--> 682 (numeric) 3.
+(numeric) 3.0              	--> 683 (numeric) 3.0
+(numeric) 3.5              	--> 684 (numeric) 3.5
+(numeric) 3.6              	--> 685 (numeric) 3.6
+(numeric) 3.7              	--> 686 (numeric) 3.7
+(numeric) 3/               	--> 687 (numeric) 3/
+(numeric) 3/8              	--> 688 (numeric) 3/8
+(numeric) 30               	--> 689 (numeric) 30
+(numeric) 30-              	--> 690 (numeric) 30-
+(numeric) 30/              	--> 691 (numeric) 30/
+(numeric) 300              	--> 692 (numeric) 300
+(numeric) 32               	--> 694 (numeric) 32 
+(numeric) 32               	--> 694 (numeric) 32 
+(numeric) 35               	--> 695 (numeric) 35
+(numeric) 350              	--> 696 (numeric) 350
+(numeric) 4                	--> 698 (numeric) 4 
+(numeric) 4                	--> 698 (numeric) 4 
+(numeric) 4 )              	--> 699 (numeric) 4 )
+(numeric) 4-               	--> 700 (numeric) 4-
+(numeric) 4-1              	--> 701 (numeric) 4-1
+(numeric) 4.               	--> 702 (numeric) 4.
+(numeric) 4.1              	--> 703 (numeric) 4.1
+(numeric) 42               	--> 705 (numeric) 42 
+(numeric) 42               	--> 705 (numeric) 42 
+(numeric) 44               	--> 707 (numeric) 44 
+(numeric) 44               	--> 707 (numeric) 44 
+(numeric) 45               	--> 709 (numeric) 45 
+(numeric) 45               	--> 709 (numeric) 45 
+(numeric) 50               	--> 711 (numeric) 50 
+(numeric) 50               	--> 711 (numeric) 50 
+(numeric) 500              	--> 712 (numeric) 500
+(numeric) 51               	--> 713 (numeric) 51
+(numeric) 51.              	--> 714 (numeric) 51.
+(numeric) 52               	--> 715 (numeric) 52
+(numeric) 525              	--> 716 (numeric) 525
+(numeric) 56               	--> 717 (numeric) 56
+(numeric) 561              	--> 718 (numeric) 561
+(numeric) 568              	--> 719 (numeric) 568
+(numeric) 6                	--> 721 (numeric) 6 
+(numeric) 6                	--> 721 (numeric) 6 
+(numeric) 6 )              	--> 722 (numeric) 6 )
+(numeric) 6.               	--> 723 (numeric) 6.
+(numeric) 6.6              	--> 724 (numeric) 6.6
+(numeric) 60               	--> 726 (numeric) 60 
+(numeric) 60               	--> 726 (numeric) 60 
+(numeric) 61               	--> 728 (numeric) 61 
+(numeric) 61               	--> 728 (numeric) 61 
+(numeric) 615              	--> 729 (numeric) 615
+(numeric) 65               	--> 731 (numeric) 65 
+(numeric) 65               	--> 731 (numeric) 65 
+(numeric) 67               	--> 733 (numeric) 67 
+(numeric) 67               	--> 733 (numeric) 67 
+(numeric) 68               	--> 735 (numeric) 68 
+(numeric) 68               	--> 735 (numeric) 68 
+(numeric) 6è               	--> 736 (numeric) 6è
+(numeric) 6è?              	--> 737 (numeric) 6è?
+(numeric) 70               	--> 738 (numeric) 70
+(numeric) 70.              	--> 739 (numeric) 70.
+(numeric) 73               	--> 741 (numeric) 73 
+(numeric) 73               	--> 741 (numeric) 73 
+(numeric) 75               	--> 743 (numeric) 75 
+(numeric) 75               	--> 743 (numeric) 75 
+(numeric) 78               	--> 745 (numeric) 78 
+(numeric) 78               	--> 745 (numeric) 78 
+(numeric) 79               	--> 747 (numeric) 79 
+(numeric) 79               	--> 747 (numeric) 79 
+(numeric) 8-               	--> 748 (numeric) 8-
+(numeric) 8-m              	--> 749 (numeric) 8-m
+(numeric) 83               	--> 751 (numeric) 83 
+(numeric) 83               	--> 751 (numeric) 83 
+(numeric) 87               	--> 753 (numeric) 87 
+(numeric) 87               	--> 753 (numeric) 87 
+(numeric) 89               	--> 755 (numeric) 89 
+(numeric) 89               	--> 755 (numeric) 89 
+(numeric) 90               	--> 757 (numeric) 90 
+(numeric) 90               	--> 757 (numeric) 90 
+(numeric) 91               	--> 758 (numeric) 91
+(numeric) 916              	--> 759 (numeric) 916
+(numeric) 94               	--> 760 (numeric) 94
+(numeric) 942              	--> 761 (numeric) 942
+(numeric) 944              	--> 762 (numeric) 944
+(numeric) 96               	--> 763 (numeric) 96
+(numeric) 967              	--> 764 (numeric) 967
+(numeric) 96è              	--> 765 (numeric) 96è
+(numeric) 97               	--> 766 (numeric) 97
+(numeric) 973              	--> 767 (numeric) 973
+(numeric) 978              	--> 768 (numeric) 978
+(numeric) 979              	--> 769 (numeric) 979
+(numeric) 983              	--> 770 (numeric) 983
+(numeric) 987              	--> 771 (numeric) 987
+(numeric) 989              	--> 772 (numeric) 989
+(numeric) 990              	--> 773 (numeric) 990
+(numeric) :                	--> 775 (numeric) : 
+(numeric) :                	--> 775 (numeric) : 
+(numeric) : )              	--> 776 (numeric) : )
+(numeric) : :              	--> 777 (numeric) : :
+(numeric) : ;              	--> 778 (numeric) : ;
+(numeric) ;                	--> 780 (numeric) ; 
+(numeric) ;                	--> 780 (numeric) ; 
+(numeric) ; )              	--> 781 (numeric) ; )
+(numeric) ?                	--> 782 (numeric) ?
+(numeric) ?½               	--> 783 (numeric) ?½
+(numeric) ?½3              	--> 784 (numeric) ?½3
+(numeric) `                	--> 786 (numeric) ` 
+(numeric) `                	--> 786 (numeric) ` 
+(numeric) ` )              	--> 787 (numeric) ` )
+(numeric) ` `              	--> 788 (numeric) ` `
+(numeric) ``               	--> 790 (numeric) `` 
+(numeric) ``               	--> 790 (numeric) `` 
+(numeric) a.               	--> 791 (numeric) a.
+(numeric) a.m              	--> 792 (numeric) a.m
+(numeric) ab               	--> 793 (numeric) ab
+(numeric) abk              	--> 794 (numeric) abk
+(numeric) abl              	--> 795 (numeric) abl
+(numeric) abr              	--> 796 (numeric) abr
+(numeric) ac               	--> 797 (numeric) ac 
+(numeric) acc              	--> 798 (numeric) acc
+(numeric) ack              	--> 799 (numeric) ack
+(numeric) acl              	--> 800 (numeric) acl
+(numeric) acr              	--> 801 (numeric) acr
+(numeric) act              	--> 802 (numeric) act
+(numeric) acy              	--> 803 (numeric) acy
+(numeric) ad               	--> 804 (numeric) ad 
+(numeric) adu              	--> 805 (numeric) adu
+(numeric) adv              	--> 806 (numeric) adv
+(numeric) ae               	--> 807 (numeric) ae
+(numeric) ael              	--> 808 (numeric) ael
+(numeric) aen              	--> 809 (numeric) aen
+(numeric) af               	--> 810 (numeric) af 
+(numeric) aft              	--> 811 (numeric) aft
+(numeric) ag               	--> 813 (numeric) ag 
+(numeric) ag               	--> 813 (numeric) ag 
+(numeric) agr              	--> 814 (numeric) agr
+(numeric) agu              	--> 815 (numeric) agu
+(numeric) ah               	--> 817 (numeric) ah 
+(numeric) ah               	--> 817 (numeric) ah 
+(numeric) ai               	--> 818 (numeric) ai
+(numeric) aid              	--> 819 (numeric) aid
+(numeric) aig              	--> 820 (numeric) aig
+(numeric) ail              	--> 821 (numeric) ail
+(numeric) aim              	--> 822 (numeric) aim
+(numeric) ain              	--> 823 (numeric) ain
+(numeric) air              	--> 824 (numeric) air
+(numeric) aiw              	--> 825 (numeric) aiw
+(numeric) aj               	--> 827 (numeric) aj 
+(numeric) aj               	--> 827 (numeric) aj 
+(numeric) ak               	--> 828 (numeric) ak 
+(numeric) ald              	--> 829 (numeric) ald
+(numeric) alf              	--> 830 (numeric) alf
+(numeric) alu              	--> 831 (numeric) alu
+(numeric) amp              	--> 832 (numeric) amp
+(numeric) anc              	--> 833 (numeric) anc
+(numeric) anh              	--> 834 (numeric) anh
+(numeric) ank              	--> 835 (numeric) ank
+(numeric) ant              	--> 836 (numeric) ant
+(numeric) ap               	--> 837 (numeric) ap
+(numeric) aph              	--> 838 (numeric) aph
+(numeric) apt              	--> 839 (numeric) apt
+(numeric) aq               	--> 841 (numeric) aq 
+(numeric) aq               	--> 841 (numeric) aq 
+(numeric) arb              	--> 842 (numeric) arb
+(numeric) arg              	--> 843 (numeric) arg
+(numeric) ark              	--> 844 (numeric) ark
+(numeric) arl              	--> 845 (numeric) arl
+(numeric) arm              	--> 846 (numeric) arm
+(numeric) arp              	--> 847 (numeric) arp
+(numeric) ath              	--> 848 (numeric) ath
+(numeric) atl              	--> 849 (numeric) atl
+(numeric) atu              	--> 850 (numeric) atu
+(numeric) au               	--> 851 (numeric) au
+(numeric) aud              	--> 852 (numeric) aud
+(numeric) aug              	--> 853 (numeric) aug
+(numeric) aus              	--> 854 (numeric) aus
+(numeric) aut              	--> 855 (numeric) aut
+(numeric) av               	--> 856 (numeric) av
+(numeric) avl              	--> 857 (numeric) avl
+(numeric) aw               	--> 859 (numeric) aw 
+(numeric) aw               	--> 859 (numeric) aw 
+(numeric) awf              	--> 860 (numeric) awf
+(numeric) awm              	--> 861 (numeric) awm
+(numeric) ax               	--> 863 (numeric) ax 
+(numeric) ax               	--> 863 (numeric) ax 
+(numeric) ayb              	--> 864 (numeric) ayb
+(numeric) aym              	--> 865 (numeric) aym
+(numeric) ays              	--> 866 (numeric) ays
+(numeric) az               	--> 868 (numeric) az 
+(numeric) az               	--> 868 (numeric) az 
+(numeric) b )              	--> 869 (numeric) b )
+(numeric) b b              	--> 870 (numeric) b b
+(numeric) b c              	--> 871 (numeric) b c
+(numeric) b d              	--> 872 (numeric) b d
+(numeric) b f              	--> 873 (numeric) b f
+(numeric) b g              	--> 874 (numeric) b g
+(numeric) b h              	--> 875 (numeric) b h
+(numeric) b k              	--> 876 (numeric) b k
+(numeric) b l              	--> 877 (numeric) b l
+(numeric) b m              	--> 878 (numeric) b m
+(numeric) b n              	--> 879 (numeric) b n
+(numeric) b p              	--> 880 (numeric) b p
+(numeric) b r              	--> 881 (numeric) b r
+(numeric) b t              	--> 882 (numeric) b t
+(numeric) b u              	--> 883 (numeric) b u
+(numeric) b v              	--> 884 (numeric) b v
+(numeric) b w              	--> 885 (numeric) b w
+(numeric) bag              	--> 886 (numeric) bag
+(numeric) bal              	--> 887 (numeric) bal
+(numeric) ban              	--> 888 (numeric) ban
+(numeric) bat              	--> 889 (numeric) bat
+(numeric) bay              	--> 890 (numeric) bay
+(numeric) bb               	--> 891 (numeric) bb
+(numeric) bby              	--> 892 (numeric) bby
+(numeric) bec              	--> 893 (numeric) bec
+(numeric) bef              	--> 894 (numeric) bef
+(numeric) beg              	--> 895 (numeric) beg
+(numeric) beh              	--> 896 (numeric) beh
+(numeric) ben              	--> 897 (numeric) ben
+(numeric) bes              	--> 898 (numeric) bes
+(numeric) bg               	--> 900 (numeric) bg 
+(numeric) bg               	--> 900 (numeric) bg 
+(numeric) bh               	--> 901 (numeric) bh
+(numeric) bhu              	--> 902 (numeric) bhu
+(numeric) bid              	--> 903 (numeric) bid
+(numeric) bir              	--> 904 (numeric) bir
+(numeric) bit              	--> 905 (numeric) bit
+(numeric) bk               	--> 906 (numeric) bk
+(numeric) bkh              	--> 907 (numeric) bkh
+(numeric) bl               	--> 908 (numeric) bl
+(numeric) blu              	--> 909 (numeric) blu
+(numeric) bm               	--> 910 (numeric) bm
+(numeric) bob              	--> 911 (numeric) bob
+(numeric) bod              	--> 912 (numeric) bod
+(numeric) bok              	--> 913 (numeric) bok
+(numeric) bon              	--> 914 (numeric) bon
+(numeric) bor              	--> 915 (numeric) bor
+(numeric) bou              	--> 916 (numeric) bou
+(numeric) box              	--> 917 (numeric) box
+(numeric) boy              	--> 918 (numeric) boy
+(numeric) bp               	--> 920 (numeric) bp 
+(numeric) bp               	--> 920 (numeric) bp 
+(numeric) br               	--> 922 (numeric) br 
+(numeric) br               	--> 922 (numeric) br 
+(numeric) bry              	--> 923 (numeric) bry
+(numeric) bs               	--> 925 (numeric) bs 
+(numeric) bs               	--> 925 (numeric) bs 
+(numeric) bst              	--> 926 (numeric) bst
+(numeric) bt               	--> 928 (numeric) bt 
+(numeric) bt               	--> 928 (numeric) bt 
+(numeric) bu               	--> 929 (numeric) bu
+(numeric) bur              	--> 930 (numeric) bur
+(numeric) bus              	--> 931 (numeric) bus
+(numeric) bv               	--> 932 (numeric) bv
+(numeric) c +              	--> 933 (numeric) c +
+(numeric) c b              	--> 934 (numeric) c b
+(numeric) c v              	--> 935 (numeric) c v
+(numeric) c$               	--> 937 (numeric) c$ 
+(numeric) c$               	--> 937 (numeric) c$ 
+(numeric) ca               	--> 938 (numeric) ca 
+(numeric) cag              	--> 939 (numeric) cag
+(numeric) cak              	--> 940 (numeric) cak
+(numeric) cam              	--> 941 (numeric) cam
+(numeric) cap              	--> 942 (numeric) cap
+(numeric) car              	--> 943 (numeric) car
+(numeric) cat              	--> 944 (numeric) cat
+(numeric) cau              	--> 945 (numeric) cau
+(numeric) ccu              	--> 946 (numeric) ccu
+(numeric) ced              	--> 947 (numeric) ced
+(numeric) cen              	--> 948 (numeric) cen
+(numeric) cep              	--> 949 (numeric) cep
+(numeric) cer              	--> 950 (numeric) cer
+(numeric) ces              	--> 951 (numeric) ces
+(numeric) chm              	--> 952 (numeric) chm
+(numeric) chn              	--> 953 (numeric) chn
+(numeric) chr              	--> 954 (numeric) chr
+(numeric) cil              	--> 955 (numeric) cil
+(numeric) cin              	--> 956 (numeric) cin
+(numeric) cis              	--> 957 (numeric) cis
+(numeric) cit              	--> 958 (numeric) cit
+(numeric) ck               	--> 960 (numeric) ck 
+(numeric) ck               	--> 960 (numeric) ck 
+(numeric) cl               	--> 961 (numeric) cl
+(numeric) clu              	--> 962 (numeric) clu
+(numeric) col              	--> 963 (numeric) col
+(numeric) cop              	--> 964 (numeric) cop
+(numeric) cor              	--> 965 (numeric) cor
+(numeric) cou              	--> 966 (numeric) cou
+(numeric) cp               	--> 968 (numeric) cp 
+(numeric) cp               	--> 968 (numeric) cp 
+(numeric) cs               	--> 970 (numeric) cs 
+(numeric) cs               	--> 970 (numeric) cs 
+(numeric) ct               	--> 971 (numeric) ct 
+(numeric) ctl              	--> 972 (numeric) ctl
+(numeric) cu               	--> 973 (numeric) cu
+(numeric) cum              	--> 974 (numeric) cum
+(numeric) cup              	--> 975 (numeric) cup
+(numeric) cur              	--> 976 (numeric) cur
+(numeric) cus              	--> 977 (numeric) cus
+(numeric) cy               	--> 979 (numeric) cy 
+(numeric) cy               	--> 979 (numeric) cy 
+(numeric) d 0              	--> 980 (numeric) d 0
+(numeric) d 3              	--> 981 (numeric) d 3
+(numeric) d 4              	--> 982 (numeric) d 4
+(numeric) d 6              	--> 983 (numeric) d 6
+(numeric) d 7              	--> 984 (numeric) d 7
+(numeric) d 9              	--> 985 (numeric) d 9
+(numeric) d c              	--> 986 (numeric) d c
+(numeric) d f              	--> 987 (numeric) d f
+(numeric) d g              	--> 988 (numeric) d g
+(numeric) d h              	--> 989 (numeric) d h
+(numeric) d j              	--> 990 (numeric) d j
+(numeric) d k              	--> 991 (numeric) d k
+(numeric) d l              	--> 992 (numeric) d l
+(numeric) d m              	--> 993 (numeric) d m
+(numeric) d n              	--> 994 (numeric) d n
+(numeric) d p              	--> 995 (numeric) d p
+(numeric) d r              	--> 996 (numeric) d r
+(numeric) d t              	--> 997 (numeric) d t
+(numeric) d w              	--> 998 (numeric) d w
+(numeric) da               	--> 1000 (numeric) da 
+(numeric) da               	--> 1000 (numeric) da 
+(numeric) dal              	--> 1001 (numeric) dal
+(numeric) dan              	--> 1002 (numeric) dan
+(numeric) dau              	--> 1003 (numeric) dau
+(numeric) day              	--> 1004 (numeric) day
+(numeric) dd               	--> 1005 (numeric) dd
+(numeric) ddl              	--> 1006 (numeric) ddl
+(numeric) deb              	--> 1007 (numeric) deb
+(numeric) dec              	--> 1008 (numeric) dec
+(numeric) def              	--> 1009 (numeric) def
+(numeric) del              	--> 1010 (numeric) del
+(numeric) dem              	--> 1011 (numeric) dem
+(numeric) den              	--> 1012 (numeric) den
+(numeric) dep              	--> 1013 (numeric) dep
+(numeric) der              	--> 1014 (numeric) der
+(numeric) des              	--> 1015 (numeric) des
+(numeric) df               	--> 1016 (numeric) df
+(numeric) dfl              	--> 1017 (numeric) dfl
+(numeric) dic              	--> 1018 (numeric) dic
+(numeric) dif              	--> 1019 (numeric) dif
+(numeric) din              	--> 1020 (numeric) din
+(numeric) dip              	--> 1021 (numeric) dip
+(numeric) dit              	--> 1022 (numeric) dit
+(numeric) dl               	--> 1023 (numeric) dl
+(numeric) dn               	--> 1024 (numeric) dn
+(numeric) don              	--> 1025 (numeric) don
+(numeric) dor              	--> 1026 (numeric) dor
+(numeric) dow              	--> 1027 (numeric) dow
+(numeric) doy              	--> 1028 (numeric) doy
+(numeric) dr               	--> 1029 (numeric) dr
+(numeric) duc              	--> 1030 (numeric) duc
+(numeric) duf              	--> 1031 (numeric) duf
+(numeric) dur              	--> 1032 (numeric) dur
+(numeric) dv               	--> 1033 (numeric) dv
+(numeric) dvp              	--> 1034 (numeric) dvp
+(numeric) e-               	--> 1035 (numeric) e-
+(numeric) e-y              	--> 1036 (numeric) e-y
+(numeric) ea               	--> 1037 (numeric) ea 
+(numeric) eac              	--> 1038 (numeric) eac
+(numeric) ead              	--> 1039 (numeric) ead
+(numeric) eam              	--> 1040 (numeric) eam
+(numeric) ean              	--> 1041 (numeric) ean
+(numeric) eap              	--> 1042 (numeric) eap
+(numeric) eat              	--> 1043 (numeric) eat
+(numeric) eav              	--> 1044 (numeric) eav
+(numeric) eb               	--> 1045 (numeric) eb
+(numeric) ebr              	--> 1046 (numeric) ebr
+(numeric) ebt              	--> 1047 (numeric) ebt
+(numeric) ech              	--> 1048 (numeric) ech
+(numeric) ecu              	--> 1049 (numeric) ecu
+(numeric) edn              	--> 1050 (numeric) edn
+(numeric) edy              	--> 1051 (numeric) edy
+(numeric) eec              	--> 1052 (numeric) eec
+(numeric) eed              	--> 1053 (numeric) eed
+(numeric) eek              	--> 1054 (numeric) eek
+(numeric) eel              	--> 1055 (numeric) eel
+(numeric) een              	--> 1056 (numeric) een
+(numeric) eep              	--> 1057 (numeric) eep
+(numeric) ees              	--> 1058 (numeric) ees
+(numeric) ef               	--> 1059 (numeric) ef
+(numeric) eff              	--> 1060 (numeric) eff
+(numeric) eh               	--> 1061 (numeric) eh
+(numeric) ei               	--> 1063 (numeric) ei 
+(numeric) ei               	--> 1063 (numeric) ei 
+(numeric) eig              	--> 1064 (numeric) eig
+(numeric) eih              	--> 1065 (numeric) eih
+(numeric) eil              	--> 1066 (numeric) eil
+(numeric) eit              	--> 1067 (numeric) eit
+(numeric) eiv              	--> 1068 (numeric) eiv
+(numeric) ek               	--> 1070 (numeric) ek 
+(numeric) ek               	--> 1070 (numeric) ek 
+(numeric) el               	--> 1071 (numeric) el 
+(numeric) eld              	--> 1072 (numeric) eld
+(numeric) elp              	--> 1073 (numeric) elp
+(numeric) elt              	--> 1074 (numeric) elt
+(numeric) ely              	--> 1075 (numeric) ely
+(numeric) em               	--> 1076 (numeric) em
+(numeric) emb              	--> 1077 (numeric) emb
+(numeric) emp              	--> 1078 (numeric) emp
+(numeric) emy              	--> 1079 (numeric) emy
+(numeric) en               	--> 1080 (numeric) en 
+(numeric) ent              	--> 1081 (numeric) ent
+(numeric) enz              	--> 1082 (numeric) enz
+(numeric) eo               	--> 1083 (numeric) eo
+(numeric) eop              	--> 1084 (numeric) eop
+(numeric) eor              	--> 1085 (numeric) eor
+(numeric) ep               	--> 1087 (numeric) ep 
+(numeric) ep               	--> 1087 (numeric) ep 
+(numeric) epd              	--> 1088 (numeric) epd
+(numeric) epl              	--> 1089 (numeric) epl
+(numeric) epr              	--> 1090 (numeric) epr
+(numeric) ept              	--> 1091 (numeric) ept
+(numeric) epu              	--> 1092 (numeric) epu
+(numeric) er-              	--> 1093 (numeric) er-
+(numeric) erc              	--> 1094 (numeric) erc
+(numeric) erd              	--> 1095 (numeric) erd
+(numeric) erf              	--> 1096 (numeric) erf
+(numeric) erg              	--> 1097 (numeric) erg
+(numeric) erl              	--> 1098 (numeric) erl
+(numeric) erv              	--> 1099 (numeric) erv
+(numeric) ery              	--> 1100 (numeric) ery
+(numeric) es-              	--> 1101 (numeric) es-
+(numeric) esn              	--> 1102 (numeric) esn
+(numeric) esp              	--> 1103 (numeric) esp
+(numeric) est              	--> 1104 (numeric) est
+(numeric) eth              	--> 1105 (numeric) eth
+(numeric) etr              	--> 1106 (numeric) etr
+(numeric) etu              	--> 1107 (numeric) etu
+(numeric) etw              	--> 1108 (numeric) etw
+(numeric) eu               	--> 1109 (numeric) eu
+(numeric) eur              	--> 1110 (numeric) eur
+(numeric) eut              	--> 1111 (numeric) eut
+(numeric) euv              	--> 1112 (numeric) euv
+(numeric) ev               	--> 1113 (numeric) ev
+(numeric) ew               	--> 1115 (numeric) ew 
+(numeric) ew               	--> 1115 (numeric) ew 
+(numeric) exc              	--> 1116 (numeric) exc
+(numeric) exp              	--> 1117 (numeric) exp
+(numeric) ext              	--> 1118 (numeric) ext
+(numeric) ey               	--> 1120 (numeric) ey 
+(numeric) ey               	--> 1120 (numeric) ey 
+(numeric) eyl              	--> 1121 (numeric) eyl
+(numeric) ez               	--> 1123 (numeric) ez 
+(numeric) ez               	--> 1123 (numeric) ez 
+(numeric) fa               	--> 1124 (numeric) fa
+(numeric) fac              	--> 1125 (numeric) fac
+(numeric) fal              	--> 1126 (numeric) fal
+(numeric) fam              	--> 1127 (numeric) fam
+(numeric) fat              	--> 1128 (numeric) fat
+(numeric) fav              	--> 1129 (numeric) fav
+(numeric) fe               	--> 1131 (numeric) fe 
+(numeric) fe               	--> 1131 (numeric) fe 
+(numeric) fec              	--> 1132 (numeric) fec
+(numeric) fed              	--> 1133 (numeric) fed
+(numeric) fel              	--> 1134 (numeric) fel
+(numeric) fen              	--> 1135 (numeric) fen
+(numeric) fer              	--> 1136 (numeric) fer
+(numeric) fes              	--> 1137 (numeric) fes
+(numeric) fez              	--> 1138 (numeric) fez
+(numeric) ff               	--> 1139 (numeric) ff 
+(numeric) fi               	--> 1140 (numeric) fi
+(numeric) fic              	--> 1141 (numeric) fic
+(numeric) fig              	--> 1142 (numeric) fig
+(numeric) fil              	--> 1143 (numeric) fil
+(numeric) fin              	--> 1144 (numeric) fin
+(numeric) fir              	--> 1145 (numeric) fir
+(numeric) fl               	--> 1146 (numeric) fl
+(numeric) flu              	--> 1147 (numeric) flu
+(numeric) fol              	--> 1148 (numeric) fol
+(numeric) fou              	--> 1149 (numeric) fou
+(numeric) fr               	--> 1150 (numeric) fr
+(numeric) ft               	--> 1152 (numeric) ft 
+(numeric) ft               	--> 1152 (numeric) ft 
+(numeric) fu               	--> 1153 (numeric) fu
+(numeric) fun              	--> 1154 (numeric) fun
+(numeric) fw               	--> 1156 (numeric) fw 
+(numeric) fw               	--> 1156 (numeric) fw 
+(numeric) g )              	--> 1157 (numeric) g )
+(numeric) g c              	--> 1158 (numeric) g c
+(numeric) g d              	--> 1159 (numeric) g d
+(numeric) g f              	--> 1160 (numeric) g f
+(numeric) g h              	--> 1161 (numeric) g h
+(numeric) g l              	--> 1162 (numeric) g l
+(numeric) g p              	--> 1163 (numeric) g p
+(numeric) g r              	--> 1164 (numeric) g r
+(numeric) g t              	--> 1165 (numeric) g t
+(numeric) g w              	--> 1166 (numeric) g w
+(numeric) g-               	--> 1167 (numeric) g-
+(numeric) g-h              	--> 1168 (numeric) g-h
+(numeric) gal              	--> 1169 (numeric) gal
+(numeric) gan              	--> 1170 (numeric) gan
+(numeric) gar              	--> 1171 (numeric) gar
+(numeric) gav              	--> 1172 (numeric) gav
+(numeric) ged              	--> 1173 (numeric) ged
+(numeric) gel              	--> 1174 (numeric) gel
+(numeric) gen              	--> 1175 (numeric) gen
+(numeric) ger              	--> 1176 (numeric) ger
+(numeric) ges              	--> 1177 (numeric) ges
+(numeric) gg               	--> 1178 (numeric) gg
+(numeric) gh               	--> 1180 (numeric) gh 
+(numeric) gh               	--> 1180 (numeric) gh 
+(numeric) ghb              	--> 1181 (numeric) ghb
+(numeric) ght              	--> 1182 (numeric) ght
+(numeric) gif              	--> 1183 (numeric) gif
+(numeric) gim              	--> 1184 (numeric) gim
+(numeric) gin              	--> 1185 (numeric) gin
+(numeric) giv              	--> 1186 (numeric) giv
+(numeric) gn               	--> 1188 (numeric) gn 
+(numeric) gn               	--> 1188 (numeric) gn 
+(numeric) gog              	--> 1189 (numeric) gog
+(numeric) gol              	--> 1190 (numeric) gol
+(numeric) gor              	--> 1191 (numeric) gor
+(numeric) grb              	--> 1192 (numeric) grb
+(numeric) gth              	--> 1193 (numeric) gth
+(numeric) gu               	--> 1194 (numeric) gu
+(numeric) guy              	--> 1195 (numeric) guy
+(numeric) gw               	--> 1196 (numeric) gw
+(numeric) gwr              	--> 1197 (numeric) gwr
+(numeric) hab              	--> 1198 (numeric) hab
+(numeric) haf              	--> 1199 (numeric) haf
+(numeric) hal              	--> 1200 (numeric) hal
+(numeric) ham              	--> 1201 (numeric) ham
+(numeric) hat              	--> 1202 (numeric) hat
+(numeric) haz              	--> 1203 (numeric) haz
+(numeric) hb               	--> 1204 (numeric) hb
+(numeric) hed              	--> 1205 (numeric) hed
+(numeric) heu              	--> 1206 (numeric) heu
+(numeric) hey              	--> 1207 (numeric) hey
+(numeric) hic              	--> 1208 (numeric) hic
+(numeric) hig              	--> 1209 (numeric) hig
+(numeric) hir              	--> 1210 (numeric) hir
+(numeric) hk               	--> 1211 (numeric) hk
+(numeric) hk$              	--> 1212 (numeric) hk$
+(numeric) hl               	--> 1213 (numeric) hl
+(numeric) hm               	--> 1214 (numeric) hm
+(numeric) hn               	--> 1216 (numeric) hn 
+(numeric) hn               	--> 1216 (numeric) hn 
+(numeric) hnp              	--> 1217 (numeric) hnp
+(numeric) ho               	--> 1218 (numeric) ho 
+(numeric) hob              	--> 1219 (numeric) hob
+(numeric) hoc              	--> 1220 (numeric) hoc
+(numeric) hod              	--> 1221 (numeric) hod
+(numeric) hol              	--> 1222 (numeric) hol
+(numeric) hon              	--> 1223 (numeric) hon
+(numeric) hop              	--> 1224 (numeric) hop
+(numeric) hor              	--> 1225 (numeric) hor
+(numeric) hou              	--> 1226 (numeric) hou
+(numeric) hp               	--> 1227 (numeric) hp
+(numeric) hr               	--> 1228 (numeric) hr
+(numeric) hry              	--> 1229 (numeric) hry
+(numeric) ht               	--> 1231 (numeric) ht 
+(numeric) ht               	--> 1231 (numeric) ht 
+(numeric) huc              	--> 1232 (numeric) huc
+(numeric) hum              	--> 1233 (numeric) hum
+(numeric) hus              	--> 1234 (numeric) hus
+(numeric) hut              	--> 1235 (numeric) hut
+(numeric) hw               	--> 1236 (numeric) hw
+(numeric) hy               	--> 1237 (numeric) hy
+(numeric) hyp              	--> 1238 (numeric) hyp
+(numeric) i )              	--> 1239 (numeric) i )
+(numeric) ia               	--> 1240 (numeric) ia 
+(numeric) iad              	--> 1241 (numeric) iad
+(numeric) iak              	--> 1242 (numeric) iak
+(numeric) iam              	--> 1243 (numeric) iam
+(numeric) ian              	--> 1244 (numeric) ian
+(numeric) iav              	--> 1245 (numeric) iav
+(numeric) ich              	--> 1246 (numeric) ich
+(numeric) ick              	--> 1247 (numeric) ick
+(numeric) icr              	--> 1248 (numeric) icr
+(numeric) ict              	--> 1249 (numeric) ict
+(numeric) icu              	--> 1250 (numeric) icu
+(numeric) idy              	--> 1251 (numeric) idy
+(numeric) ied              	--> 1252 (numeric) ied
+(numeric) ief              	--> 1253 (numeric) ief
+(numeric) ieg              	--> 1254 (numeric) ieg
+(numeric) iel              	--> 1255 (numeric) iel
+(numeric) ier              	--> 1256 (numeric) ier
+(numeric) ieu              	--> 1257 (numeric) ieu
+(numeric) iff              	--> 1258 (numeric) iff
+(numeric) ift              	--> 1259 (numeric) ift
+(numeric) ig               	--> 1260 (numeric) ig
+(numeric) igh              	--> 1261 (numeric) igh
+(numeric) ign              	--> 1262 (numeric) ign
+(numeric) ih               	--> 1263 (numeric) ih
+(numeric) ii               	--> 1264 (numeric) ii
+(numeric) iid              	--> 1265 (numeric) iid
+(numeric) ik               	--> 1266 (numeric) ik
+(numeric) il               	--> 1267 (numeric) il 
+(numeric) ild              	--> 1268 (numeric) ild
+(numeric) ilm              	--> 1269 (numeric) ilm
+(numeric) ilt              	--> 1270 (numeric) ilt
+(numeric) ily              	--> 1271 (numeric) ily
+(numeric) im               	--> 1272 (numeric) im 
+(numeric) imp              	--> 1273 (numeric) imp
+(numeric) inf              	--> 1274 (numeric) inf
+(numeric) inh              	--> 1275 (numeric) inh
+(numeric) inq              	--> 1276 (numeric) inq
+(numeric) inu              	--> 1277 (numeric) inu
+(numeric) inv              	--> 1278 (numeric) inv
+(numeric) iny              	--> 1279 (numeric) iny
+(numeric) io               	--> 1280 (numeric) io 
+(numeric) iol              	--> 1281 (numeric) iol
+(numeric) ior              	--> 1282 (numeric) ior
+(numeric) ip               	--> 1284 (numeric) ip 
+(numeric) ip               	--> 1284 (numeric) ip 
+(numeric) ipl              	--> 1285 (numeric) ipl
+(numeric) iq               	--> 1286 (numeric) iq
+(numeric) iqu              	--> 1287 (numeric) iqu
+(numeric) ir               	--> 1288 (numeric) ir 
+(numeric) irm              	--> 1289 (numeric) irm
+(numeric) irp              	--> 1290 (numeric) irp
+(numeric) irt              	--> 1291 (numeric) irt
+(numeric) isc              	--> 1292 (numeric) isc
+(numeric) isl              	--> 1293 (numeric) isl
+(numeric) isr              	--> 1294 (numeric) isr
+(numeric) itu              	--> 1295 (numeric) itu
+(numeric) ity              	--> 1296 (numeric) ity
+(numeric) iu               	--> 1297 (numeric) iu
+(numeric) ium              	--> 1298 (numeric) ium
+(numeric) iw               	--> 1299 (numeric) iw
+(numeric) ix               	--> 1300 (numeric) ix
+(numeric) ix-              	--> 1301 (numeric) ix-
+(numeric) iy               	--> 1302 (numeric) iy
+(numeric) iz               	--> 1303 (numeric) iz
+(numeric) izz              	--> 1304 (numeric) izz
+(numeric) j )              	--> 1305 (numeric) j )
+(numeric) j 1              	--> 1306 (numeric) j 1
+(numeric) j 2              	--> 1307 (numeric) j 2
+(numeric) j 3              	--> 1308 (numeric) j 3
+(numeric) j b              	--> 1309 (numeric) j b
+(numeric) j c              	--> 1310 (numeric) j c
+(numeric) j f              	--> 1311 (numeric) j f
+(numeric) j h              	--> 1312 (numeric) j h
+(numeric) j k              	--> 1313 (numeric) j k
+(numeric) j l              	--> 1314 (numeric) j l
+(numeric) j m              	--> 1315 (numeric) j m
+(numeric) j n              	--> 1316 (numeric) j n
+(numeric) j q              	--> 1317 (numeric) j q
+(numeric) j r              	--> 1318 (numeric) j r
+(numeric) j t              	--> 1319 (numeric) j t
+(numeric) j u              	--> 1320 (numeric) j u
+(numeric) j v              	--> 1321 (numeric) j v
+(numeric) jan              	--> 1322 (numeric) jan
+(numeric) jap              	--> 1323 (numeric) jap
+(numeric) je               	--> 1324 (numeric) je
+(numeric) jer              	--> 1325 (numeric) jer
+(numeric) jjr              	--> 1326 (numeric) jjr
+(numeric) jl               	--> 1327 (numeric) jl
+(numeric) jo               	--> 1328 (numeric) jo
+(numeric) job              	--> 1329 (numeric) job
+(numeric) joh              	--> 1330 (numeric) joh
+(numeric) jor              	--> 1331 (numeric) jor
+(numeric) jr               	--> 1333 (numeric) jr 
+(numeric) jr               	--> 1333 (numeric) jr 
+(numeric) js               	--> 1335 (numeric) js 
+(numeric) js               	--> 1335 (numeric) js 
+(numeric) ju               	--> 1336 (numeric) ju
+(numeric) jun              	--> 1337 (numeric) jun
+(numeric) k )              	--> 1338 (numeric) k )
+(numeric) k$               	--> 1340 (numeric) k$ 
+(numeric) k$               	--> 1340 (numeric) k$ 
+(numeric) ka               	--> 1341 (numeric) ka
+(numeric) kag              	--> 1342 (numeric) kag
+(numeric) kat              	--> 1343 (numeric) kat
+(numeric) ke               	--> 1344 (numeric) ke 
+(numeric) ked              	--> 1345 (numeric) ked
+(numeric) ken              	--> 1346 (numeric) ken
+(numeric) kep              	--> 1347 (numeric) kep
+(numeric) kes              	--> 1348 (numeric) kes
+(numeric) key              	--> 1349 (numeric) key
+(numeric) kh               	--> 1350 (numeric) kh
+(numeric) ki               	--> 1351 (numeric) ki
+(numeric) kid              	--> 1352 (numeric) kid
+(numeric) kil              	--> 1353 (numeric) kil
+(numeric) kin              	--> 1354 (numeric) kin
+(numeric) kn               	--> 1355 (numeric) kn
+(numeric) ko               	--> 1356 (numeric) ko
+(numeric) kor              	--> 1357 (numeric) kor
+(numeric) ks               	--> 1359 (numeric) ks 
+(numeric) ks               	--> 1359 (numeric) ks 
+(numeric) ku               	--> 1360 (numeric) ku
+(numeric) kur              	--> 1361 (numeric) kur
+(numeric) la               	--> 1362 (numeric) la 
+(numeric) lab              	--> 1363 (numeric) lab
+(numeric) lac              	--> 1364 (numeric) lac
+(numeric) lag              	--> 1365 (numeric) lag
+(numeric) lan              	--> 1366 (numeric) lan
+(numeric) lar              	--> 1367 (numeric) lar
+(numeric) lau              	--> 1368 (numeric) lau
+(numeric) law              	--> 1369 (numeric) law
+(numeric) lay              	--> 1370 (numeric) lay
+(numeric) ld               	--> 1372 (numeric) ld 
+(numeric) ld               	--> 1372 (numeric) ld 
+(numeric) ldf              	--> 1373 (numeric) ldf
+(numeric) le               	--> 1374 (numeric) le 
+(numeric) led              	--> 1375 (numeric) led
+(numeric) leg              	--> 1376 (numeric) leg
+(numeric) lem              	--> 1377 (numeric) lem
+(numeric) len              	--> 1378 (numeric) len
+(numeric) ler              	--> 1379 (numeric) ler
+(numeric) les              	--> 1380 (numeric) les
+(numeric) lev              	--> 1381 (numeric) lev
+(numeric) ley              	--> 1382 (numeric) ley
+(numeric) lf               	--> 1384 (numeric) lf 
+(numeric) lf               	--> 1384 (numeric) lf 
+(numeric) lic              	--> 1385 (numeric) lic
+(numeric) lif              	--> 1386 (numeric) lif
+(numeric) lik              	--> 1387 (numeric) lik
+(numeric) lin              	--> 1388 (numeric) lin
+(numeric) lip              	--> 1389 (numeric) lip
+(numeric) liv              	--> 1390 (numeric) liv
+(numeric) llt              	--> 1391 (numeric) llt
+(numeric) lly              	--> 1392 (numeric) lly
+(numeric) lm               	--> 1394 (numeric) lm 
+(numeric) lm               	--> 1394 (numeric) lm 
+(numeric) lob              	--> 1395 (numeric) lob
+(numeric) loc              	--> 1396 (numeric) loc
+(numeric) lom              	--> 1397 (numeric) lom
+(numeric) lon              	--> 1398 (numeric) lon
+(numeric) lov              	--> 1399 (numeric) lov
+(numeric) low              	--> 1400 (numeric) low
+(numeric) loy              	--> 1401 (numeric) loy
+(numeric) lp               	--> 1403 (numeric) lp 
+(numeric) lp               	--> 1403 (numeric) lp 
+(numeric) ls               	--> 1405 (numeric) ls 
+(numeric) ls               	--> 1405 (numeric) ls 
+(numeric) lt               	--> 1407 (numeric) lt 
+(numeric) lt               	--> 1407 (numeric) lt 
+(numeric) lt-              	--> 1408 (numeric) lt-
+(numeric) lu               	--> 1409 (numeric) lu
+(numeric) lub              	--> 1410 (numeric) lub
+(numeric) luc              	--> 1411 (numeric) luc
+(numeric) lur              	--> 1412 (numeric) lur
+(numeric) lus              	--> 1413 (numeric) lus
+(numeric) lut              	--> 1414 (numeric) lut
+(numeric) lv               	--> 1415 (numeric) lv
+(numeric) ly               	--> 1417 (numeric) ly 
+(numeric) ly               	--> 1417 (numeric) ly 
+(numeric) m )              	--> 1418 (numeric) m )
+(numeric) m.               	--> 1420 (numeric) m. 
+(numeric) m.               	--> 1420 (numeric) m. 
+(numeric) m2               	--> 1422 (numeric) m2 
+(numeric) m2               	--> 1422 (numeric) m2 
+(numeric) ma               	--> 1423 (numeric) ma 
+(numeric) mac              	--> 1424 (numeric) mac
+(numeric) mad              	--> 1425 (numeric) mad
+(numeric) maj              	--> 1426 (numeric) maj
+(numeric) mak              	--> 1427 (numeric) mak
+(numeric) mal              	--> 1428 (numeric) mal
+(numeric) man              	--> 1429 (numeric) man
+(numeric) mar              	--> 1430 (numeric) mar
+(numeric) mat              	--> 1431 (numeric) mat
+(numeric) mb               	--> 1432 (numeric) mb
+(numeric) mc               	--> 1433 (numeric) mc
+(numeric) mcc              	--> 1434 (numeric) mcc
+(numeric) mcd              	--> 1435 (numeric) mcd
+(numeric) md               	--> 1437 (numeric) md 
+(numeric) md               	--> 1437 (numeric) md 
+(numeric) meb              	--> 1438 (numeric) meb
+(numeric) med              	--> 1439 (numeric) med
+(numeric) mel              	--> 1440 (numeric) mel
+(numeric) mem              	--> 1441 (numeric) mem
+(numeric) men              	--> 1442 (numeric) men
+(numeric) mer              	--> 1443 (numeric) mer
+(numeric) mes              	--> 1444 (numeric) mes
+(numeric) mi               	--> 1446 (numeric) mi 
+(numeric) mi               	--> 1446 (numeric) mi 
+(numeric) mic              	--> 1447 (numeric) mic
+(numeric) mid              	--> 1448 (numeric) mid
+(numeric) mil              	--> 1449 (numeric) mil
+(numeric) min              	--> 1450 (numeric) min
+(numeric) mis              	--> 1451 (numeric) mis
+(numeric) mm               	--> 1452 (numeric) mm
+(numeric) mmy              	--> 1453 (numeric) mmy
+(numeric) moc              	--> 1454 (numeric) moc
+(numeric) mod              	--> 1455 (numeric) mod
+(numeric) mom              	--> 1456 (numeric) mom
+(numeric) mor              	--> 1457 (numeric) mor
+(numeric) mot              	--> 1458 (numeric) mot
+(numeric) mou              	--> 1459 (numeric) mou
+(numeric) mov              	--> 1460 (numeric) mov
+(numeric) mp               	--> 1461 (numeric) mp
+(numeric) mpl              	--> 1462 (numeric) mpl
+(numeric) mpu              	--> 1463 (numeric) mpu
+(numeric) mr.              	--> 1464 (numeric) mr.
+(numeric) muc              	--> 1465 (numeric) muc
+(numeric) myr              	--> 1466 (numeric) myr
+(numeric) n g              	--> 1467 (numeric) n g
+(numeric) n j              	--> 1468 (numeric) n j
+(numeric) n k              	--> 1469 (numeric) n k
+(numeric) n q              	--> 1470 (numeric) n q
+(numeric) n r              	--> 1471 (numeric) n r
+(numeric) n t              	--> 1472 (numeric) n t
+(numeric) n u              	--> 1473 (numeric) n u
+(numeric) n v              	--> 1474 (numeric) n v
+(numeric) n y              	--> 1475 (numeric) n y
+(numeric) nal              	--> 1476 (numeric) nal
+(numeric) nam              	--> 1477 (numeric) nam
+(numeric) nan              	--> 1478 (numeric) nan
+(numeric) nap              	--> 1479 (numeric) nap
+(numeric) nat              	--> 1480 (numeric) nat
+(numeric) nav              	--> 1481 (numeric) nav
+(numeric) nch              	--> 1482 (numeric) nch
+(numeric) ncl              	--> 1483 (numeric) ncl
+(numeric) ncr              	--> 1484 (numeric) ncr
+(numeric) nct              	--> 1485 (numeric) nct
+(numeric) ncy              	--> 1486 (numeric) ncy
+(numeric) ndl              	--> 1487 (numeric) ndl
+(numeric) ndn              	--> 1488 (numeric) ndn
+(numeric) ndr              	--> 1489 (numeric) ndr
+(numeric) ndy              	--> 1490 (numeric) ndy
+(numeric) ne-              	--> 1491 (numeric) ne-
+(numeric) ned              	--> 1492 (numeric) ned
+(numeric) neg              	--> 1493 (numeric) neg
+(numeric) nem              	--> 1494 (numeric) nem
+(numeric) nen              	--> 1495 (numeric) nen
+(numeric) ner              	--> 1496 (numeric) ner
+(numeric) net              	--> 1497 (numeric) net
+(numeric) nf               	--> 1498 (numeric) nf
+(numeric) nfl              	--> 1499 (numeric) nfl
+(numeric) ng               	--> 1500 (numeric) ng 
+(numeric) ng-              	--> 1501 (numeric) ng-
+(numeric) ngh              	--> 1502 (numeric) ngh
+(numeric) ngu              	--> 1503 (numeric) ngu
+(numeric) ngw              	--> 1504 (numeric) ngw
+(numeric) nh               	--> 1505 (numeric) nh
+(numeric) nhu              	--> 1506 (numeric) nhu
+(numeric) ni               	--> 1507 (numeric) ni 
+(numeric) nic              	--> 1508 (numeric) nic
+(numeric) nil              	--> 1509 (numeric) nil
+(numeric) nin              	--> 1510 (numeric) nin
+(numeric) niq              	--> 1511 (numeric) niq
+(numeric) nit              	--> 1512 (numeric) nit
+(numeric) niy              	--> 1513 (numeric) niy
+(numeric) nj               	--> 1514 (numeric) nj
+(numeric) njp              	--> 1515 (numeric) njp
+(numeric) nk               	--> 1517 (numeric) nk 
+(numeric) nk               	--> 1517 (numeric) nk 
+(numeric) nkn              	--> 1518 (numeric) nkn
+(numeric) nl               	--> 1519 (numeric) nl
+(numeric) nly              	--> 1520 (numeric) nly
+(numeric) nm               	--> 1521 (numeric) nm
+(numeric) nnu              	--> 1522 (numeric) nnu
+(numeric) nom              	--> 1523 (numeric) nom
+(numeric) nou              	--> 1524 (numeric) nou
+(numeric) nov              	--> 1525 (numeric) nov
+(numeric) nq               	--> 1526 (numeric) nq
+(numeric) nqu              	--> 1527 (numeric) nqu
+(numeric) nsf              	--> 1528 (numeric) nsf
+(numeric) nsl              	--> 1529 (numeric) nsl
+(numeric) nsp              	--> 1530 (numeric) nsp
+(numeric) nst              	--> 1531 (numeric) nst
+(numeric) nsu              	--> 1532 (numeric) nsu
+(numeric) nt               	--> 1533 (numeric) nt 
+(numeric) nth              	--> 1534 (numeric) nth
+(numeric) ntu              	--> 1535 (numeric) ntu
+(numeric) nty              	--> 1536 (numeric) nty
+(numeric) nu               	--> 1537 (numeric) nu
+(numeric) num              	--> 1538 (numeric) num
+(numeric) nur              	--> 1539 (numeric) nur
+(numeric) nv               	--> 1540 (numeric) nv
+(numeric) nx               	--> 1542 (numeric) nx 
+(numeric) nx               	--> 1542 (numeric) nx 
+(numeric) ny               	--> 1544 (numeric) ny 
+(numeric) ny               	--> 1544 (numeric) ny 
+(numeric) nyb              	--> 1545 (numeric) nyb
+(numeric) nyd              	--> 1546 (numeric) nyd
+(numeric) nz               	--> 1548 (numeric) nz 
+(numeric) nz               	--> 1548 (numeric) nz 
+(numeric) o )              	--> 1549 (numeric) o )
+(numeric) o t              	--> 1550 (numeric) o t
+(numeric) o-               	--> 1551 (numeric) o-
+(numeric) o-f              	--> 1552 (numeric) o-f
+(numeric) oa               	--> 1553 (numeric) oa 
+(numeric) oal              	--> 1554 (numeric) oal
+(numeric) ob               	--> 1555 (numeric) ob 
+(numeric) oc               	--> 1556 (numeric) oc
+(numeric) occ              	--> 1557 (numeric) occ
+(numeric) ock              	--> 1558 (numeric) ock
+(numeric) ocr              	--> 1559 (numeric) ocr
+(numeric) od               	--> 1561 (numeric) od 
+(numeric) od               	--> 1561 (numeric) od 
+(numeric) odu              	--> 1562 (numeric) odu
+(numeric) ody              	--> 1563 (numeric) ody
+(numeric) oe               	--> 1564 (numeric) oe
+(numeric) oeb              	--> 1565 (numeric) oeb
+(numeric) oer              	--> 1566 (numeric) oer
+(numeric) ogr              	--> 1567 (numeric) ogr
+(numeric) ohn              	--> 1568 (numeric) ohn
+(numeric) oid              	--> 1569 (numeric) oid
+(numeric) oin              	--> 1570 (numeric) oin
+(numeric) olu              	--> 1571 (numeric) olu
+(numeric) olut             	--> 1572 (numeric) olut
+(numeric) om               	--> 1573 (numeric) om 
+(numeric) omp              	--> 1574 (numeric) omp
+(numeric) onc              	--> 1575 (numeric) onc
+(numeric) onh              	--> 1576 (numeric) onh
+(numeric) onj              	--> 1577 (numeric) onj
+(numeric) onl              	--> 1578 (numeric) onl
+(numeric) ons              	--> 1579 (numeric) ons
+(numeric) onv              	--> 1580 (numeric) onv
+(numeric) ony              	--> 1581 (numeric) ony
+(numeric) ood              	--> 1582 (numeric) ood
+(numeric) ook              	--> 1583 (numeric) ook
+(numeric) ool              	--> 1584 (numeric) ool
+(numeric) oom              	--> 1585 (numeric) oom
+(numeric) oon              	--> 1586 (numeric) oon
+(numeric) oop              	--> 1587 (numeric) oop
+(numeric) oor              	--> 1588 (numeric) oor
+(numeric) op               	--> 1590 (numeric) op 
+(numeric) op               	--> 1590 (numeric) op 
+(numeric) opl              	--> 1591 (numeric) opl
+(numeric) opt              	--> 1592 (numeric) opt
+(numeric) orb              	--> 1593 (numeric) orb
+(numeric) orc              	--> 1594 (numeric) orc
+(numeric) ord              	--> 1595 (numeric) ord
+(numeric) org              	--> 1596 (numeric) org
+(numeric) orh              	--> 1597 (numeric) orh
+(numeric) ork              	--> 1598 (numeric) ork
+(numeric) orl              	--> 1599 (numeric) orl
+(numeric) orm              	--> 1600 (numeric) orm
+(numeric) orn              	--> 1601 (numeric) orn
+(numeric) ort              	--> 1602 (numeric) ort
+(numeric) orw              	--> 1603 (numeric) orw
+(numeric) ory              	--> 1604 (numeric) ory
+(numeric) osc              	--> 1605 (numeric) osc
+(numeric) osp              	--> 1606 (numeric) osp
+(numeric) ost              	--> 1607 (numeric) ost
+(numeric) otf              	--> 1608 (numeric) otf
+(numeric) oth              	--> 1609 (numeric) oth
+(numeric) ou               	--> 1610 (numeric) ou
+(numeric) oub              	--> 1611 (numeric) oub
+(numeric) oug              	--> 1612 (numeric) oug
+(numeric) oul              	--> 1613 (numeric) oul
+(numeric) oun              	--> 1614 (numeric) oun
+(numeric) oup              	--> 1615 (numeric) oup
+(numeric) ous              	--> 1616 (numeric) ous
+(numeric) ow               	--> 1618 (numeric) ow 
+(numeric) ow               	--> 1618 (numeric) ow 
+(numeric) owd              	--> 1619 (numeric) owd
+(numeric) ox               	--> 1621 (numeric) ox 
+(numeric) ox               	--> 1621 (numeric) ox 
+(numeric) oy               	--> 1622 (numeric) oy
+(numeric) oym              	--> 1623 (numeric) oym
+(numeric) oyn              	--> 1624 (numeric) oyn
+(numeric) oz               	--> 1625 (numeric) oz
+(numeric) ozn              	--> 1626 (numeric) ozn
+(numeric) p )              	--> 1627 (numeric) p )
+(numeric) p c              	--> 1628 (numeric) p c
+(numeric) p d              	--> 1629 (numeric) p d
+(numeric) p f              	--> 1630 (numeric) p f
+(numeric) p k              	--> 1631 (numeric) p k
+(numeric) p l              	--> 1632 (numeric) p l
+(numeric) p n              	--> 1633 (numeric) p n
+(numeric) p p              	--> 1634 (numeric) p p
+(numeric) p t              	--> 1635 (numeric) p t
+(numeric) p v              	--> 1636 (numeric) p v
+(numeric) p z              	--> 1637 (numeric) p z
+(numeric) pa               	--> 1638 (numeric) pa
+(numeric) pac              	--> 1639 (numeric) pac
+(numeric) pan              	--> 1640 (numeric) pan
+(numeric) par              	--> 1641 (numeric) par
+(numeric) pat              	--> 1642 (numeric) pat
+(numeric) pav              	--> 1643 (numeric) pav
+(numeric) pc               	--> 1644 (numeric) pc
+(numeric) pd               	--> 1645 (numeric) pd
+(numeric) pdt              	--> 1646 (numeric) pdt
+(numeric) pe               	--> 1647 (numeric) pe 
+(numeric) pec              	--> 1648 (numeric) pec
+(numeric) pen              	--> 1649 (numeric) pen
+(numeric) ph               	--> 1651 (numeric) ph 
+(numeric) ph               	--> 1651 (numeric) ph 
+(numeric) pic              	--> 1652 (numeric) pic
+(numeric) pil              	--> 1653 (numeric) pil
+(numeric) pin              	--> 1654 (numeric) pin
+(numeric) pir              	--> 1655 (numeric) pir
+(numeric) pit              	--> 1656 (numeric) pit
+(numeric) pl               	--> 1657 (numeric) pl
+(numeric) ply              	--> 1658 (numeric) ply
+(numeric) pm               	--> 1660 (numeric) pm 
+(numeric) pm               	--> 1660 (numeric) pm 
+(numeric) pok              	--> 1661 (numeric) pok
+(numeric) pon              	--> 1662 (numeric) pon
+(numeric) por              	--> 1663 (numeric) por
+(numeric) pow              	--> 1664 (numeric) pow
+(numeric) ppl              	--> 1665 (numeric) ppl
+(numeric) ppr              	--> 1666 (numeric) ppr
+(numeric) prn              	--> 1667 (numeric) prn
+(numeric) prt              	--> 1668 (numeric) prt
+(numeric) ps               	--> 1670 (numeric) ps 
+(numeric) ps               	--> 1670 (numeric) ps 
+(numeric) pt               	--> 1672 (numeric) pt 
+(numeric) pt               	--> 1672 (numeric) pt 
+(numeric) ptu              	--> 1673 (numeric) ptu
+(numeric) pu               	--> 1674 (numeric) pu
+(numeric) pub              	--> 1675 (numeric) pub
+(numeric) pur              	--> 1676 (numeric) pur
+(numeric) pus              	--> 1677 (numeric) pus
+(numeric) put              	--> 1678 (numeric) put
+(numeric) q )              	--> 1679 (numeric) q )
+(numeric) qp               	--> 1681 (numeric) qp 
+(numeric) qp               	--> 1681 (numeric) qp 
+(numeric) qu               	--> 1682 (numeric) qu
+(numeric) r l              	--> 1683 (numeric) r l
+(numeric) r m              	--> 1684 (numeric) r m
+(numeric) r-               	--> 1685 (numeric) r-
+(numeric) r-h              	--> 1686 (numeric) r-h
+(numeric) r.               	--> 1688 (numeric) r. 
+(numeric) r.               	--> 1688 (numeric) r. 
+(numeric) ra               	--> 1689 (numeric) ra 
+(numeric) rac              	--> 1690 (numeric) rac
+(numeric) rad              	--> 1691 (numeric) rad
+(numeric) raf              	--> 1692 (numeric) raf
+(numeric) rag              	--> 1693 (numeric) rag
+(numeric) rah              	--> 1694 (numeric) rah
+(numeric) ral              	--> 1695 (numeric) ral
+(numeric) ram              	--> 1696 (numeric) ram
+(numeric) rap              	--> 1697 (numeric) rap
+(numeric) raq              	--> 1698 (numeric) raq
+(numeric) rat              	--> 1699 (numeric) rat
+(numeric) raw              	--> 1700 (numeric) raw
+(numeric) rb               	--> 1702 (numeric) rb 
+(numeric) rb               	--> 1702 (numeric) rb 
+(numeric) rbr              	--> 1703 (numeric) rbr
+(numeric) rby              	--> 1704 (numeric) rby
+(numeric) rcu              	--> 1705 (numeric) rcu
+(numeric) rdy              	--> 1706 (numeric) rdy
+(numeric) red              	--> 1707 (numeric) red
+(numeric) ref              	--> 1708 (numeric) ref
+(numeric) rem              	--> 1709 (numeric) rem
+(numeric) ren              	--> 1710 (numeric) ren
+(numeric) rep              	--> 1711 (numeric) rep
+(numeric) rev              	--> 1712 (numeric) rev
+(numeric) rew              	--> 1713 (numeric) rew
+(numeric) rf               	--> 1715 (numeric) rf 
+(numeric) rf               	--> 1715 (numeric) rf 
+(numeric) rfu              	--> 1716 (numeric) rfu
+(numeric) rg               	--> 1717 (numeric) rg
+(numeric) rgr              	--> 1718 (numeric) rgr
+(numeric) rh               	--> 1719 (numeric) rh
+(numeric) ric              	--> 1720 (numeric) ric
+(numeric) rid              	--> 1721 (numeric) rid
+(numeric) rig              	--> 1722 (numeric) rig
+(numeric) rik              	--> 1723 (numeric) rik
+(numeric) ril              	--> 1724 (numeric) ril
+(numeric) rin              	--> 1725 (numeric) rin
+(numeric) rip              	--> 1726 (numeric) rip
+(numeric) riu              	--> 1727 (numeric) riu
+(numeric) riv              	--> 1728 (numeric) riv
+(numeric) riz              	--> 1729 (numeric) riz
+(numeric) rk               	--> 1731 (numeric) rk 
+(numeric) rk               	--> 1731 (numeric) rk 
+(numeric) rkh              	--> 1732 (numeric) rkh
+(numeric) rl               	--> 1733 (numeric) rl
+(numeric) rld              	--> 1734 (numeric) rld
+(numeric) rly              	--> 1735 (numeric) rly
+(numeric) rm               	--> 1737 (numeric) rm 
+(numeric) rm               	--> 1737 (numeric) rm 
+(numeric) rn               	--> 1738 (numeric) rn 
+(numeric) rnm              	--> 1739 (numeric) rnm
+(numeric) ro               	--> 1740 (numeric) ro 
+(numeric) roc              	--> 1741 (numeric) roc
+(numeric) rod              	--> 1742 (numeric) rod
+(numeric) rog              	--> 1743 (numeric) rog
+(numeric) rom              	--> 1744 (numeric) rom
+(numeric) ron              	--> 1745 (numeric) ron
+(numeric) rop              	--> 1746 (numeric) rop
+(numeric) rot              	--> 1747 (numeric) rot
+(numeric) rou              	--> 1748 (numeric) rou
+(numeric) rov              	--> 1749 (numeric) rov
+(numeric) row              	--> 1750 (numeric) row
+(numeric) rox              	--> 1751 (numeric) rox
+(numeric) rpl              	--> 1752 (numeric) rpl
+(numeric) rr               	--> 1753 (numeric) rr
+(numeric) rru              	--> 1754 (numeric) rru
+(numeric) rry              	--> 1755 (numeric) rry
+(numeric) rs               	--> 1756 (numeric) rs 
+(numeric) rst              	--> 1757 (numeric) rst
+(numeric) rtl              	--> 1758 (numeric) rtl
+(numeric) rtm              	--> 1759 (numeric) rtm
+(numeric) rtu              	--> 1760 (numeric) rtu
+(numeric) rty              	--> 1761 (numeric) rty
+(numeric) ru               	--> 1762 (numeric) ru
+(numeric) ruc              	--> 1763 (numeric) ruc
+(numeric) rup              	--> 1764 (numeric) rup
+(numeric) rus              	--> 1765 (numeric) rus
+(numeric) rv               	--> 1766 (numeric) rv
+(numeric) rw               	--> 1767 (numeric) rw
+(numeric) ryn              	--> 1768 (numeric) ryn
+(numeric) s b              	--> 1769 (numeric) s b
+(numeric) s d              	--> 1770 (numeric) s d
+(numeric) s f              	--> 1771 (numeric) s f
+(numeric) s g              	--> 1772 (numeric) s g
+(numeric) s h              	--> 1773 (numeric) s h
+(numeric) s k              	--> 1774 (numeric) s k
+(numeric) s l              	--> 1775 (numeric) s l
+(numeric) s m              	--> 1776 (numeric) s m
+(numeric) s n              	--> 1777 (numeric) s n
+(numeric) s p              	--> 1778 (numeric) s p
+(numeric) s w              	--> 1779 (numeric) s w
+(numeric) s y              	--> 1780 (numeric) s y
+(numeric) s-               	--> 1781 (numeric) s-
+(numeric) s-b              	--> 1782 (numeric) s-b
+(numeric) sa               	--> 1784 (numeric) sa 
+(numeric) sa               	--> 1784 (numeric) sa 
+(numeric) sac              	--> 1785 (numeric) sac
+(numeric) sad              	--> 1786 (numeric) sad
+(numeric) sag              	--> 1787 (numeric) sag
+(numeric) sal              	--> 1788 (numeric) sal
+(numeric) sam              	--> 1789 (numeric) sam
+(numeric) san              	--> 1790 (numeric) san
+(numeric) sat              	--> 1791 (numeric) sat
+(numeric) sb               	--> 1792 (numeric) sb
+(numeric) sch              	--> 1793 (numeric) sch
+(numeric) se               	--> 1794 (numeric) se 
+(numeric) sed              	--> 1795 (numeric) sed
+(numeric) sen              	--> 1796 (numeric) sen
+(numeric) ser              	--> 1797 (numeric) ser
+(numeric) ses              	--> 1798 (numeric) ses
+(numeric) sey              	--> 1799 (numeric) sey
+(numeric) sf               	--> 1800 (numeric) sf
+(numeric) sid              	--> 1801 (numeric) sid
+(numeric) sif              	--> 1802 (numeric) sif
+(numeric) sig              	--> 1803 (numeric) sig
+(numeric) sil              	--> 1804 (numeric) sil
+(numeric) sim              	--> 1805 (numeric) sim
+(numeric) sin              	--> 1806 (numeric) sin
+(numeric) siv              	--> 1807 (numeric) siv
+(numeric) sk               	--> 1808 (numeric) sk
+(numeric) sl               	--> 1809 (numeric) sl
+(numeric) sly              	--> 1810 (numeric) sly
+(numeric) sm               	--> 1811 (numeric) sm
+(numeric) sn               	--> 1812 (numeric) sn
+(numeric) sny              	--> 1813 (numeric) sny
+(numeric) soc              	--> 1814 (numeric) soc
+(numeric) sol              	--> 1815 (numeric) sol
+(numeric) som              	--> 1816 (numeric) som
+(numeric) son              	--> 1817 (numeric) son
+(numeric) sor              	--> 1818 (numeric) sor
+(numeric) sou              	--> 1819 (numeric) sou
+(numeric) sr               	--> 1820 (numeric) sr
+(numeric) ss               	--> 1822 (numeric) ss 
+(numeric) ss               	--> 1822 (numeric) ss 
+(numeric) ssm              	--> 1823 (numeric) ssm
+(numeric) ssu              	--> 1824 (numeric) ssu
+(numeric) st               	--> 1825 (numeric) st 
+(numeric) sth              	--> 1826 (numeric) sth
+(numeric) stp              	--> 1827 (numeric) stp
+(numeric) su               	--> 1828 (numeric) su
+(numeric) suc              	--> 1829 (numeric) suc
+(numeric) sum              	--> 1830 (numeric) sum
+(numeric) sur              	--> 1831 (numeric) sur
+(numeric) sy               	--> 1832 (numeric) sy
+(numeric) syr              	--> 1833 (numeric) syr
+(numeric) t w              	--> 1834 (numeric) t w
+(numeric) t-               	--> 1835 (numeric) t-
+(numeric) tab              	--> 1836 (numeric) tab
+(numeric) tac              	--> 1837 (numeric) tac
+(numeric) tag              	--> 1838 (numeric) tag
+(numeric) tak              	--> 1839 (numeric) tak
+(numeric) tal              	--> 1840 (numeric) tal
+(numeric) tan              	--> 1841 (numeric) tan
+(numeric) tat              	--> 1842 (numeric) tat
+(numeric) teb              	--> 1843 (numeric) teb
+(numeric) tec              	--> 1844 (numeric) tec
+(numeric) ted              	--> 1845 (numeric) ted
+(numeric) teg              	--> 1846 (numeric) teg
+(numeric) tel              	--> 1847 (numeric) tel
+(numeric) tep              	--> 1848 (numeric) tep
+(numeric) tev              	--> 1849 (numeric) tev
+(numeric) tf               	--> 1850 (numeric) tf
+(numeric) thl              	--> 1851 (numeric) thl
+(numeric) thr              	--> 1852 (numeric) thr
+(numeric) thu              	--> 1853 (numeric) thu
+(numeric) thw              	--> 1854 (numeric) thw
+(numeric) tid              	--> 1855 (numeric) tid
+(numeric) til              	--> 1856 (numeric) til
+(numeric) tin              	--> 1857 (numeric) tin
+(numeric) tip              	--> 1858 (numeric) tip
+(numeric) tir              	--> 1859 (numeric) tir
+(numeric) tit              	--> 1860 (numeric) tit
+(numeric) tiv              	--> 1861 (numeric) tiv
+(numeric) tl               	--> 1862 (numeric) tl
+(numeric) tly              	--> 1863 (numeric) tly
+(numeric) tm               	--> 1864 (numeric) tm
+(numeric) toc              	--> 1865 (numeric) toc
+(numeric) tod              	--> 1866 (numeric) tod
+(numeric) tog              	--> 1867 (numeric) tog
+(numeric) tom              	--> 1868 (numeric) tom
+(numeric) top              	--> 1869 (numeric) top
+(numeric) tp               	--> 1870 (numeric) tp
+(numeric) tru              	--> 1871 (numeric) tru
+(numeric) ts               	--> 1873 (numeric) ts 
+(numeric) ts               	--> 1873 (numeric) ts 
+(numeric) tst              	--> 1874 (numeric) tst
+(numeric) tt               	--> 1875 (numeric) tt
+(numeric) ttl              	--> 1876 (numeric) ttl
+(numeric) tub              	--> 1877 (numeric) tub
+(numeric) tuf              	--> 1878 (numeric) tuf
+(numeric) tum              	--> 1879 (numeric) tum
+(numeric) tut              	--> 1880 (numeric) tut
+(numeric) tv               	--> 1882 (numeric) tv 
+(numeric) tv               	--> 1882 (numeric) tv 
+(numeric) tw               	--> 1883 (numeric) tw
+(numeric) ty               	--> 1885 (numeric) ty 
+(numeric) ty               	--> 1885 (numeric) ty 
+(numeric) u )              	--> 1886 (numeric) u )
+(numeric) ua               	--> 1887 (numeric) ua
+(numeric) ual              	--> 1888 (numeric) ual
+(numeric) uan              	--> 1889 (numeric) uan
+(numeric) uar              	--> 1890 (numeric) uar
+(numeric) uat              	--> 1891 (numeric) uat
+(numeric) ub               	--> 1893 (numeric) ub 
+(numeric) ub               	--> 1893 (numeric) ub 
+(numeric) ubl              	--> 1894 (numeric) ubl
+(numeric) ubm              	--> 1895 (numeric) ubm
+(numeric) ubr              	--> 1896 (numeric) ubr
+(numeric) ubv              	--> 1897 (numeric) ubv
+(numeric) uc               	--> 1898 (numeric) uc
+(numeric) ucc              	--> 1899 (numeric) ucc
+(numeric) uch              	--> 1900 (numeric) uch
+(numeric) uck              	--> 1901 (numeric) uck
+(numeric) ucp              	--> 1902 (numeric) ucp
+(numeric) ue               	--> 1904 (numeric) ue 
+(numeric) ue               	--> 1904 (numeric) ue 
+(numeric) ued              	--> 1905 (numeric) ued
+(numeric) uel              	--> 1906 (numeric) uel
+(numeric) uen              	--> 1907 (numeric) uen
+(numeric) uf               	--> 1908 (numeric) uf
+(numeric) uff              	--> 1909 (numeric) uff
+(numeric) ufr              	--> 1910 (numeric) ufr
+(numeric) ug               	--> 1911 (numeric) ug
+(numeric) ugh              	--> 1912 (numeric) ugh
+(numeric) ui               	--> 1914 (numeric) ui 
+(numeric) ui               	--> 1914 (numeric) ui 
+(numeric) uic              	--> 1915 (numeric) uic
+(numeric) uid              	--> 1916 (numeric) uid
+(numeric) uil              	--> 1917 (numeric) uil
+(numeric) uin              	--> 1918 (numeric) uin
+(numeric) uit              	--> 1919 (numeric) uit
+(numeric) uiz              	--> 1920 (numeric) uiz
+(numeric) ul               	--> 1922 (numeric) ul 
+(numeric) ul               	--> 1922 (numeric) ul 
+(numeric) uld              	--> 1923 (numeric) uld
+(numeric) ult              	--> 1924 (numeric) ult
+(numeric) uly              	--> 1925 (numeric) uly
+(numeric) um               	--> 1927 (numeric) um 
+(numeric) um               	--> 1927 (numeric) um 
+(numeric) umb              	--> 1928 (numeric) umb
+(numeric) unc              	--> 1929 (numeric) unc
+(numeric) und              	--> 1930 (numeric) und
+(numeric) ung              	--> 1931 (numeric) ung
+(numeric) unk              	--> 1932 (numeric) unk
+(numeric) unl              	--> 1933 (numeric) unl
+(numeric) unt              	--> 1934 (numeric) unt
+(numeric) upc              	--> 1935 (numeric) upc
+(numeric) upl              	--> 1936 (numeric) upl
+(numeric) upt              	--> 1937 (numeric) upt
+(numeric) urd              	--> 1938 (numeric) urd
+(numeric) urf              	--> 1939 (numeric) urf
+(numeric) urk              	--> 1940 (numeric) urk
+(numeric) urn              	--> 1941 (numeric) urn
+(numeric) urp              	--> 1942 (numeric) urp
+(numeric) urt              	--> 1943 (numeric) urt
+(numeric) ury              	--> 1944 (numeric) ury
+(numeric) ush              	--> 1945 (numeric) ush
+(numeric) usl              	--> 1946 (numeric) usl
+(numeric) ut               	--> 1948 (numeric) ut 
+(numeric) ut               	--> 1948 (numeric) ut 
+(numeric) uth              	--> 1949 (numeric) uth
+(numeric) utp              	--> 1950 (numeric) utp
+(numeric) uv               	--> 1951 (numeric) uv
+(numeric) uy               	--> 1953 (numeric) uy 
+(numeric) uy               	--> 1953 (numeric) uy 
+(numeric) v )              	--> 1954 (numeric) v )
+(numeric) va               	--> 1956 (numeric) va 
+(numeric) va               	--> 1956 (numeric) va 
+(numeric) vag              	--> 1957 (numeric) vag
+(numeric) val              	--> 1958 (numeric) val
+(numeric) vb               	--> 1959 (numeric) vb 
+(numeric) vbg              	--> 1960 (numeric) vbg
+(numeric) vbp              	--> 1961 (numeric) vbp
+(numeric) ved              	--> 1962 (numeric) ved
+(numeric) vel              	--> 1963 (numeric) vel
+(numeric) vem              	--> 1964 (numeric) vem
+(numeric) ven              	--> 1965 (numeric) ven
+(numeric) vi               	--> 1966 (numeric) vi
+(numeric) vic              	--> 1967 (numeric) vic
+(numeric) vid              	--> 1968 (numeric) vid
+(numeric) vin              	--> 1969 (numeric) vin
+(numeric) vl               	--> 1970 (numeric) vl
+(numeric) vo               	--> 1971 (numeric) vo
+(numeric) vor              	--> 1972 (numeric) vor
+(numeric) vs.              	--> 1973 (numeric) vs.
+(numeric) w )              	--> 1974 (numeric) w )
+(numeric) wal              	--> 1975 (numeric) wal
+(numeric) wan              	--> 1976 (numeric) wan
+(numeric) wat              	--> 1977 (numeric) wat
+(numeric) wd               	--> 1979 (numeric) wd 
+(numeric) wd               	--> 1979 (numeric) wd 
+(numeric) wdt              	--> 1980 (numeric) wdt
+(numeric) wed              	--> 1981 (numeric) wed
+(numeric) wel              	--> 1982 (numeric) wel
+(numeric) wen              	--> 1983 (numeric) wen
+(numeric) wer              	--> 1984 (numeric) wer
+(numeric) wf               	--> 1985 (numeric) wf
+(numeric) wfu              	--> 1986 (numeric) wfu
+(numeric) wh               	--> 1987 (numeric) wh
+(numeric) whn              	--> 1988 (numeric) whn
+(numeric) whp              	--> 1989 (numeric) whp
+(numeric) wif              	--> 1990 (numeric) wif
+(numeric) wil              	--> 1991 (numeric) wil
+(numeric) wm               	--> 1992 (numeric) wm
+(numeric) wn               	--> 1994 (numeric) wn 
+(numeric) wn               	--> 1994 (numeric) wn 
+(numeric) wo               	--> 1995 (numeric) wo
+(numeric) wo-              	--> 1996 (numeric) wo-
+(numeric) wom              	--> 1997 (numeric) wom
+(numeric) won              	--> 1998 (numeric) won
+(numeric) wor              	--> 1999 (numeric) wor
+(numeric) wou              	--> 2000 (numeric) wou
+(numeric) woz              	--> 2001 (numeric) woz
+(numeric) wp               	--> 2003 (numeric) wp 
+(numeric) wp               	--> 2003 (numeric) wp 
+(numeric) wp$              	--> 2004 (numeric) wp$
+(numeric) wrb              	--> 2005 (numeric) wrb
+(numeric) ws               	--> 2007 (numeric) ws 
+(numeric) ws               	--> 2007 (numeric) ws 
+(numeric) wu               	--> 2009 (numeric) wu 
+(numeric) wu               	--> 2009 (numeric) wu 
+(numeric) x )              	--> 2010 (numeric) x )
+(numeric) x-               	--> 2011 (numeric) x-
+(numeric) x-m              	--> 2012 (numeric) x-m
+(numeric) xa               	--> 2013 (numeric) xa
+(numeric) xac              	--> 2014 (numeric) xac
+(numeric) xc               	--> 2015 (numeric) xc
+(numeric) xch              	--> 2016 (numeric) xch
+(numeric) xi               	--> 2017 (numeric) xi
+(numeric) xil              	--> 2018 (numeric) xil
+(numeric) xim              	--> 2019 (numeric) xim
+(numeric) xp               	--> 2020 (numeric) xp
+(numeric) xt               	--> 2021 (numeric) xt
+(numeric) xtu              	--> 2022 (numeric) xtu
+(numeric) ya               	--> 2023 (numeric) ya
+(numeric) yah              	--> 2024 (numeric) yah
+(numeric) yan              	--> 2025 (numeric) yan
+(numeric) yar              	--> 2026 (numeric) yar
+(numeric) yb               	--> 2027 (numeric) yb
+(numeric) yd               	--> 2028 (numeric) yd
+(numeric) ye               	--> 2030 (numeric) ye 
+(numeric) ye               	--> 2030 (numeric) ye 
+(numeric) yed              	--> 2031 (numeric) yed
+(numeric) yen              	--> 2032 (numeric) yen
+(numeric) yi               	--> 2033 (numeric) yi
+(numeric) yin              	--> 2034 (numeric) yin
+(numeric) yl               	--> 2035 (numeric) yl
+(numeric) ym               	--> 2036 (numeric) ym
+(numeric) yn               	--> 2038 (numeric) yn 
+(numeric) yn               	--> 2038 (numeric) yn 
+(numeric) ynt              	--> 2039 (numeric) ynt
+(numeric) yor              	--> 2040 (numeric) yor
+(numeric) yp               	--> 2041 (numeric) yp
+(numeric) yr               	--> 2042 (numeric) yr
+(numeric) ys               	--> 2044 (numeric) ys 
+(numeric) ys               	--> 2044 (numeric) ys 
+(numeric) yt               	--> 2045 (numeric) yt
+(numeric) yu               	--> 2046 (numeric) yu
+(numeric) yun              	--> 2047 (numeric) yun
+(numeric) z )              	--> 2048 (numeric) z )
+(numeric) z c              	--> 2049 (numeric) z c
+(numeric) z d              	--> 2050 (numeric) z d
+(numeric) z g              	--> 2051 (numeric) z g
+(numeric) z p              	--> 2052 (numeric) z p
+(numeric) z r              	--> 2053 (numeric) z r
+(numeric) z t              	--> 2054 (numeric) z t
+(numeric) z w              	--> 2055 (numeric) z w
+(numeric) zi               	--> 2056 (numeric) zi
+(numeric) zic              	--> 2057 (numeric) zic
+(numeric) zim              	--> 2058 (numeric) zim
+(numeric) zn               	--> 2059 (numeric) zn
+(numeric) zo               	--> 2060 (numeric) zo
+(numeric) zon              	--> 2061 (numeric) zon
+(numeric) zz               	--> 2062 (numeric) zz
+(numeric) ½                	--> 2063 (numeric) ½
+(numeric) ½3               	--> 2064 (numeric) ½3
+(numeric) ½30              	--> 2065 (numeric) ½30
+(numeric) è                	--> 2066 (numeric) è
+(numeric) è?               	--> 2067 (numeric) è?
+(numeric) è?½              	--> 2068 (numeric) è?½
+
+
+Time taken to build model: 0.11 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         239               97.9508 %
+Incorrectly Classified Instances         5                2.0492 %
+Kappa statistic                          0.959 
+Mean absolute error                      0.0896
+Root mean squared error                  0.1508
+Relative absolute error                 17.9225 %
+Root relative squared error             30.1647 %
+Total Number of Instances              244     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,984    0,025    0,976      0,984    0,980      0,959    0,983     0,988     0
+                 0,975    0,016    0,983      0,975    0,979      0,959    0,983     0,969     1
+Weighted Avg.    0,980    0,020    0,980      0,980    0,980      0,959    0,983     0,978     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 120   2 |   a = 0
+   3 119 |   b = 1
+

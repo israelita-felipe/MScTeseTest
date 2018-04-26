@@ -1,0 +1,152 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.LibSVM -- -S 0 -K 2 -D 3 -G 0.005 -R 0.0 -N 0.5 -M 40.0 -C 5.0 -E 0.001 -P 0.05 -B -model "C:\\Program Files\\Weka-3-8" -seed 1
+Relation:     relations.triples.sentences.txt-weka.filters.unsupervised.attribute.NumericToBinary-R5-weka.filters.unsupervised.attribute.StringToWordVector-R1,2,3,4-W100000-prune-rate-1.0-I-N0-stemmerweka.core.stemmers.LovinsStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.CharacterNGramTokenizer -max 1 -min 1
+Instances:    244
+Attributes:   53
+              class_binarized
+               
+              #
+              $
+              (
+              )
+              ,
+              .
+              /
+              0
+              1
+              2
+              5
+              7
+              8
+              9
+              a
+              b
+              c
+              d
+              e
+              f
+              g
+              h
+              i
+              j
+              k
+              l
+              m
+              n
+              o
+              p
+              r
+              s
+              t
+              u
+              v
+              w
+              y
+              z
+              +
+              -
+              3
+              4
+              6
+              :
+              ;
+              ?
+              `
+              q
+              x
+              ½
+              è
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+Attribute mappings:
+
+Model attributes           	    Incoming attributes
+---------------------------	    ----------------
+(nominal) class_binarized  	--> 1 (nominal) class_binarized
+(numeric)                  	--> 2 (numeric)  
+(numeric) #                	--> 3 (numeric) #
+(numeric) $                	--> 4 (numeric) $
+(numeric) (                	--> 5 (numeric) (
+(numeric) )                	--> 6 (numeric) )
+(numeric) ,                	--> 7 (numeric) ,
+(numeric) .                	--> 8 (numeric) .
+(numeric) /                	--> 9 (numeric) /
+(numeric) 0                	--> 10 (numeric) 0
+(numeric) 1                	--> 11 (numeric) 1
+(numeric) 2                	--> 12 (numeric) 2
+(numeric) 5                	--> 13 (numeric) 5
+(numeric) 7                	--> 14 (numeric) 7
+(numeric) 8                	--> 15 (numeric) 8
+(numeric) 9                	--> 16 (numeric) 9
+(numeric) a                	--> 17 (numeric) a
+(numeric) b                	--> 18 (numeric) b
+(numeric) c                	--> 19 (numeric) c
+(numeric) d                	--> 20 (numeric) d
+(numeric) e                	--> 21 (numeric) e
+(numeric) f                	--> 22 (numeric) f
+(numeric) g                	--> 23 (numeric) g
+(numeric) h                	--> 24 (numeric) h
+(numeric) i                	--> 25 (numeric) i
+(numeric) j                	--> 26 (numeric) j
+(numeric) k                	--> 27 (numeric) k
+(numeric) l                	--> 28 (numeric) l
+(numeric) m                	--> 29 (numeric) m
+(numeric) n                	--> 30 (numeric) n
+(numeric) o                	--> 31 (numeric) o
+(numeric) p                	--> 32 (numeric) p
+(numeric) r                	--> 33 (numeric) r
+(numeric) s                	--> 34 (numeric) s
+(numeric) t                	--> 35 (numeric) t
+(numeric) u                	--> 36 (numeric) u
+(numeric) v                	--> 37 (numeric) v
+(numeric) w                	--> 38 (numeric) w
+(numeric) y                	--> 39 (numeric) y
+(numeric) z                	--> 40 (numeric) z
+(numeric) +                	--> 41 (numeric) +
+(numeric) -                	--> 42 (numeric) -
+(numeric) 3                	--> 43 (numeric) 3
+(numeric) 4                	--> 44 (numeric) 4
+(numeric) 6                	--> 45 (numeric) 6
+(numeric) :                	--> 46 (numeric) :
+(numeric) ;                	--> 47 (numeric) ;
+(numeric) ?                	--> 48 (numeric) ?
+(numeric) `                	--> 49 (numeric) `
+(numeric) q                	--> 50 (numeric) q
+(numeric) x                	--> 51 (numeric) x
+(numeric) ½                	--> 52 (numeric) ½
+(numeric) è                	--> 53 (numeric) è
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         197               80.7377 %
+Incorrectly Classified Instances        47               19.2623 %
+Kappa statistic                          0.6148
+Mean absolute error                      0.218 
+Root mean squared error                  0.3268
+Relative absolute error                 43.598  %
+Root relative squared error             65.3557 %
+Total Number of Instances              244     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,713    0,098    0,879      0,713    0,787      0,626    0,916     0,934     0
+                 0,902    0,287    0,759      0,902    0,824      0,626    0,916     0,899     1
+Weighted Avg.    0,807    0,193    0,819      0,807    0,806      0,626    0,916     0,917     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  87  35 |   a = 0
+  12 110 |   b = 1
+

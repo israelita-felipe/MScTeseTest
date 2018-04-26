@@ -1,0 +1,100 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.LibSVM -- -S 0 -K 2 -D 3 -G 0.005 -R 0.0 -N 0.5 -M 40.0 -C 5.0 -E 0.001 -P 0.05 -B -model "C:\\Program Files\\Weka-3-8" -seed 1
+Relation:     relations.triples.sentences.txt-weka.filters.unsupervised.attribute.NumericToBinary-R5-weka.filters.unsupervised.attribute.StringToWordVector-R1,2,3,4-W100000-prune-rate-1.0-I-N0-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Rainbow-M1-tokenizerweka.core.tokenizers.CharacterNGramTokenizer -max 1 -min 1
+Instances:    244
+Attributes:   27
+              class_binarized
+               
+              #
+              $
+              (
+              )
+              ,
+              .
+              /
+              0
+              1
+              2
+              5
+              7
+              8
+              9
+              +
+              -
+              3
+              4
+              6
+              :
+              ;
+              ?
+              `
+              ½
+              è
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+Attribute mappings:
+
+Model attributes           	    Incoming attributes
+---------------------------	    ----------------
+(nominal) class_binarized  	--> 1 (nominal) class_binarized
+(numeric)                  	--> 2 (numeric)  
+(numeric) #                	--> 3 (numeric) #
+(numeric) $                	--> 4 (numeric) $
+(numeric) (                	--> 5 (numeric) (
+(numeric) )                	--> 6 (numeric) )
+(numeric) ,                	--> 7 (numeric) ,
+(numeric) .                	--> 8 (numeric) .
+(numeric) /                	--> 9 (numeric) /
+(numeric) 0                	--> 10 (numeric) 0
+(numeric) 1                	--> 11 (numeric) 1
+(numeric) 2                	--> 12 (numeric) 2
+(numeric) 5                	--> 13 (numeric) 5
+(numeric) 7                	--> 14 (numeric) 7
+(numeric) 8                	--> 15 (numeric) 8
+(numeric) 9                	--> 16 (numeric) 9
+(numeric) +                	--> 17 (numeric) +
+(numeric) -                	--> 18 (numeric) -
+(numeric) 3                	--> 19 (numeric) 3
+(numeric) 4                	--> 20 (numeric) 4
+(numeric) 6                	--> 21 (numeric) 6
+(numeric) :                	--> 22 (numeric) :
+(numeric) ;                	--> 23 (numeric) ;
+(numeric) ?                	--> 24 (numeric) ?
+(numeric) `                	--> 25 (numeric) `
+(numeric) ½                	--> 26 (numeric) ½
+(numeric) è                	--> 27 (numeric) è
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         202               82.7869 %
+Incorrectly Classified Instances        42               17.2131 %
+Kappa statistic                          0.6557
+Mean absolute error                      0.2595
+Root mean squared error                  0.3608
+Relative absolute error                 51.8907 %
+Root relative squared error             72.1643 %
+Total Number of Instances              244     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,697    0,041    0,944      0,697    0,802      0,680    0,844     0,887     0
+                 0,959    0,303    0,760      0,959    0,848      0,680    0,844     0,818     1
+Weighted Avg.    0,828    0,172    0,852      0,828    0,825      0,680    0,844     0,852     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  85  37 |   a = 0
+   5 117 |   b = 1
+
