@@ -1,0 +1,3019 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.meta.GridSearch -- -E ACC -y-property gamma -y-min -5.0 -y-max 0.0 -y-step 1.0 -y-base 10.0 -y-expression 5*pow(BASE,I) -x-property cost -x-min 1.0 -x-max 10.0 -x-step 1.0 -x-base 1.0 -x-expression (BASE+I) -sample-size 100.0 -traversal COLUMN-WISE -log-file "C:\\Program Files\\Weka-3-8" -num-slots 1 -S 1 -W weka.classifiers.functions.LibSVM -- -S 0 -K 2 -D 5 -G 0.005 -R 0.0 -N 0.5 -M 40.0 -C 6.0 -E 0.5 -P 0.05 -B -model "C:\\Program Files\\Weka-3-8" -seed 1
+Relation:     relations.triples.sentences.txt-weka.filters.unsupervised.attribute.NumericToBinary-R5-weka.filters.unsupervised.attribute.StringToWordVector-R1,2,3,4-W100000-prune-rate-1.0-C-T-I-N0-stemmerweka.core.stemmers.LovinsStemmer-stopwords-handlerweka.core.stopwords.Null-M1-O-tokenizerweka.core.tokenizers.NGramTokenizer -max 2 -min 1 -delimiters " \r \t"-weka.filters.unsupervised.attribute.Normalize-S2.0-T-1.0
+Instances:    244
+Attributes:   2955
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+weka.classifiers.meta.GridSearch:
+Classifier: weka.classifiers.functions.LibSVM -S 0 -K 2 -D 5 -G 0.05 -R 0.0 -N 0.5 -M 40.0 -C 6.0 -E 0.5 -P 0.05 -B -model "C:\\Program Files\\Weka-3-8" -seed 1
+
+X property: cost
+Y property: gamma
+
+Evaluation: Accuracy
+Coordinates: [5.0, -2.0]
+Values: 6.0 (X coordinate), 0.05 (Y coordinate)
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+Attribute mappings:
+
+Model attributes             	    Incoming attributes
+-----------------------------	    ----------------
+(nominal) class_binarized    	--> 1 (nominal) class_binarized
+(numeric) #                  	--> 2 (numeric) #
+(numeric) # #                	--> 3 (numeric) # #
+(numeric) # )                	--> 4 (numeric) # )
+(numeric) $                  	--> 5 (numeric) $
+(numeric) $ $                	--> 6 (numeric) $ $
+(numeric) $ )                	--> 7 (numeric) $ )
+(numeric) $ c$               	--> 8 (numeric) $ c$
+(numeric) $ hk$              	--> 9 (numeric) $ hk$
+(numeric) (                  	--> 11 (numeric) ( 
+(numeric) (                  	--> 11 (numeric) ( 
+(numeric) ( #                	--> 12 (numeric) ( #
+(numeric) ( $                	--> 13 (numeric) ( $
+(numeric) ( )                	--> 14 (numeric) ( )
+(numeric) ( ,                	--> 15 (numeric) ( ,
+(numeric) ( .                	--> 16 (numeric) ( .
+(numeric) ( :                	--> 17 (numeric) ( :
+(numeric) ( ``               	--> 18 (numeric) ( ``
+(numeric) ( adjp             	--> 19 (numeric) ( adjp
+(numeric) ( advp             	--> 20 (numeric) ( advp
+(numeric) ( cc               	--> 21 (numeric) ( cc
+(numeric) ( cd               	--> 22 (numeric) ( cd
+(numeric) ( conjp            	--> 23 (numeric) ( conjp
+(numeric) ( dt               	--> 24 (numeric) ( dt
+(numeric) ( fw               	--> 25 (numeric) ( fw
+(numeric) ( in               	--> 26 (numeric) ( in
+(numeric) ( jj               	--> 27 (numeric) ( jj
+(numeric) ( jjr              	--> 28 (numeric) ( jjr
+(numeric) ( md               	--> 29 (numeric) ( md
+(numeric) ( n                	--> 30 (numeric) ( n
+(numeric) ( nnp              	--> 31 (numeric) ( nnp
+(numeric) ( np               	--> 32 (numeric) ( np
+(numeric) ( nx               	--> 33 (numeric) ( nx
+(numeric) ( p                	--> 34 (numeric) ( p
+(numeric) ( pdt              	--> 35 (numeric) ( pdt
+(numeric) ( po               	--> 36 (numeric) ( po
+(numeric) ( prn              	--> 37 (numeric) ( prn
+(numeric) ( prp              	--> 38 (numeric) ( prp
+(numeric) ( prp$             	--> 39 (numeric) ( prp$
+(numeric) ( prt              	--> 40 (numeric) ( prt
+(numeric) ( qp               	--> 41 (numeric) ( qp
+(numeric) ( rb               	--> 42 (numeric) ( rb
+(numeric) ( rbr              	--> 43 (numeric) ( rbr
+(numeric) ( root             	--> 44 (numeric) ( root
+(numeric) ( rp               	--> 45 (numeric) ( rp
+(numeric) ( sbar             	--> 46 (numeric) ( sbar
+(numeric) ( t                	--> 47 (numeric) ( t
+(numeric) ( ucp              	--> 48 (numeric) ( ucp
+(numeric) ( vb               	--> 49 (numeric) ( vb
+(numeric) ( vbd              	--> 50 (numeric) ( vbd
+(numeric) ( vbg              	--> 51 (numeric) ( vbg
+(numeric) ( vbn              	--> 52 (numeric) ( vbn
+(numeric) ( vbp              	--> 53 (numeric) ( vbp
+(numeric) ( vbz              	--> 54 (numeric) ( vbz
+(numeric) ( vp               	--> 55 (numeric) ( vp
+(numeric) ( wdt              	--> 56 (numeric) ( wdt
+(numeric) ( whadjp           	--> 57 (numeric) ( whadjp
+(numeric) ( whadvp           	--> 58 (numeric) ( whadvp
+(numeric) ( whnp             	--> 59 (numeric) ( whnp
+(numeric) ( whp              	--> 60 (numeric) ( whp
+(numeric) ( wp               	--> 61 (numeric) ( wp
+(numeric) ( wp$              	--> 62 (numeric) ( wp$
+(numeric) ( wrb              	--> 63 (numeric) ( wrb
+(numeric) )                  	--> 64 (numeric) )
+(numeric) ) (                	--> 65 (numeric) ) (
+(numeric) ) )                	--> 66 (numeric) ) )
+(numeric) +                  	--> 67 (numeric) +
+(numeric) + )                	--> 68 (numeric) + )
+(numeric) ,                  	--> 69 (numeric) ,
+(numeric) , )                	--> 70 (numeric) , )
+(numeric) , ,                	--> 71 (numeric) , ,
+(numeric) .                  	--> 72 (numeric) .
+(numeric) . )                	--> 73 (numeric) . )
+(numeric) . .                	--> 74 (numeric) . .
+(numeric) 0                  	--> 75 (numeric) 0
+(numeric) 0 )                	--> 76 (numeric) 0 )
+(numeric) 000                	--> 77 (numeric) 000
+(numeric) 000 )              	--> 78 (numeric) 000 )
+(numeric) 1                  	--> 79 (numeric) 1
+(numeric) 1 )                	--> 80 (numeric) 1 )
+(numeric) 1.9                	--> 81 (numeric) 1.9
+(numeric) 1.9 )              	--> 82 (numeric) 1.9 )
+(numeric) 10                 	--> 83 (numeric) 10
+(numeric) 10 )               	--> 84 (numeric) 10 )
+(numeric) 109                	--> 85 (numeric) 109
+(numeric) 109 )              	--> 86 (numeric) 109 )
+(numeric) 11                 	--> 87 (numeric) 11
+(numeric) 11 )               	--> 88 (numeric) 11 )
+(numeric) 12                 	--> 89 (numeric) 12
+(numeric) 12 )               	--> 90 (numeric) 12 )
+(numeric) 12-month           	--> 91 (numeric) 12-month
+(numeric) 12-month )         	--> 92 (numeric) 12-month )
+(numeric) 12.4               	--> 93 (numeric) 12.4
+(numeric) 12.4 )             	--> 94 (numeric) 12.4 )
+(numeric) 12.5               	--> 95 (numeric) 12.5
+(numeric) 12.5 )             	--> 96 (numeric) 12.5 )
+(numeric) 120                	--> 97 (numeric) 120
+(numeric) 120 )              	--> 98 (numeric) 120 )
+(numeric) 15                 	--> 99 (numeric) 15
+(numeric) 15 )               	--> 100 (numeric) 15 )
+(numeric) 17                 	--> 101 (numeric) 17
+(numeric) 17 )               	--> 102 (numeric) 17 )
+(numeric) 18                 	--> 103 (numeric) 18
+(numeric) 18 )               	--> 104 (numeric) 18 )
+(numeric) 18-month           	--> 105 (numeric) 18-month
+(numeric) 18-month )         	--> 106 (numeric) 18-month )
+(numeric) 1916               	--> 107 (numeric) 1916
+(numeric) 1916 )             	--> 108 (numeric) 1916 )
+(numeric) 1942               	--> 109 (numeric) 1942
+(numeric) 1942 )             	--> 110 (numeric) 1942 )
+(numeric) 1944               	--> 111 (numeric) 1944
+(numeric) 1944 )             	--> 112 (numeric) 1944 )
+(numeric) 1967               	--> 113 (numeric) 1967
+(numeric) 1967 )             	--> 114 (numeric) 1967 )
+(numeric) 1973               	--> 115 (numeric) 1973
+(numeric) 1973 )             	--> 116 (numeric) 1973 )
+(numeric) 1978               	--> 117 (numeric) 1978
+(numeric) 1978 )             	--> 118 (numeric) 1978 )
+(numeric) 1979               	--> 119 (numeric) 1979
+(numeric) 1979 )             	--> 120 (numeric) 1979 )
+(numeric) 1983               	--> 121 (numeric) 1983
+(numeric) 1983 )             	--> 122 (numeric) 1983 )
+(numeric) 1987               	--> 123 (numeric) 1987
+(numeric) 1987 )             	--> 124 (numeric) 1987 )
+(numeric) 1989               	--> 125 (numeric) 1989
+(numeric) 1989 )             	--> 126 (numeric) 1989 )
+(numeric) 1990               	--> 127 (numeric) 1990
+(numeric) 1990 )             	--> 128 (numeric) 1990 )
+(numeric) 1998               	--> 129 (numeric) 1998
+(numeric) 1998 )             	--> 130 (numeric) 1998 )
+(numeric) 2                  	--> 131 (numeric) 2
+(numeric) 2 )                	--> 132 (numeric) 2 )
+(numeric) 2.1                	--> 133 (numeric) 2.1
+(numeric) 2.1 )              	--> 134 (numeric) 2.1 )
+(numeric) 20-inch            	--> 135 (numeric) 20-inch
+(numeric) 20-inch )          	--> 136 (numeric) 20-inch )
+(numeric) 200                	--> 137 (numeric) 200
+(numeric) 200 )              	--> 138 (numeric) 200 )
+(numeric) 2003               	--> 139 (numeric) 2003
+(numeric) 2003 )             	--> 140 (numeric) 2003 )
+(numeric) 2009               	--> 141 (numeric) 2009
+(numeric) 2009 )             	--> 142 (numeric) 2009 )
+(numeric) 23                 	--> 143 (numeric) 23
+(numeric) 23 )               	--> 144 (numeric) 23 )
+(numeric) 3                  	--> 145 (numeric) 3
+(numeric) 3 )                	--> 146 (numeric) 3 )
+(numeric) 3.0                	--> 147 (numeric) 3.0
+(numeric) 3.0 )              	--> 148 (numeric) 3.0 )
+(numeric) 3.561              	--> 149 (numeric) 3.561
+(numeric) 3.561 )            	--> 150 (numeric) 3.561 )
+(numeric) 3.615              	--> 151 (numeric) 3.615
+(numeric) 3.615 )            	--> 152 (numeric) 3.615 )
+(numeric) 3.75               	--> 153 (numeric) 3.75
+(numeric) 3.75 )             	--> 154 (numeric) 3.75 )
+(numeric) 3/8                	--> 155 (numeric) 3/8
+(numeric) 3/8 )              	--> 156 (numeric) 3/8 )
+(numeric) 30-year            	--> 157 (numeric) 30-year
+(numeric) 30-year )          	--> 158 (numeric) 30-year )
+(numeric) 300                	--> 159 (numeric) 300
+(numeric) 300 )              	--> 160 (numeric) 300 )
+(numeric) 350                	--> 161 (numeric) 350
+(numeric) 350 )              	--> 162 (numeric) 350 )
+(numeric) 4-1                	--> 163 (numeric) 4-1
+(numeric) 4-1 )              	--> 164 (numeric) 4-1 )
+(numeric) 4.165              	--> 165 (numeric) 4.165
+(numeric) 4.165 )            	--> 166 (numeric) 4.165 )
+(numeric) 4.167              	--> 167 (numeric) 4.167
+(numeric) 4.167 )            	--> 168 (numeric) 4.167 )
+(numeric) 45                 	--> 169 (numeric) 45
+(numeric) 45 )               	--> 170 (numeric) 45 )
+(numeric) 5                  	--> 171 (numeric) 5
+(numeric) 5 )                	--> 172 (numeric) 5 )
+(numeric) 500                	--> 173 (numeric) 500
+(numeric) 500 )              	--> 174 (numeric) 500 )
+(numeric) 51.00              	--> 175 (numeric) 51.00
+(numeric) 51.00 )            	--> 176 (numeric) 51.00 )
+(numeric) 525                	--> 177 (numeric) 525
+(numeric) 525 )              	--> 178 (numeric) 525 )
+(numeric) 568                	--> 179 (numeric) 568
+(numeric) 568 )              	--> 180 (numeric) 568 )
+(numeric) 6                  	--> 181 (numeric) 6
+(numeric) 6 )                	--> 182 (numeric) 6 )
+(numeric) 6.61               	--> 183 (numeric) 6.61
+(numeric) 6.61 )             	--> 184 (numeric) 6.61 )
+(numeric) 60                 	--> 185 (numeric) 60
+(numeric) 60 )               	--> 186 (numeric) 60 )
+(numeric) 70.00              	--> 187 (numeric) 70.00
+(numeric) 70.00 )            	--> 188 (numeric) 70.00 )
+(numeric) 75                 	--> 189 (numeric) 75
+(numeric) 75 )               	--> 190 (numeric) 75 )
+(numeric) 96è?½30/32         	--> 191 (numeric) 96è?½30/32
+(numeric) 96è?½30/32 )       	--> 192 (numeric) 96è?½30/32 )
+(numeric) :                  	--> 193 (numeric) :
+(numeric) : )                	--> 194 (numeric) : )
+(numeric) : :                	--> 195 (numeric) : :
+(numeric) : ;                	--> 196 (numeric) : ;
+(numeric) ;                  	--> 197 (numeric) ;
+(numeric) ; )                	--> 198 (numeric) ; )
+(numeric) `                  	--> 199 (numeric) `
+(numeric) ` )                	--> 200 (numeric) ` )
+(numeric) ``                 	--> 201 (numeric) ``
+(numeric) `` )               	--> 202 (numeric) `` )
+(numeric) `` `               	--> 203 (numeric) `` `
+(numeric) `` ``              	--> 204 (numeric) `` ``
+(numeric) a                  	--> 205 (numeric) a
+(numeric) a )                	--> 206 (numeric) a )
+(numeric) a.m.               	--> 207 (numeric) a.m.
+(numeric) a.m. )             	--> 208 (numeric) a.m. )
+(numeric) aberdeen           	--> 209 (numeric) aberdeen
+(numeric) aberdeen )         	--> 210 (numeric) aberdeen )
+(numeric) abkhaz             	--> 211 (numeric) abkhaz
+(numeric) abkhaz )           	--> 212 (numeric) abkhaz )
+(numeric) about              	--> 213 (numeric) about
+(numeric) about )            	--> 214 (numeric) about )
+(numeric) accompl            	--> 215 (numeric) accompl
+(numeric) accomplished )     	--> 216 (numeric) accomplished )
+(numeric) accus              	--> 217 (numeric) accus
+(numeric) accuses )          	--> 218 (numeric) accuses )
+(numeric) achief             	--> 219 (numeric) achief
+(numeric) achievement )      	--> 220 (numeric) achievement )
+(numeric) acros              	--> 221 (numeric) acros
+(numeric) across )           	--> 222 (numeric) across )
+(numeric) act                	--> 223 (numeric) act
+(numeric) action )           	--> 224 (numeric) action )
+(numeric) actor )            	--> 225 (numeric) actor )
+(numeric) adjp               	--> 226 (numeric) adjp
+(numeric) adjp (             	--> 227 (numeric) adjp (
+(numeric) ador               	--> 228 (numeric) ador
+(numeric) adoring )          	--> 229 (numeric) adoring )
+(numeric) adorn              	--> 230 (numeric) adorn
+(numeric) adorned )          	--> 231 (numeric) adorned )
+(numeric) advp               	--> 232 (numeric) advp
+(numeric) advp (             	--> 233 (numeric) advp (
+(numeric) affect             	--> 234 (numeric) affect
+(numeric) affect )           	--> 235 (numeric) affect )
+(numeric) affirm             	--> 236 (numeric) affirm
+(numeric) affirmative )      	--> 237 (numeric) affirmative )
+(numeric) after              	--> 238 (numeric) after
+(numeric) after )            	--> 239 (numeric) after )
+(numeric) ag                 	--> 240 (numeric) ag
+(numeric) against            	--> 241 (numeric) against
+(numeric) against )          	--> 242 (numeric) against )
+(numeric) ago )              	--> 243 (numeric) ago )
+(numeric) agreed             	--> 244 (numeric) agreed
+(numeric) agreed )           	--> 245 (numeric) agreed )
+(numeric) aid                	--> 246 (numeric) aid
+(numeric) aids )             	--> 247 (numeric) aids )
+(numeric) aim                	--> 248 (numeric) aim
+(numeric) aimed )            	--> 249 (numeric) aimed )
+(numeric) air                	--> 250 (numeric) air
+(numeric) air )              	--> 251 (numeric) air )
+(numeric) airport            	--> 252 (numeric) airport
+(numeric) airport )          	--> 253 (numeric) airport )
+(numeric) al                 	--> 254 (numeric) al
+(numeric) all )              	--> 255 (numeric) all )
+(numeric) allow              	--> 256 (numeric) allow
+(numeric) allowing )         	--> 257 (numeric) allowing )
+(numeric) along              	--> 258 (numeric) along
+(numeric) along )            	--> 259 (numeric) along )
+(numeric) als                	--> 260 (numeric) als
+(numeric) also )             	--> 261 (numeric) also )
+(numeric) american           	--> 262 (numeric) american
+(numeric) american )         	--> 263 (numeric) american )
+(numeric) amount             	--> 264 (numeric) amount
+(numeric) amount )           	--> 265 (numeric) amount )
+(numeric) an                 	--> 266 (numeric) an
+(numeric) an )               	--> 267 (numeric) an )
+(numeric) and                	--> 268 (numeric) and
+(numeric) and )              	--> 269 (numeric) and )
+(numeric) angel              	--> 270 (numeric) angel
+(numeric) angeles )          	--> 271 (numeric) angeles )
+(numeric) anne )             	--> 272 (numeric) anne )
+(numeric) announc            	--> 273 (numeric) announc
+(numeric) announced )        	--> 274 (numeric) announced )
+(numeric) annu               	--> 275 (numeric) annu
+(numeric) annual )           	--> 276 (numeric) annual )
+(numeric) anthrac            	--> 277 (numeric) anthrac
+(numeric) anthrax )          	--> 278 (numeric) anthrax )
+(numeric) any                	--> 279 (numeric) any
+(numeric) any )              	--> 280 (numeric) any )
+(numeric) anybod             	--> 281 (numeric) anybod
+(numeric) anybody )          	--> 282 (numeric) anybody )
+(numeric) ap                 	--> 283 (numeric) ap
+(numeric) appl               	--> 284 (numeric) appl
+(numeric) apple )            	--> 285 (numeric) apple )
+(numeric) applic             	--> 286 (numeric) applic
+(numeric) application )      	--> 287 (numeric) application )
+(numeric) apply )            	--> 288 (numeric) apply )
+(numeric) appointe           	--> 289 (numeric) appointe
+(numeric) appointee )        	--> 290 (numeric) appointee )
+(numeric) approxim           	--> 291 (numeric) approxim
+(numeric) approximately )    	--> 292 (numeric) approximately )
+(numeric) arizon             	--> 293 (numeric) arizon
+(numeric) arizona )          	--> 294 (numeric) arizona )
+(numeric) arm                	--> 295 (numeric) arm
+(numeric) armed )            	--> 296 (numeric) armed )
+(numeric) armen              	--> 297 (numeric) armen
+(numeric) armenian )         	--> 298 (numeric) armenian )
+(numeric) around             	--> 299 (numeric) around
+(numeric) around )           	--> 300 (numeric) around )
+(numeric) arriv              	--> 301 (numeric) arriv
+(numeric) arrives )          	--> 302 (numeric) arrives )
+(numeric) artur              	--> 303 (numeric) artur
+(numeric) arturo )           	--> 304 (numeric) arturo )
+(numeric) as                 	--> 305 (numeric) as
+(numeric) as )               	--> 306 (numeric) as )
+(numeric) ask                	--> 307 (numeric) ask
+(numeric) asked )            	--> 308 (numeric) asked )
+(numeric) assad              	--> 309 (numeric) assad
+(numeric) assad )            	--> 310 (numeric) assad )
+(numeric) asses              	--> 311 (numeric) asses
+(numeric) asset )            	--> 312 (numeric) asset )
+(numeric) at                 	--> 313 (numeric) at
+(numeric) at )               	--> 314 (numeric) at )
+(numeric) athlon             	--> 315 (numeric) athlon
+(numeric) athlone )          	--> 316 (numeric) athlone )
+(numeric) attack             	--> 317 (numeric) attack
+(numeric) attack )           	--> 318 (numeric) attack )
+(numeric) austral            	--> 319 (numeric) austral
+(numeric) australia )        	--> 320 (numeric) australia )
+(numeric) australian )       	--> 321 (numeric) australian )
+(numeric) author             	--> 322 (numeric) author
+(numeric) author )           	--> 323 (numeric) author )
+(numeric) av                 	--> 324 (numeric) av
+(numeric) aver               	--> 325 (numeric) aver
+(numeric) average )          	--> 326 (numeric) average )
+(numeric) avoid )            	--> 327 (numeric) avoid )
+(numeric) award              	--> 328 (numeric) award
+(numeric) award )            	--> 329 (numeric) award )
+(numeric) bachelor           	--> 330 (numeric) bachelor
+(numeric) bachelor )         	--> 331 (numeric) bachelor )
+(numeric) bag                	--> 332 (numeric) bag
+(numeric) bag )              	--> 333 (numeric) bag )
+(numeric) baido              	--> 334 (numeric) baido
+(numeric) baidoa )           	--> 335 (numeric) baidoa )
+(numeric) bal                	--> 336 (numeric) bal
+(numeric) balanced )         	--> 337 (numeric) balanced )
+(numeric) ball )             	--> 338 (numeric) ball )
+(numeric) ban                	--> 339 (numeric) ban
+(numeric) ban )              	--> 340 (numeric) ban )
+(numeric) band               	--> 341 (numeric) band
+(numeric) band )             	--> 342 (numeric) band )
+(numeric) bank               	--> 343 (numeric) bank
+(numeric) bank )             	--> 344 (numeric) bank )
+(numeric) banks )            	--> 345 (numeric) banks )
+(numeric) banner             	--> 346 (numeric) banner
+(numeric) banner )           	--> 347 (numeric) banner )
+(numeric) barnard            	--> 348 (numeric) barnard
+(numeric) barnard )          	--> 349 (numeric) barnard )
+(numeric) bart               	--> 350 (numeric) bart
+(numeric) bart )             	--> 351 (numeric) bart )
+(numeric) bas                	--> 352 (numeric) bas
+(numeric) based )            	--> 353 (numeric) based )
+(numeric) basically )        	--> 354 (numeric) basically )
+(numeric) basis )            	--> 355 (numeric) basis )
+(numeric) battl              	--> 356 (numeric) battl
+(numeric) battle )           	--> 357 (numeric) battle )
+(numeric) bay                	--> 358 (numeric) bay
+(numeric) bay )              	--> 359 (numeric) bay )
+(numeric) be                 	--> 360 (numeric) be
+(numeric) be )               	--> 361 (numeric) be )
+(numeric) becaus             	--> 362 (numeric) becaus
+(numeric) because )          	--> 363 (numeric) because )
+(numeric) befor              	--> 364 (numeric) befor
+(numeric) before )           	--> 365 (numeric) before )
+(numeric) beg                	--> 366 (numeric) beg
+(numeric) begged )           	--> 367 (numeric) begged )
+(numeric) begin              	--> 368 (numeric) begin
+(numeric) begin )            	--> 369 (numeric) begin )
+(numeric) begins )           	--> 370 (numeric) begins )
+(numeric) behind             	--> 371 (numeric) behind
+(numeric) behind )           	--> 372 (numeric) behind )
+(numeric) benchmark          	--> 373 (numeric) benchmark
+(numeric) benchmark )        	--> 374 (numeric) benchmark )
+(numeric) bensonhurst        	--> 375 (numeric) bensonhurst
+(numeric) bensonhurst )      	--> 376 (numeric) bensonhurst )
+(numeric) between            	--> 377 (numeric) between
+(numeric) between )          	--> 378 (numeric) between )
+(numeric) bhut               	--> 379 (numeric) bhut
+(numeric) bhutto )           	--> 380 (numeric) bhutto )
+(numeric) bidder             	--> 381 (numeric) bidder
+(numeric) bidder )           	--> 382 (numeric) bidder )
+(numeric) bil                	--> 383 (numeric) bil
+(numeric) bill )             	--> 384 (numeric) bill )
+(numeric) billboard          	--> 385 (numeric) billboard
+(numeric) billboard )        	--> 386 (numeric) billboard )
+(numeric) birmingham         	--> 387 (numeric) birmingham
+(numeric) birmingham )       	--> 388 (numeric) birmingham )
+(numeric) black              	--> 389 (numeric) black
+(numeric) black )            	--> 390 (numeric) black )
+(numeric) blevin             	--> 391 (numeric) blevin
+(numeric) blevins )          	--> 392 (numeric) blevins )
+(numeric) bluster            	--> 393 (numeric) bluster
+(numeric) bluster )          	--> 394 (numeric) bluster )
+(numeric) bob                	--> 395 (numeric) bob
+(numeric) bob )              	--> 396 (numeric) bob )
+(numeric) bod                	--> 397 (numeric) bod
+(numeric) body )             	--> 398 (numeric) body )
+(numeric) boern              	--> 399 (numeric) boern
+(numeric) boerne )           	--> 400 (numeric) boerne )
+(numeric) bond )             	--> 401 (numeric) bond )
+(numeric) bonil              	--> 402 (numeric) bonil
+(numeric) bonilla )          	--> 403 (numeric) bonilla )
+(numeric) bons               	--> 404 (numeric) bons
+(numeric) book               	--> 405 (numeric) book
+(numeric) book )             	--> 406 (numeric) book )
+(numeric) bost               	--> 407 (numeric) bost
+(numeric) boston )           	--> 408 (numeric) boston )
+(numeric) box                	--> 409 (numeric) box
+(numeric) box )              	--> 410 (numeric) box )
+(numeric) boynt              	--> 411 (numeric) boynt
+(numeric) boynton )          	--> 412 (numeric) boynton )
+(numeric) br                 	--> 413 (numeric) br
+(numeric) brain              	--> 414 (numeric) brain
+(numeric) brain )            	--> 415 (numeric) brain )
+(numeric) breath             	--> 416 (numeric) breath
+(numeric) breath )           	--> 417 (numeric) breath )
+(numeric) brick              	--> 418 (numeric) brick
+(numeric) brick )            	--> 419 (numeric) brick )
+(numeric) bride )            	--> 420 (numeric) bride )
+(numeric) brilli             	--> 421 (numeric) brilli
+(numeric) brilliant )        	--> 422 (numeric) brilliant )
+(numeric) brother            	--> 423 (numeric) brother
+(numeric) brother )          	--> 424 (numeric) brother )
+(numeric) brown              	--> 425 (numeric) brown
+(numeric) brown )            	--> 426 (numeric) brown )
+(numeric) bry                	--> 427 (numeric) bry
+(numeric) bryant )           	--> 428 (numeric) bryant )
+(numeric) build              	--> 429 (numeric) build
+(numeric) building )         	--> 430 (numeric) building )
+(numeric) built-in           	--> 431 (numeric) built-in
+(numeric) built-in )         	--> 432 (numeric) built-in )
+(numeric) burd               	--> 433 (numeric) burd
+(numeric) burden )           	--> 434 (numeric) burden )
+(numeric) burkhart           	--> 435 (numeric) burkhart
+(numeric) burkhart )         	--> 436 (numeric) burkhart )
+(numeric) bush               	--> 437 (numeric) bush
+(numeric) bush )             	--> 438 (numeric) bush )
+(numeric) but                	--> 439 (numeric) but
+(numeric) but )              	--> 440 (numeric) but )
+(numeric) by                 	--> 441 (numeric) by
+(numeric) by )               	--> 442 (numeric) by )
+(numeric) bye )              	--> 443 (numeric) bye )
+(numeric) c$                 	--> 444 (numeric) c$
+(numeric) c$ )               	--> 445 (numeric) c$ )
+(numeric) ca                 	--> 446 (numeric) ca
+(numeric) ca )               	--> 447 (numeric) ca )
+(numeric) californ           	--> 448 (numeric) californ
+(numeric) california )       	--> 449 (numeric) california )
+(numeric) campaign           	--> 450 (numeric) campaign
+(numeric) campaign )         	--> 451 (numeric) campaign )
+(numeric) can                	--> 452 (numeric) can
+(numeric) can )              	--> 453 (numeric) can )
+(numeric) cand               	--> 454 (numeric) cand
+(numeric) candy )            	--> 455 (numeric) candy )
+(numeric) captur             	--> 456 (numeric) captur
+(numeric) captured )         	--> 457 (numeric) captured )
+(numeric) car                	--> 458 (numeric) car
+(numeric) car )              	--> 459 (numeric) car )
+(numeric) cas                	--> 460 (numeric) cas
+(numeric) casanov            	--> 461 (numeric) casanov
+(numeric) casanova )         	--> 462 (numeric) casanova )
+(numeric) case )             	--> 463 (numeric) case )
+(numeric) categor            	--> 464 (numeric) categor
+(numeric) category )         	--> 465 (numeric) category )
+(numeric) cc                 	--> 466 (numeric) cc
+(numeric) cc +               	--> 467 (numeric) cc +
+(numeric) cc and             	--> 468 (numeric) cc and
+(numeric) cc but             	--> 469 (numeric) cc but
+(numeric) cc either          	--> 470 (numeric) cc either
+(numeric) cc or              	--> 471 (numeric) cc or
+(numeric) cc vs.             	--> 472 (numeric) cc vs.
+(numeric) cd                 	--> 473 (numeric) cd
+(numeric) cd )               	--> 474 (numeric) cd )
+(numeric) cd 0               	--> 475 (numeric) cd 0
+(numeric) cd 000             	--> 476 (numeric) cd 000
+(numeric) cd 1               	--> 477 (numeric) cd 1
+(numeric) cd 1.9             	--> 478 (numeric) cd 1.9
+(numeric) cd 10              	--> 479 (numeric) cd 10
+(numeric) cd 109             	--> 480 (numeric) cd 109
+(numeric) cd 11              	--> 481 (numeric) cd 11
+(numeric) cd 12              	--> 482 (numeric) cd 12
+(numeric) cd 12.4            	--> 483 (numeric) cd 12.4
+(numeric) cd 12.5            	--> 484 (numeric) cd 12.5
+(numeric) cd 120             	--> 485 (numeric) cd 120
+(numeric) cd 15              	--> 486 (numeric) cd 15
+(numeric) cd 17              	--> 487 (numeric) cd 17
+(numeric) cd 18              	--> 488 (numeric) cd 18
+(numeric) cd 1916            	--> 489 (numeric) cd 1916
+(numeric) cd 1942            	--> 490 (numeric) cd 1942
+(numeric) cd 1944            	--> 491 (numeric) cd 1944
+(numeric) cd 1967            	--> 492 (numeric) cd 1967
+(numeric) cd 1973            	--> 493 (numeric) cd 1973
+(numeric) cd 1978            	--> 494 (numeric) cd 1978
+(numeric) cd 1979            	--> 495 (numeric) cd 1979
+(numeric) cd 1983            	--> 496 (numeric) cd 1983
+(numeric) cd 1987            	--> 497 (numeric) cd 1987
+(numeric) cd 1989            	--> 498 (numeric) cd 1989
+(numeric) cd 1990            	--> 499 (numeric) cd 1990
+(numeric) cd 1998            	--> 500 (numeric) cd 1998
+(numeric) cd 2               	--> 501 (numeric) cd 2
+(numeric) cd 2.1             	--> 502 (numeric) cd 2.1
+(numeric) cd 200             	--> 503 (numeric) cd 200
+(numeric) cd 2003            	--> 504 (numeric) cd 2003
+(numeric) cd 2009            	--> 505 (numeric) cd 2009
+(numeric) cd 23              	--> 506 (numeric) cd 23
+(numeric) cd 3               	--> 507 (numeric) cd 3
+(numeric) cd 3.0             	--> 508 (numeric) cd 3.0
+(numeric) cd 3.561           	--> 509 (numeric) cd 3.561
+(numeric) cd 3.615           	--> 510 (numeric) cd 3.615
+(numeric) cd 3.75            	--> 511 (numeric) cd 3.75
+(numeric) cd 3/8             	--> 512 (numeric) cd 3/8
+(numeric) cd 300             	--> 513 (numeric) cd 300
+(numeric) cd 350             	--> 514 (numeric) cd 350
+(numeric) cd 4-1             	--> 515 (numeric) cd 4-1
+(numeric) cd 4.165           	--> 516 (numeric) cd 4.165
+(numeric) cd 4.167           	--> 517 (numeric) cd 4.167
+(numeric) cd 45              	--> 518 (numeric) cd 45
+(numeric) cd 5               	--> 519 (numeric) cd 5
+(numeric) cd 500             	--> 520 (numeric) cd 500
+(numeric) cd 51.00           	--> 521 (numeric) cd 51.00
+(numeric) cd 525             	--> 522 (numeric) cd 525
+(numeric) cd 568             	--> 523 (numeric) cd 568
+(numeric) cd 6               	--> 524 (numeric) cd 6
+(numeric) cd 6.61            	--> 525 (numeric) cd 6.61
+(numeric) cd 60              	--> 526 (numeric) cd 60
+(numeric) cd 70.00           	--> 527 (numeric) cd 70.00
+(numeric) cd 75              	--> 528 (numeric) cd 75
+(numeric) cd 96è?½30/32      	--> 529 (numeric) cd 96è?½30/32
+(numeric) cd eight           	--> 530 (numeric) cd eight
+(numeric) cd t               	--> 531 (numeric) cd t
+(numeric) centr              	--> 532 (numeric) centr
+(numeric) central )          	--> 533 (numeric) central )
+(numeric) centur             	--> 534 (numeric) centur
+(numeric) century )          	--> 535 (numeric) century )
+(numeric) chang              	--> 536 (numeric) chang
+(numeric) change )           	--> 537 (numeric) change )
+(numeric) charg              	--> 538 (numeric) charg
+(numeric) charged )          	--> 539 (numeric) charged )
+(numeric) chart              	--> 540 (numeric) chart
+(numeric) chart )            	--> 541 (numeric) chart )
+(numeric) chas               	--> 542 (numeric) chas
+(numeric) chase )            	--> 543 (numeric) chase )
+(numeric) chiaverin          	--> 544 (numeric) chiaverin
+(numeric) chiaverini )       	--> 545 (numeric) chiaverini )
+(numeric) chicag             	--> 546 (numeric) chicag
+(numeric) chicago )          	--> 547 (numeric) chicago )
+(numeric) child              	--> 548 (numeric) child
+(numeric) child )            	--> 549 (numeric) child )
+(numeric) chin               	--> 550 (numeric) chin
+(numeric) china )            	--> 551 (numeric) china )
+(numeric) chocol             	--> 552 (numeric) chocol
+(numeric) chocolate )        	--> 553 (numeric) chocolate )
+(numeric) choic              	--> 554 (numeric) choic
+(numeric) choice )           	--> 555 (numeric) choice )
+(numeric) choler             	--> 556 (numeric) choler
+(numeric) cholera )          	--> 557 (numeric) cholera )
+(numeric) christ             	--> 558 (numeric) christ
+(numeric) christian )        	--> 559 (numeric) christian )
+(numeric) chuck              	--> 560 (numeric) chuck
+(numeric) chuck )            	--> 561 (numeric) chuck )
+(numeric) church             	--> 562 (numeric) church
+(numeric) church )           	--> 563 (numeric) church )
+(numeric) cit                	--> 564 (numeric) cit
+(numeric) city )             	--> 565 (numeric) city )
+(numeric) classif            	--> 566 (numeric) classif
+(numeric) classification )   	--> 567 (numeric) classification )
+(numeric) clos               	--> 568 (numeric) clos
+(numeric) close )            	--> 569 (numeric) close )
+(numeric) club               	--> 570 (numeric) club
+(numeric) club )             	--> 571 (numeric) club )
+(numeric) coalit             	--> 572 (numeric) coalit
+(numeric) coalition )        	--> 573 (numeric) coalition )
+(numeric) colin              	--> 574 (numeric) colin
+(numeric) colin )            	--> 575 (numeric) colin )
+(numeric) collabor           	--> 576 (numeric) collabor
+(numeric) collaborator )     	--> 577 (numeric) collaborator )
+(numeric) com                	--> 578 (numeric) com
+(numeric) come )             	--> 579 (numeric) come )
+(numeric) comed              	--> 580 (numeric) comed
+(numeric) comedy )           	--> 581 (numeric) comedy )
+(numeric) commander          	--> 582 (numeric) commander
+(numeric) commander )        	--> 583 (numeric) commander )
+(numeric) commis             	--> 584 (numeric) commis
+(numeric) committe           	--> 585 (numeric) committe
+(numeric) committed )        	--> 586 (numeric) committed )
+(numeric) committee )        	--> 587 (numeric) committee )
+(numeric) common             	--> 588 (numeric) common
+(numeric) commonly )         	--> 589 (numeric) commonly )
+(numeric) comp               	--> 590 (numeric) comp
+(numeric) compan             	--> 591 (numeric) compan
+(numeric) company )          	--> 592 (numeric) company )
+(numeric) comples            	--> 593 (numeric) comples
+(numeric) complete )         	--> 594 (numeric) complete )
+(numeric) completely )       	--> 595 (numeric) completely )
+(numeric) complic            	--> 596 (numeric) complic
+(numeric) complicated )      	--> 597 (numeric) complicated )
+(numeric) comply )           	--> 598 (numeric) comply )
+(numeric) compon             	--> 599 (numeric) compon
+(numeric) component )        	--> 600 (numeric) component )
+(numeric) computer           	--> 601 (numeric) computer
+(numeric) computer )         	--> 602 (numeric) computer )
+(numeric) concres            	--> 603 (numeric) concres
+(numeric) concrete )         	--> 604 (numeric) concrete )
+(numeric) congreg            	--> 605 (numeric) congreg
+(numeric) congregation )     	--> 606 (numeric) congregation )
+(numeric) conjp              	--> 607 (numeric) conjp
+(numeric) conjp (            	--> 608 (numeric) conjp (
+(numeric) conni              	--> 609 (numeric) conni
+(numeric) connie )           	--> 610 (numeric) connie )
+(numeric) continu            	--> 611 (numeric) continu
+(numeric) continued )        	--> 612 (numeric) continued )
+(numeric) continues )        	--> 613 (numeric) continues )
+(numeric) continuing )       	--> 614 (numeric) continuing )
+(numeric) contract           	--> 615 (numeric) contract
+(numeric) contracted )       	--> 616 (numeric) contracted )
+(numeric) convent            	--> 617 (numeric) convent
+(numeric) convention )       	--> 618 (numeric) convention )
+(numeric) cooper             	--> 619 (numeric) cooper
+(numeric) cooper )           	--> 620 (numeric) cooper )
+(numeric) corrupt            	--> 621 (numeric) corrupt
+(numeric) corruption )       	--> 622 (numeric) corruption )
+(numeric) council            	--> 623 (numeric) council
+(numeric) council )          	--> 624 (numeric) council )
+(numeric) count              	--> 625 (numeric) count
+(numeric) countr             	--> 626 (numeric) countr
+(numeric) country )          	--> 627 (numeric) country )
+(numeric) county )           	--> 628 (numeric) county )
+(numeric) coupl              	--> 629 (numeric) coupl
+(numeric) couple )           	--> 630 (numeric) couple )
+(numeric) court              	--> 631 (numeric) court
+(numeric) court )            	--> 632 (numeric) court )
+(numeric) craft              	--> 633 (numeric) craft
+(numeric) crafting )         	--> 634 (numeric) crafting )
+(numeric) crash              	--> 635 (numeric) crash
+(numeric) crashed )          	--> 636 (numeric) crashed )
+(numeric) creat              	--> 637 (numeric) creat
+(numeric) created )          	--> 638 (numeric) created )
+(numeric) credit             	--> 639 (numeric) credit
+(numeric) credit )           	--> 640 (numeric) credit )
+(numeric) crick              	--> 641 (numeric) crick
+(numeric) crick )            	--> 642 (numeric) crick )
+(numeric) crim               	--> 643 (numeric) crim
+(numeric) crime )            	--> 644 (numeric) crime )
+(numeric) crit               	--> 645 (numeric) crit
+(numeric) critic )           	--> 646 (numeric) critic )
+(numeric) crowd              	--> 647 (numeric) crowd
+(numeric) crowd )            	--> 648 (numeric) crowd )
+(numeric) cum                	--> 649 (numeric) cum
+(numeric) cum )              	--> 650 (numeric) cum )
+(numeric) cupcak             	--> 651 (numeric) cupcak
+(numeric) cupcake )          	--> 652 (numeric) cupcake )
+(numeric) cur                	--> 653 (numeric) cur
+(numeric) current )          	--> 654 (numeric) current )
+(numeric) da                 	--> 655 (numeric) da
+(numeric) daily )            	--> 656 (numeric) daily )
+(numeric) danger             	--> 657 (numeric) danger
+(numeric) danger )           	--> 658 (numeric) danger )
+(numeric) daughter           	--> 659 (numeric) daughter
+(numeric) daughter )         	--> 660 (numeric) daughter )
+(numeric) day                	--> 661 (numeric) day
+(numeric) day )              	--> 662 (numeric) day )
+(numeric) days               	--> 663 (numeric) days
+(numeric) dayton )           	--> 664 (numeric) dayton )
+(numeric) de                 	--> 665 (numeric) de
+(numeric) de )               	--> 666 (numeric) de )
+(numeric) death              	--> 667 (numeric) death
+(numeric) death )            	--> 668 (numeric) death )
+(numeric) debt               	--> 669 (numeric) debt
+(numeric) debt )             	--> 670 (numeric) debt )
+(numeric) decis              	--> 671 (numeric) decis
+(numeric) decision )         	--> 672 (numeric) decision )
+(numeric) defended )         	--> 673 (numeric) defended )
+(numeric) defens             	--> 674 (numeric) defens
+(numeric) defense )          	--> 675 (numeric) defense )
+(numeric) degre              	--> 676 (numeric) degre
+(numeric) degree )           	--> 677 (numeric) degree )
+(numeric) democrat           	--> 678 (numeric) democrat
+(numeric) democrat )         	--> 679 (numeric) democrat )
+(numeric) departm            	--> 680 (numeric) departm
+(numeric) department )       	--> 681 (numeric) department )
+(numeric) deserv             	--> 682 (numeric) deserv
+(numeric) deserves )         	--> 683 (numeric) deserves )
+(numeric) detect             	--> 684 (numeric) detect
+(numeric) detector )         	--> 685 (numeric) detector )
+(numeric) di                 	--> 686 (numeric) di
+(numeric) dickenson          	--> 687 (numeric) dickenson
+(numeric) dickenson )        	--> 688 (numeric) dickenson )
+(numeric) dickinson          	--> 689 (numeric) dickinson
+(numeric) dickinson )        	--> 690 (numeric) dickinson )
+(numeric) did                	--> 691 (numeric) did
+(numeric) did )              	--> 692 (numeric) did )
+(numeric) died )             	--> 693 (numeric) died )
+(numeric) differ             	--> 694 (numeric) differ
+(numeric) difference )       	--> 695 (numeric) difference )
+(numeric) dinsoor            	--> 696 (numeric) dinsoor
+(numeric) dinsoor )          	--> 697 (numeric) dinsoor )
+(numeric) diplom             	--> 698 (numeric) diplom
+(numeric) diplomacy )        	--> 699 (numeric) diplomacy )
+(numeric) direct             	--> 700 (numeric) direct
+(numeric) director )         	--> 701 (numeric) director )
+(numeric) donald             	--> 702 (numeric) donald
+(numeric) donald )           	--> 703 (numeric) donald )
+(numeric) door               	--> 704 (numeric) door
+(numeric) door )             	--> 705 (numeric) door )
+(numeric) dorm               	--> 706 (numeric) dorm
+(numeric) dorm )             	--> 707 (numeric) dorm )
+(numeric) down               	--> 708 (numeric) down
+(numeric) down )             	--> 709 (numeric) down )
+(numeric) doy                	--> 710 (numeric) doy
+(numeric) doyen )            	--> 711 (numeric) doyen )
+(numeric) draene             	--> 712 (numeric) draene
+(numeric) draenei )          	--> 713 (numeric) draenei )
+(numeric) draw               	--> 714 (numeric) draw
+(numeric) draws )            	--> 715 (numeric) draws )
+(numeric) dream              	--> 716 (numeric) dream
+(numeric) dream )            	--> 717 (numeric) dream )
+(numeric) dril               	--> 718 (numeric) dril
+(numeric) drill )            	--> 719 (numeric) drill )
+(numeric) drilling )         	--> 720 (numeric) drilling )
+(numeric) driver             	--> 721 (numeric) driver
+(numeric) driver )           	--> 722 (numeric) driver )
+(numeric) drop               	--> 723 (numeric) drop
+(numeric) drop )             	--> 724 (numeric) drop )
+(numeric) drown              	--> 725 (numeric) drown
+(numeric) drowned )          	--> 726 (numeric) drowned )
+(numeric) dt                 	--> 728 (numeric) dt 
+(numeric) dt                 	--> 728 (numeric) dt 
+(numeric) dt al              	--> 729 (numeric) dt al
+(numeric) dt an              	--> 730 (numeric) dt an
+(numeric) dt som             	--> 731 (numeric) dt som
+(numeric) dt th              	--> 732 (numeric) dt th
+(numeric) dt that            	--> 733 (numeric) dt that
+(numeric) dufresn            	--> 734 (numeric) dufresn
+(numeric) dufresne )         	--> 735 (numeric) dufresne )
+(numeric) dur                	--> 736 (numeric) dur
+(numeric) during )           	--> 737 (numeric) during )
+(numeric) ear                	--> 738 (numeric) ear
+(numeric) early )            	--> 739 (numeric) early )
+(numeric) edn                	--> 740 (numeric) edn
+(numeric) edna )             	--> 741 (numeric) edna )
+(numeric) edward             	--> 742 (numeric) edward
+(numeric) edwards )          	--> 743 (numeric) edwards )
+(numeric) edwin              	--> 744 (numeric) edwin
+(numeric) edwin )            	--> 745 (numeric) edwin )
+(numeric) effect             	--> 746 (numeric) effect
+(numeric) effective )        	--> 747 (numeric) effective )
+(numeric) eight              	--> 748 (numeric) eight
+(numeric) eight )            	--> 749 (numeric) eight )
+(numeric) either             	--> 750 (numeric) either
+(numeric) either )           	--> 751 (numeric) either )
+(numeric) el                 	--> 752 (numeric) el
+(numeric) el )               	--> 753 (numeric) el )
+(numeric) elect              	--> 754 (numeric) elect
+(numeric) election )         	--> 755 (numeric) election )
+(numeric) els                	--> 756 (numeric) els
+(numeric) else )             	--> 757 (numeric) else )
+(numeric) em                 	--> 758 (numeric) em
+(numeric) emerg              	--> 759 (numeric) emerg
+(numeric) emergency )        	--> 760 (numeric) emergency )
+(numeric) emmy )             	--> 761 (numeric) emmy )
+(numeric) en                 	--> 762 (numeric) en
+(numeric) en )               	--> 763 (numeric) en )
+(numeric) encour             	--> 764 (numeric) encour
+(numeric) encourag           	--> 765 (numeric) encourag
+(numeric) encourage )        	--> 766 (numeric) encourage )
+(numeric) encouraged )       	--> 767 (numeric) encouraged )
+(numeric) enem               	--> 768 (numeric) enem
+(numeric) enemy )            	--> 769 (numeric) enemy )
+(numeric) engl               	--> 770 (numeric) engl
+(numeric) english )          	--> 771 (numeric) english )
+(numeric) enough             	--> 772 (numeric) enough
+(numeric) enough )           	--> 773 (numeric) enough )
+(numeric) entic              	--> 774 (numeric) entic
+(numeric) entice )           	--> 775 (numeric) entice )
+(numeric) est                	--> 776 (numeric) est
+(numeric) establ             	--> 777 (numeric) establ
+(numeric) establish )        	--> 778 (numeric) establish )
+(numeric) estate )           	--> 779 (numeric) estate )
+(numeric) eth                	--> 780 (numeric) eth
+(numeric) ethics )           	--> 781 (numeric) ethics )
+(numeric) europ              	--> 782 (numeric) europ
+(numeric) europe )           	--> 783 (numeric) europe )
+(numeric) even               	--> 784 (numeric) even
+(numeric) even )             	--> 785 (numeric) even )
+(numeric) event              	--> 786 (numeric) event
+(numeric) event )            	--> 787 (numeric) event )
+(numeric) ever               	--> 788 (numeric) ever
+(numeric) ever )             	--> 789 (numeric) ever )
+(numeric) exact              	--> 790 (numeric) exact
+(numeric) exactly )          	--> 791 (numeric) exactly )
+(numeric) exchang            	--> 792 (numeric) exchang
+(numeric) exchange )         	--> 793 (numeric) exchange )
+(numeric) exil               	--> 794 (numeric) exil
+(numeric) exile )            	--> 795 (numeric) exile )
+(numeric) expect             	--> 796 (numeric) expect
+(numeric) expects )          	--> 797 (numeric) expects )
+(numeric) fac                	--> 798 (numeric) fac
+(numeric) face )             	--> 799 (numeric) face )
+(numeric) fail               	--> 800 (numeric) fail
+(numeric) failed )           	--> 801 (numeric) failed )
+(numeric) fal                	--> 802 (numeric) fal
+(numeric) falling )          	--> 803 (numeric) falling )
+(numeric) fam                	--> 804 (numeric) fam
+(numeric) family )           	--> 805 (numeric) family )
+(numeric) father             	--> 806 (numeric) father
+(numeric) fathered )         	--> 807 (numeric) fathered )
+(numeric) favor              	--> 808 (numeric) favor
+(numeric) favorite )         	--> 809 (numeric) favorite )
+(numeric) featur             	--> 810 (numeric) featur
+(numeric) featuring )        	--> 811 (numeric) featuring )
+(numeric) feel               	--> 812 (numeric) feel
+(numeric) feel )             	--> 813 (numeric) feel )
+(numeric) felt               	--> 814 (numeric) felt
+(numeric) felt )             	--> 815 (numeric) felt )
+(numeric) fer                	--> 816 (numeric) fer
+(numeric) ferry )            	--> 817 (numeric) ferry )
+(numeric) festiv             	--> 818 (numeric) festiv
+(numeric) festival )         	--> 819 (numeric) festival )
+(numeric) field              	--> 820 (numeric) field
+(numeric) field )            	--> 821 (numeric) field )
+(numeric) fight              	--> 822 (numeric) fight
+(numeric) fighting )         	--> 823 (numeric) fighting )
+(numeric) film               	--> 824 (numeric) film
+(numeric) film )             	--> 825 (numeric) film )
+(numeric) fin                	--> 826 (numeric) fin
+(numeric) financial )        	--> 827 (numeric) financial )
+(numeric) financing )        	--> 828 (numeric) financing )
+(numeric) find               	--> 829 (numeric) find
+(numeric) finding )          	--> 830 (numeric) finding )
+(numeric) fir                	--> 831 (numeric) fir
+(numeric) fire )             	--> 832 (numeric) fire )
+(numeric) firm               	--> 833 (numeric) firm
+(numeric) firm )             	--> 834 (numeric) firm )
+(numeric) first              	--> 835 (numeric) first
+(numeric) first )            	--> 836 (numeric) first )
+(numeric) fish               	--> 837 (numeric) fish
+(numeric) fisher )           	--> 838 (numeric) fisher )
+(numeric) fishes             	--> 839 (numeric) fishes
+(numeric) fishing )          	--> 840 (numeric) fishing )
+(numeric) flag               	--> 841 (numeric) flag
+(numeric) flag )             	--> 842 (numeric) flag )
+(numeric) flori              	--> 843 (numeric) flori
+(numeric) florid             	--> 844 (numeric) florid
+(numeric) florida )          	--> 845 (numeric) florida )
+(numeric) florio )           	--> 846 (numeric) florio )
+(numeric) follow             	--> 847 (numeric) follow
+(numeric) followed )         	--> 848 (numeric) followed )
+(numeric) for                	--> 849 (numeric) for
+(numeric) for )              	--> 850 (numeric) for )
+(numeric) forb               	--> 851 (numeric) forb
+(numeric) forbes )           	--> 852 (numeric) forbes )
+(numeric) forc               	--> 853 (numeric) forc
+(numeric) force )            	--> 854 (numeric) force )
+(numeric) form               	--> 855 (numeric) form
+(numeric) formation )        	--> 856 (numeric) formation )
+(numeric) former             	--> 857 (numeric) former
+(numeric) former )           	--> 858 (numeric) former )
+(numeric) forward )          	--> 859 (numeric) forward )
+(numeric) founder            	--> 860 (numeric) founder
+(numeric) founder )          	--> 861 (numeric) founder )
+(numeric) franc              	--> 862 (numeric) franc
+(numeric) francis )          	--> 863 (numeric) francis )
+(numeric) francisc           	--> 864 (numeric) francisc
+(numeric) francisco )        	--> 865 (numeric) francisco )
+(numeric) frank              	--> 866 (numeric) frank
+(numeric) frank )            	--> 867 (numeric) frank )
+(numeric) from               	--> 868 (numeric) from
+(numeric) from )             	--> 869 (numeric) from )
+(numeric) front              	--> 870 (numeric) front
+(numeric) front )            	--> 871 (numeric) front )
+(numeric) fun                	--> 872 (numeric) fun
+(numeric) fun )              	--> 873 (numeric) fun )
+(numeric) funct              	--> 874 (numeric) funct
+(numeric) function )         	--> 875 (numeric) function )
+(numeric) fund               	--> 876 (numeric) fund
+(numeric) fundrais           	--> 877 (numeric) fundrais
+(numeric) fundraising )      	--> 878 (numeric) fundraising )
+(numeric) funds )            	--> 879 (numeric) funds )
+(numeric) fw                 	--> 880 (numeric) fw
+(numeric) fw i               	--> 881 (numeric) fw i
+(numeric) gal                	--> 882 (numeric) gal
+(numeric) gallery )          	--> 883 (numeric) gallery )
+(numeric) gar                	--> 884 (numeric) gar
+(numeric) gard               	--> 885 (numeric) gard
+(numeric) garden )           	--> 886 (numeric) garden )
+(numeric) gary )             	--> 887 (numeric) gary )
+(numeric) gav                	--> 888 (numeric) gav
+(numeric) gave )             	--> 889 (numeric) gave )
+(numeric) gear               	--> 890 (numeric) gear
+(numeric) gear )             	--> 891 (numeric) gear )
+(numeric) gener              	--> 892 (numeric) gener
+(numeric) general )          	--> 893 (numeric) general )
+(numeric) generos            	--> 894 (numeric) generos
+(numeric) generosity )       	--> 895 (numeric) generosity )
+(numeric) georg              	--> 896 (numeric) georg
+(numeric) georgia )          	--> 897 (numeric) georgia )
+(numeric) ges                	--> 898 (numeric) ges
+(numeric) get )              	--> 899 (numeric) get )
+(numeric) gift               	--> 900 (numeric) gift
+(numeric) gift )             	--> 901 (numeric) gift )
+(numeric) girard             	--> 902 (numeric) girard
+(numeric) girard )           	--> 903 (numeric) girard )
+(numeric) giv                	--> 904 (numeric) giv
+(numeric) give )             	--> 905 (numeric) give )
+(numeric) given )            	--> 906 (numeric) given )
+(numeric) glob               	--> 907 (numeric) glob
+(numeric) globe )            	--> 908 (numeric) globe )
+(numeric) go                 	--> 909 (numeric) go
+(numeric) go )               	--> 910 (numeric) go )
+(numeric) goal               	--> 911 (numeric) goal
+(numeric) goal )             	--> 912 (numeric) goal )
+(numeric) goes )             	--> 913 (numeric) goes )
+(numeric) goggin             	--> 914 (numeric) goggin
+(numeric) goggins )          	--> 915 (numeric) goggins )
+(numeric) golan              	--> 916 (numeric) golan
+(numeric) golan )            	--> 917 (numeric) golan )
+(numeric) governm            	--> 918 (numeric) governm
+(numeric) government )       	--> 919 (numeric) government )
+(numeric) governor           	--> 920 (numeric) governor
+(numeric) governor )         	--> 921 (numeric) governor )
+(numeric) gradu              	--> 922 (numeric) gradu
+(numeric) graduate )         	--> 923 (numeric) graduate )
+(numeric) graduated )        	--> 924 (numeric) graduated )
+(numeric) graham             	--> 925 (numeric) graham
+(numeric) graham )           	--> 926 (numeric) graham )
+(numeric) grant              	--> 927 (numeric) grant
+(numeric) granted )          	--> 928 (numeric) granted )
+(numeric) gras               	--> 929 (numeric) gras
+(numeric) grass )            	--> 930 (numeric) grass )
+(numeric) grbac              	--> 931 (numeric) grbac
+(numeric) grbac )            	--> 932 (numeric) grbac )
+(numeric) grip               	--> 933 (numeric) grip
+(numeric) grip )             	--> 934 (numeric) grip )
+(numeric) group              	--> 935 (numeric) group
+(numeric) group )            	--> 936 (numeric) group )
+(numeric) grow               	--> 937 (numeric) grow
+(numeric) grow )             	--> 938 (numeric) grow )
+(numeric) guidel             	--> 939 (numeric) guidel
+(numeric) guideline )        	--> 940 (numeric) guideline )
+(numeric) guy                	--> 941 (numeric) guy
+(numeric) guy )              	--> 942 (numeric) guy )
+(numeric) ha                 	--> 943 (numeric) ha
+(numeric) had                	--> 944 (numeric) had
+(numeric) had )              	--> 945 (numeric) had )
+(numeric) hafez              	--> 946 (numeric) hafez
+(numeric) hafez )            	--> 947 (numeric) hafez )
+(numeric) half               	--> 948 (numeric) half
+(numeric) half )             	--> 949 (numeric) half )
+(numeric) handan             	--> 950 (numeric) handan
+(numeric) handan )           	--> 951 (numeric) handan )
+(numeric) handl              	--> 952 (numeric) handl
+(numeric) handling )         	--> 953 (numeric) handling )
+(numeric) har                	--> 954 (numeric) har
+(numeric) harassm            	--> 955 (numeric) harassm
+(numeric) harassment )       	--> 956 (numeric) harassment )
+(numeric) hard               	--> 957 (numeric) hard
+(numeric) hardy )            	--> 958 (numeric) hardy )
+(numeric) harris )           	--> 959 (numeric) harris )
+(numeric) harry )            	--> 960 (numeric) harry )
+(numeric) has )              	--> 961 (numeric) has )
+(numeric) hatle              	--> 962 (numeric) hatle
+(numeric) hatley )           	--> 963 (numeric) hatley )
+(numeric) he                 	--> 964 (numeric) he
+(numeric) he )               	--> 965 (numeric) he )
+(numeric) healer             	--> 966 (numeric) healer
+(numeric) healer )           	--> 967 (numeric) healer )
+(numeric) hear               	--> 968 (numeric) hear
+(numeric) hear )             	--> 969 (numeric) hear )
+(numeric) heard              	--> 970 (numeric) heard
+(numeric) heard )            	--> 971 (numeric) heard )
+(numeric) heart              	--> 972 (numeric) heart
+(numeric) heart )            	--> 973 (numeric) heart )
+(numeric) height             	--> 974 (numeric) height
+(numeric) heightened )       	--> 975 (numeric) heightened )
+(numeric) heights )          	--> 976 (numeric) heights )
+(numeric) held               	--> 977 (numeric) held
+(numeric) held )             	--> 978 (numeric) held )
+(numeric) helicopter         	--> 979 (numeric) helicopter
+(numeric) helicopter )       	--> 980 (numeric) helicopter )
+(numeric) help               	--> 981 (numeric) help
+(numeric) help )             	--> 982 (numeric) help )
+(numeric) henr               	--> 983 (numeric) henr
+(numeric) henry )            	--> 984 (numeric) henry )
+(numeric) her )              	--> 985 (numeric) her )
+(numeric) hes                	--> 986 (numeric) hes
+(numeric) hesit              	--> 987 (numeric) hesit
+(numeric) hesitated )        	--> 988 (numeric) hesitated )
+(numeric) heuvel             	--> 989 (numeric) heuvel
+(numeric) heuvel )           	--> 990 (numeric) heuvel )
+(numeric) hi                 	--> 991 (numeric) hi
+(numeric) high               	--> 992 (numeric) high
+(numeric) high )             	--> 993 (numeric) high )
+(numeric) hil                	--> 994 (numeric) hil
+(numeric) hill )             	--> 995 (numeric) hill )
+(numeric) hillock            	--> 996 (numeric) hillock
+(numeric) hillock )          	--> 997 (numeric) hillock )
+(numeric) hilltop            	--> 998 (numeric) hilltop
+(numeric) hilltop )          	--> 999 (numeric) hilltop )
+(numeric) him                	--> 1000 (numeric) him
+(numeric) him )              	--> 1001 (numeric) him )
+(numeric) his )              	--> 1002 (numeric) his )
+(numeric) hk$                	--> 1003 (numeric) hk$
+(numeric) hk$ )              	--> 1004 (numeric) hk$ )
+(numeric) hobby              	--> 1005 (numeric) hobby
+(numeric) hobbyist )         	--> 1006 (numeric) hobbyist )
+(numeric) hobok              	--> 1007 (numeric) hobok
+(numeric) hoboken )          	--> 1008 (numeric) hoboken )
+(numeric) hol                	--> 1009 (numeric) hol
+(numeric) hole )             	--> 1010 (numeric) hole )
+(numeric) hom                	--> 1011 (numeric) hom
+(numeric) home )             	--> 1012 (numeric) home )
+(numeric) homebrew           	--> 1013 (numeric) homebrew
+(numeric) homebrew )         	--> 1014 (numeric) homebrew )
+(numeric) honour             	--> 1015 (numeric) honour
+(numeric) honours )          	--> 1016 (numeric) honours )
+(numeric) hoon               	--> 1017 (numeric) hoon
+(numeric) hoon )             	--> 1018 (numeric) hoon )
+(numeric) hop                	--> 1019 (numeric) hop
+(numeric) hopes )            	--> 1020 (numeric) hopes )
+(numeric) hos                	--> 1021 (numeric) hos
+(numeric) hose )             	--> 1022 (numeric) hose )
+(numeric) hospit             	--> 1023 (numeric) hospit
+(numeric) hospital )         	--> 1024 (numeric) hospital )
+(numeric) hotel              	--> 1025 (numeric) hotel
+(numeric) hotel )            	--> 1026 (numeric) hotel )
+(numeric) hour               	--> 1027 (numeric) hour
+(numeric) hours )            	--> 1028 (numeric) hours )
+(numeric) hous               	--> 1029 (numeric) hous
+(numeric) house )            	--> 1030 (numeric) house )
+(numeric) how                	--> 1031 (numeric) how
+(numeric) how )              	--> 1032 (numeric) how )
+(numeric) human              	--> 1033 (numeric) human
+(numeric) human )            	--> 1034 (numeric) human )
+(numeric) hur                	--> 1035 (numeric) hur
+(numeric) hurry )            	--> 1036 (numeric) hurry )
+(numeric) i                  	--> 1037 (numeric) i
+(numeric) i )                	--> 1038 (numeric) i )
+(numeric) ide                	--> 1039 (numeric) ide
+(numeric) idea )             	--> 1040 (numeric) idea )
+(numeric) ie                 	--> 1041 (numeric) ie
+(numeric) ie )               	--> 1042 (numeric) ie )
+(numeric) if                 	--> 1043 (numeric) if
+(numeric) if )               	--> 1044 (numeric) if )
+(numeric) iidal              	--> 1045 (numeric) iidal
+(numeric) iidale )           	--> 1046 (numeric) iidale )
+(numeric) import             	--> 1047 (numeric) import
+(numeric) importance )       	--> 1048 (numeric) importance )
+(numeric) in                 	--> 1050 (numeric) in 
+(numeric) in                 	--> 1050 (numeric) in 
+(numeric) in )               	--> 1051 (numeric) in )
+(numeric) in about           	--> 1052 (numeric) in about
+(numeric) in acros           	--> 1053 (numeric) in acros
+(numeric) in after           	--> 1054 (numeric) in after
+(numeric) in against         	--> 1055 (numeric) in against
+(numeric) in along           	--> 1056 (numeric) in along
+(numeric) in around          	--> 1057 (numeric) in around
+(numeric) in at              	--> 1058 (numeric) in at
+(numeric) in b               	--> 1059 (numeric) in b
+(numeric) in becaus          	--> 1060 (numeric) in becaus
+(numeric) in befor           	--> 1061 (numeric) in befor
+(numeric) in behind          	--> 1062 (numeric) in behind
+(numeric) in between         	--> 1063 (numeric) in between
+(numeric) in d               	--> 1064 (numeric) in d
+(numeric) in dur             	--> 1065 (numeric) in dur
+(numeric) in for             	--> 1066 (numeric) in for
+(numeric) in from            	--> 1067 (numeric) in from
+(numeric) in if              	--> 1068 (numeric) in if
+(numeric) in in              	--> 1069 (numeric) in in
+(numeric) in int             	--> 1070 (numeric) in int
+(numeric) in lik             	--> 1071 (numeric) in lik
+(numeric) in near            	--> 1072 (numeric) in near
+(numeric) in of              	--> 1073 (numeric) in of
+(numeric) in on              	--> 1074 (numeric) in on
+(numeric) in out             	--> 1075 (numeric) in out
+(numeric) in over            	--> 1076 (numeric) in over
+(numeric) in per             	--> 1077 (numeric) in per
+(numeric) in s               	--> 1078 (numeric) in s
+(numeric) in sinc            	--> 1079 (numeric) in sinc
+(numeric) in than            	--> 1080 (numeric) in than
+(numeric) in that            	--> 1081 (numeric) in that
+(numeric) in through         	--> 1082 (numeric) in through
+(numeric) in under           	--> 1083 (numeric) in under
+(numeric) in until           	--> 1084 (numeric) in until
+(numeric) in whether         	--> 1085 (numeric) in whether
+(numeric) in whil            	--> 1086 (numeric) in whil
+(numeric) in with            	--> 1087 (numeric) in with
+(numeric) including )        	--> 1088 (numeric) including )
+(numeric) inclus             	--> 1089 (numeric) inclus
+(numeric) incom              	--> 1090 (numeric) incom
+(numeric) income )           	--> 1091 (numeric) income )
+(numeric) increas            	--> 1092 (numeric) increas
+(numeric) increasing )       	--> 1093 (numeric) increasing )
+(numeric) independent )      	--> 1094 (numeric) independent )
+(numeric) indepens           	--> 1095 (numeric) indepens
+(numeric) industr            	--> 1096 (numeric) industr
+(numeric) industrial )       	--> 1097 (numeric) industrial )
+(numeric) industry )         	--> 1098 (numeric) industry )
+(numeric) influ              	--> 1099 (numeric) influ
+(numeric) influence )        	--> 1100 (numeric) influence )
+(numeric) inhabit            	--> 1101 (numeric) inhabit
+(numeric) inhabited )        	--> 1102 (numeric) inhabited )
+(numeric) inhal              	--> 1103 (numeric) inhal
+(numeric) inhalation )       	--> 1104 (numeric) inhalation )
+(numeric) insolut            	--> 1105 (numeric) insolut
+(numeric) insolvent )        	--> 1106 (numeric) insolvent )
+(numeric) inspir             	--> 1107 (numeric) inspir
+(numeric) inspired )         	--> 1108 (numeric) inspired )
+(numeric) instruc            	--> 1109 (numeric) instruc
+(numeric) instructed )       	--> 1110 (numeric) instructed )
+(numeric) int                	--> 1111 (numeric) int
+(numeric) intended )         	--> 1112 (numeric) intended )
+(numeric) intens             	--> 1113 (numeric) intens
+(numeric) intensive )        	--> 1114 (numeric) intensive )
+(numeric) intercept          	--> 1115 (numeric) intercept
+(numeric) interception )     	--> 1116 (numeric) interception )
+(numeric) intern             	--> 1117 (numeric) intern
+(numeric) international )    	--> 1118 (numeric) international )
+(numeric) into )             	--> 1119 (numeric) into )
+(numeric) introduc           	--> 1120 (numeric) introduc
+(numeric) introduction )     	--> 1121 (numeric) introduction )
+(numeric) invent             	--> 1122 (numeric) invent
+(numeric) inventor )         	--> 1123 (numeric) inventor )
+(numeric) iraq               	--> 1124 (numeric) iraq
+(numeric) iraq )             	--> 1125 (numeric) iraq )
+(numeric) iron               	--> 1126 (numeric) iron
+(numeric) iron )             	--> 1127 (numeric) iron )
+(numeric) island             	--> 1128 (numeric) island
+(numeric) island )           	--> 1129 (numeric) island )
+(numeric) israel             	--> 1130 (numeric) israel
+(numeric) israel )           	--> 1131 (numeric) israel )
+(numeric) it                 	--> 1132 (numeric) it
+(numeric) it )               	--> 1133 (numeric) it )
+(numeric) ital               	--> 1134 (numeric) ital
+(numeric) italian )          	--> 1135 (numeric) italian )
+(numeric) its )              	--> 1136 (numeric) its )
+(numeric) jaffn              	--> 1137 (numeric) jaffn
+(numeric) jaffna )           	--> 1138 (numeric) jaffna )
+(numeric) jan                	--> 1139 (numeric) jan
+(numeric) jane )             	--> 1140 (numeric) jane )
+(numeric) japan              	--> 1141 (numeric) japan
+(numeric) japan )            	--> 1142 (numeric) japan )
+(numeric) japanese )         	--> 1143 (numeric) japanese )
+(numeric) jerse              	--> 1144 (numeric) jerse
+(numeric) jersey )           	--> 1145 (numeric) jersey )
+(numeric) jj                 	--> 1146 (numeric) jj
+(numeric) jj 12-month        	--> 1147 (numeric) jj 12-month
+(numeric) jj 18-month        	--> 1148 (numeric) jj 18-month
+(numeric) jj 20-inch         	--> 1149 (numeric) jj 20-inch
+(numeric) jj 30-year         	--> 1150 (numeric) jj 30-year
+(numeric) jj accompl         	--> 1151 (numeric) jj accompl
+(numeric) jj ador            	--> 1152 (numeric) jj ador
+(numeric) jj affirm          	--> 1153 (numeric) jj affirm
+(numeric) jj american        	--> 1154 (numeric) jj american
+(numeric) jj annu            	--> 1155 (numeric) jj annu
+(numeric) jj arm             	--> 1156 (numeric) jj arm
+(numeric) jj armen           	--> 1157 (numeric) jj armen
+(numeric) jj austral         	--> 1158 (numeric) jj austral
+(numeric) jj aver            	--> 1159 (numeric) jj aver
+(numeric) jj benchmark       	--> 1160 (numeric) jj benchmark
+(numeric) jj black           	--> 1161 (numeric) jj black
+(numeric) jj brilli          	--> 1162 (numeric) jj brilli
+(numeric) jj built-in        	--> 1163 (numeric) jj built-in
+(numeric) jj comples         	--> 1164 (numeric) jj comples
+(numeric) jj complic         	--> 1165 (numeric) jj complic
+(numeric) jj concres         	--> 1166 (numeric) jj concres
+(numeric) jj cur             	--> 1167 (numeric) jj cur
+(numeric) jj ear             	--> 1168 (numeric) jj ear
+(numeric) jj effect          	--> 1169 (numeric) jj effect
+(numeric) jj engl            	--> 1170 (numeric) jj engl
+(numeric) jj favor           	--> 1171 (numeric) jj favor
+(numeric) jj fin             	--> 1172 (numeric) jj fin
+(numeric) jj first           	--> 1173 (numeric) jj first
+(numeric) jj former          	--> 1174 (numeric) jj former
+(numeric) jj front           	--> 1175 (numeric) jj front
+(numeric) jj high            	--> 1176 (numeric) jj high
+(numeric) jj human           	--> 1177 (numeric) jj human
+(numeric) jj indepens        	--> 1178 (numeric) jj indepens
+(numeric) jj industr         	--> 1179 (numeric) jj industr
+(numeric) jj insolut         	--> 1180 (numeric) jj insolut
+(numeric) jj intens          	--> 1181 (numeric) jj intens
+(numeric) jj ital            	--> 1182 (numeric) jj ital
+(numeric) jj key             	--> 1183 (numeric) jj key
+(numeric) jj known           	--> 1184 (numeric) jj known
+(numeric) jj korean          	--> 1185 (numeric) jj korean
+(numeric) jj loc             	--> 1186 (numeric) jj loc
+(numeric) jj long            	--> 1187 (numeric) jj long
+(numeric) jj major           	--> 1188 (numeric) jj major
+(numeric) jj milit           	--> 1189 (numeric) jj milit
+(numeric) jj modern          	--> 1190 (numeric) jj modern
+(numeric) jj much            	--> 1191 (numeric) jj much
+(numeric) jj myriad          	--> 1192 (numeric) jj myriad
+(numeric) jj n               	--> 1193 (numeric) jj n
+(numeric) jj nav             	--> 1194 (numeric) jj nav
+(numeric) jj neg             	--> 1195 (numeric) jj neg
+(numeric) jj net             	--> 1196 (numeric) jj net
+(numeric) jj new             	--> 1197 (numeric) jj new
+(numeric) jj nonslip         	--> 1198 (numeric) jj nonslip
+(numeric) jj old             	--> 1199 (numeric) jj old
+(numeric) jj one-year        	--> 1200 (numeric) jj one-year
+(numeric) jj onl             	--> 1201 (numeric) jj onl
+(numeric) jj organis         	--> 1202 (numeric) jj organis
+(numeric) jj other           	--> 1203 (numeric) jj other
+(numeric) jj outstand        	--> 1204 (numeric) jj outstand
+(numeric) jj own             	--> 1205 (numeric) jj own
+(numeric) jj parliament      	--> 1206 (numeric) jj parliament
+(numeric) jj polit           	--> 1207 (numeric) jj polit
+(numeric) jj publ            	--> 1208 (numeric) jj publ
+(numeric) jj quarter         	--> 1209 (numeric) jj quarter
+(numeric) jj quizz           	--> 1210 (numeric) jj quizz
+(numeric) jj remot           	--> 1211 (numeric) jj remot
+(numeric) jj republican      	--> 1212 (numeric) jj republican
+(numeric) jj sam             	--> 1213 (numeric) jj sam
+(numeric) jj secretary/mus   	--> 1214 (numeric) jj secretary/mus
+(numeric) jj senior          	--> 1215 (numeric) jj senior
+(numeric) jj sil             	--> 1216 (numeric) jj sil
+(numeric) jj simil           	--> 1217 (numeric) jj simil
+(numeric) jj six-month       	--> 1218 (numeric) jj six-month
+(numeric) jj smal            	--> 1219 (numeric) jj smal
+(numeric) jj sol             	--> 1220 (numeric) jj sol
+(numeric) jj solut           	--> 1221 (numeric) jj solut
+(numeric) jj spec            	--> 1222 (numeric) jj spec
+(numeric) jj straight        	--> 1223 (numeric) jj straight
+(numeric) jj string          	--> 1224 (numeric) jj string
+(numeric) jj subvers         	--> 1225 (numeric) jj subvers
+(numeric) jj super-hyp       	--> 1226 (numeric) jj super-hyp
+(numeric) jj syr             	--> 1227 (numeric) jj syr
+(numeric) jj thril           	--> 1228 (numeric) jj thril
+(numeric) jj tid             	--> 1229 (numeric) jj tid
+(numeric) jj tin             	--> 1230 (numeric) jj tin
+(numeric) jj tru             	--> 1231 (numeric) jj tru
+(numeric) jj two-fam         	--> 1232 (numeric) jj two-fam
+(numeric) jj underground     	--> 1233 (numeric) jj underground
+(numeric) jj unknown         	--> 1234 (numeric) jj unknown
+(numeric) jj unlaw           	--> 1235 (numeric) jj unlaw
+(numeric) jj vint            	--> 1236 (numeric) jj vint
+(numeric) jj w               	--> 1237 (numeric) jj w
+(numeric) jj whol            	--> 1238 (numeric) jj whol
+(numeric) jj wild            	--> 1239 (numeric) jj wild
+(numeric) jj wonder          	--> 1240 (numeric) jj wonder
+(numeric) jjr                	--> 1242 (numeric) jjr 
+(numeric) jjr                	--> 1242 (numeric) jjr 
+(numeric) jjr older          	--> 1243 (numeric) jjr older
+(numeric) jjs oldest         	--> 1244 (numeric) jjs oldest
+(numeric) jjs worst          	--> 1245 (numeric) jjs worst
+(numeric) jl                 	--> 1246 (numeric) jl
+(numeric) job                	--> 1247 (numeric) job
+(numeric) job )              	--> 1248 (numeric) job )
+(numeric) john               	--> 1249 (numeric) john
+(numeric) john )             	--> 1250 (numeric) john )
+(numeric) join               	--> 1251 (numeric) join
+(numeric) joined )           	--> 1252 (numeric) joined )
+(numeric) jose               	--> 1253 (numeric) jose
+(numeric) josei )            	--> 1254 (numeric) josei )
+(numeric) july )             	--> 1255 (numeric) july )
+(numeric) jung               	--> 1256 (numeric) jung
+(numeric) jung )             	--> 1257 (numeric) jung )
+(numeric) junk               	--> 1258 (numeric) junk
+(numeric) junk )             	--> 1259 (numeric) junk )
+(numeric) kathryn            	--> 1260 (numeric) kathryn
+(numeric) kathryn )          	--> 1261 (numeric) kathryn )
+(numeric) keep               	--> 1262 (numeric) keep
+(numeric) keep )             	--> 1263 (numeric) keep )
+(numeric) kept               	--> 1264 (numeric) kept
+(numeric) kept )             	--> 1265 (numeric) kept )
+(numeric) key                	--> 1266 (numeric) key
+(numeric) keyless )          	--> 1267 (numeric) keyless )
+(numeric) kid                	--> 1268 (numeric) kid
+(numeric) kid )              	--> 1269 (numeric) kid )
+(numeric) kilometer          	--> 1270 (numeric) kilometer
+(numeric) kilometre )        	--> 1271 (numeric) kilometre )
+(numeric) kind               	--> 1272 (numeric) kind
+(numeric) kindness )         	--> 1273 (numeric) kindness )
+(numeric) known              	--> 1274 (numeric) known
+(numeric) known )            	--> 1275 (numeric) known )
+(numeric) korean             	--> 1276 (numeric) korean
+(numeric) korean )           	--> 1277 (numeric) korean )
+(numeric) kurdistan          	--> 1278 (numeric) kurdistan
+(numeric) kurdistan )        	--> 1279 (numeric) kurdistan )
+(numeric) l                  	--> 1280 (numeric) l
+(numeric) l )                	--> 1281 (numeric) l )
+(numeric) labor              	--> 1282 (numeric) labor
+(numeric) labor )            	--> 1283 (numeric) labor )
+(numeric) labrocc            	--> 1284 (numeric) labrocc
+(numeric) labrocca )         	--> 1285 (numeric) labrocca )
+(numeric) land               	--> 1286 (numeric) land
+(numeric) land )             	--> 1287 (numeric) land )
+(numeric) laud               	--> 1288 (numeric) laud
+(numeric) laude )            	--> 1289 (numeric) laude )
+(numeric) law                	--> 1290 (numeric) law
+(numeric) law )              	--> 1291 (numeric) law )
+(numeric) lawmaker           	--> 1292 (numeric) lawmaker
+(numeric) lawmaker )         	--> 1293 (numeric) lawmaker )
+(numeric) lawson             	--> 1294 (numeric) lawson
+(numeric) lawson )           	--> 1295 (numeric) lawson )
+(numeric) le                 	--> 1296 (numeric) le
+(numeric) leap               	--> 1297 (numeric) leap
+(numeric) leaping )          	--> 1298 (numeric) leaping )
+(numeric) learn              	--> 1299 (numeric) learn
+(numeric) learned )          	--> 1300 (numeric) learned )
+(numeric) leav               	--> 1301 (numeric) leav
+(numeric) leave )            	--> 1302 (numeric) leave )
+(numeric) lecturer           	--> 1303 (numeric) lecturer
+(numeric) lecturer )         	--> 1304 (numeric) lecturer )
+(numeric) lee )              	--> 1305 (numeric) lee )
+(numeric) legend )           	--> 1306 (numeric) legend )
+(numeric) legens             	--> 1307 (numeric) legens
+(numeric) lemelson           	--> 1308 (numeric) lemelson
+(numeric) lemelson )         	--> 1309 (numeric) lemelson )
+(numeric) les                	--> 1310 (numeric) les
+(numeric) less )             	--> 1311 (numeric) less )
+(numeric) level              	--> 1312 (numeric) level
+(numeric) level )            	--> 1313 (numeric) level )
+(numeric) lieuten            	--> 1314 (numeric) lieuten
+(numeric) lieutenant )       	--> 1315 (numeric) lieutenant )
+(numeric) lif                	--> 1316 (numeric) lif
+(numeric) life )             	--> 1317 (numeric) life )
+(numeric) lifetim            	--> 1318 (numeric) lifetim
+(numeric) lifetime )         	--> 1319 (numeric) lifetime )
+(numeric) lik                	--> 1320 (numeric) lik
+(numeric) like )             	--> 1321 (numeric) like )
+(numeric) liv                	--> 1322 (numeric) liv
+(numeric) lived )            	--> 1323 (numeric) lived )
+(numeric) living )           	--> 1324 (numeric) living )
+(numeric) lo                 	--> 1325 (numeric) lo
+(numeric) loc                	--> 1326 (numeric) loc
+(numeric) local )            	--> 1327 (numeric) local )
+(numeric) located )          	--> 1328 (numeric) located )
+(numeric) london             	--> 1329 (numeric) london
+(numeric) london )           	--> 1330 (numeric) london )
+(numeric) long               	--> 1331 (numeric) long
+(numeric) long )             	--> 1332 (numeric) long )
+(numeric) look               	--> 1333 (numeric) look
+(numeric) look )             	--> 1334 (numeric) look )
+(numeric) looking )          	--> 1335 (numeric) looking )
+(numeric) los )              	--> 1336 (numeric) los )
+(numeric) lov                	--> 1337 (numeric) lov
+(numeric) love )             	--> 1338 (numeric) love )
+(numeric) loved )            	--> 1339 (numeric) loved )
+(numeric) luc                	--> 1340 (numeric) luc
+(numeric) lucas )            	--> 1341 (numeric) lucas )
+(numeric) lurk               	--> 1342 (numeric) lurk
+(numeric) lurked )           	--> 1343 (numeric) lurked )
+(numeric) m2                 	--> 1344 (numeric) m2
+(numeric) m2 )               	--> 1345 (numeric) m2 )
+(numeric) mack               	--> 1346 (numeric) mack
+(numeric) mack )             	--> 1347 (numeric) mack )
+(numeric) mad                	--> 1348 (numeric) mad
+(numeric) made )             	--> 1349 (numeric) made )
+(numeric) madon              	--> 1350 (numeric) madon
+(numeric) madonna )          	--> 1351 (numeric) madonna )
+(numeric) mail               	--> 1352 (numeric) mail
+(numeric) mail )             	--> 1353 (numeric) mail )
+(numeric) maj                	--> 1354 (numeric) maj
+(numeric) maj )              	--> 1355 (numeric) maj )
+(numeric) major              	--> 1356 (numeric) major
+(numeric) major )            	--> 1357 (numeric) major )
+(numeric) manhattan          	--> 1358 (numeric) manhattan
+(numeric) manhattan )        	--> 1359 (numeric) manhattan )
+(numeric) mar                	--> 1360 (numeric) mar
+(numeric) mar )              	--> 1361 (numeric) mar )
+(numeric) mark               	--> 1362 (numeric) mark
+(numeric) mark )             	--> 1363 (numeric) mark )
+(numeric) mary )             	--> 1364 (numeric) mary )
+(numeric) massachuses        	--> 1365 (numeric) massachuses
+(numeric) massachusetts )    	--> 1366 (numeric) massachusetts )
+(numeric) master             	--> 1367 (numeric) master
+(numeric) master )           	--> 1368 (numeric) master )
+(numeric) may                	--> 1369 (numeric) may
+(numeric) may )              	--> 1370 (numeric) may )
+(numeric) mayb               	--> 1371 (numeric) mayb
+(numeric) maybe )            	--> 1372 (numeric) maybe )
+(numeric) mayor              	--> 1373 (numeric) mayor
+(numeric) mayor )            	--> 1374 (numeric) mayor )
+(numeric) mccart             	--> 1375 (numeric) mccart
+(numeric) mccarty )          	--> 1376 (numeric) mccarty )
+(numeric) mcdaniel           	--> 1377 (numeric) mcdaniel
+(numeric) mcdaniel )         	--> 1378 (numeric) mcdaniel )
+(numeric) md                 	--> 1379 (numeric) md
+(numeric) md c               	--> 1380 (numeric) md c
+(numeric) md can             	--> 1381 (numeric) md can
+(numeric) md ma              	--> 1382 (numeric) md ma
+(numeric) md should          	--> 1383 (numeric) md should
+(numeric) md wil             	--> 1384 (numeric) md wil
+(numeric) md would           	--> 1385 (numeric) md would
+(numeric) member             	--> 1386 (numeric) member
+(numeric) member )           	--> 1387 (numeric) member )
+(numeric) mercedes-benz      	--> 1388 (numeric) mercedes-benz
+(numeric) mercedes-benz )    	--> 1389 (numeric) mercedes-benz )
+(numeric) merger             	--> 1390 (numeric) merger
+(numeric) merger )           	--> 1391 (numeric) merger )
+(numeric) mes                	--> 1392 (numeric) mes
+(numeric) message )          	--> 1393 (numeric) message )
+(numeric) metal              	--> 1394 (numeric) metal
+(numeric) metal )            	--> 1395 (numeric) metal )
+(numeric) method             	--> 1396 (numeric) method
+(numeric) method )           	--> 1397 (numeric) method )
+(numeric) miam               	--> 1398 (numeric) miam
+(numeric) miami )            	--> 1399 (numeric) miami )
+(numeric) michigan           	--> 1400 (numeric) michigan
+(numeric) michigan )         	--> 1401 (numeric) michigan )
+(numeric) microscop          	--> 1402 (numeric) microscop
+(numeric) microscopically )  	--> 1403 (numeric) microscopically )
+(numeric) middlesec          	--> 1404 (numeric) middlesec
+(numeric) middlesex )        	--> 1405 (numeric) middlesex )
+(numeric) milit              	--> 1406 (numeric) milit
+(numeric) military )         	--> 1407 (numeric) military )
+(numeric) modern             	--> 1408 (numeric) modern
+(numeric) modern )           	--> 1409 (numeric) modern )
+(numeric) mom                	--> 1410 (numeric) mom
+(numeric) mom )              	--> 1411 (numeric) mom )
+(numeric) montre             	--> 1412 (numeric) montre
+(numeric) montreal )         	--> 1413 (numeric) montreal )
+(numeric) mor                	--> 1414 (numeric) mor
+(numeric) more )             	--> 1415 (numeric) more )
+(numeric) morgan             	--> 1416 (numeric) morgan
+(numeric) morgan )           	--> 1417 (numeric) morgan )
+(numeric) most               	--> 1418 (numeric) most
+(numeric) most )             	--> 1419 (numeric) most )
+(numeric) mot                	--> 1420 (numeric) mot
+(numeric) motion )           	--> 1421 (numeric) motion )
+(numeric) mov                	--> 1422 (numeric) mov
+(numeric) move )             	--> 1423 (numeric) move )
+(numeric) moved )            	--> 1424 (numeric) moved )
+(numeric) movi               	--> 1425 (numeric) movi
+(numeric) movie )            	--> 1426 (numeric) movie )
+(numeric) mr.                	--> 1427 (numeric) mr.
+(numeric) mr. )              	--> 1428 (numeric) mr. )
+(numeric) mrs.               	--> 1429 (numeric) mrs.
+(numeric) mrs. )             	--> 1430 (numeric) mrs. )
+(numeric) much               	--> 1431 (numeric) much
+(numeric) much )             	--> 1432 (numeric) much )
+(numeric) mus                	--> 1433 (numeric) mus
+(numeric) musharraf          	--> 1434 (numeric) musharraf
+(numeric) musharraf )        	--> 1435 (numeric) musharraf )
+(numeric) musician )         	--> 1436 (numeric) musician )
+(numeric) my                 	--> 1437 (numeric) my
+(numeric) my )               	--> 1438 (numeric) my )
+(numeric) myriad             	--> 1439 (numeric) myriad
+(numeric) myriad )           	--> 1440 (numeric) myriad )
+(numeric) n                  	--> 1441 (numeric) n
+(numeric) nam                	--> 1442 (numeric) nam
+(numeric) name )             	--> 1443 (numeric) name )
+(numeric) nat                	--> 1444 (numeric) nat
+(numeric) nation )           	--> 1445 (numeric) nation )
+(numeric) national )         	--> 1446 (numeric) national )
+(numeric) native )           	--> 1447 (numeric) native )
+(numeric) nav                	--> 1448 (numeric) nav
+(numeric) naval )            	--> 1449 (numeric) naval )
+(numeric) near               	--> 1450 (numeric) near
+(numeric) near )             	--> 1451 (numeric) near )
+(numeric) nearb              	--> 1452 (numeric) nearb
+(numeric) nearby )           	--> 1453 (numeric) nearby )
+(numeric) nearly )           	--> 1454 (numeric) nearly )
+(numeric) neg                	--> 1455 (numeric) neg
+(numeric) negative )         	--> 1456 (numeric) negative )
+(numeric) neighbor           	--> 1457 (numeric) neighbor
+(numeric) neighborhood )     	--> 1458 (numeric) neighborhood )
+(numeric) nemes              	--> 1459 (numeric) nemes
+(numeric) nemesis )          	--> 1460 (numeric) nemesis )
+(numeric) net                	--> 1461 (numeric) net
+(numeric) net )              	--> 1462 (numeric) net )
+(numeric) new                	--> 1463 (numeric) new
+(numeric) new )              	--> 1464 (numeric) new )
+(numeric) news )             	--> 1465 (numeric) news )
+(numeric) nin                	--> 1466 (numeric) nin
+(numeric) nino )             	--> 1467 (numeric) nino )
+(numeric) nn                 	--> 1468 (numeric) nn
+(numeric) nn a               	--> 1469 (numeric) nn a
+(numeric) nn act             	--> 1470 (numeric) nn act
+(numeric) nn airport         	--> 1471 (numeric) nn airport
+(numeric) nn anthrac         	--> 1472 (numeric) nn anthrac
+(numeric) nn anybod          	--> 1473 (numeric) nn anybod
+(numeric) nn asses           	--> 1474 (numeric) nn asses
+(numeric) nn attack          	--> 1475 (numeric) nn attack
+(numeric) nn author          	--> 1476 (numeric) nn author
+(numeric) nn bachelor        	--> 1477 (numeric) nn bachelor
+(numeric) nn bal             	--> 1478 (numeric) nn bal
+(numeric) nn band            	--> 1479 (numeric) nn band
+(numeric) nn banner          	--> 1480 (numeric) nn banner
+(numeric) nn bas             	--> 1481 (numeric) nn bas
+(numeric) nn battl           	--> 1482 (numeric) nn battl
+(numeric) nn bidder          	--> 1483 (numeric) nn bidder
+(numeric) nn bil             	--> 1484 (numeric) nn bil
+(numeric) nn bluster         	--> 1485 (numeric) nn bluster
+(numeric) nn bod             	--> 1486 (numeric) nn bod
+(numeric) nn bons            	--> 1487 (numeric) nn bons
+(numeric) nn book            	--> 1488 (numeric) nn book
+(numeric) nn br              	--> 1489 (numeric) nn br
+(numeric) nn brain           	--> 1490 (numeric) nn brain
+(numeric) nn breath          	--> 1491 (numeric) nn breath
+(numeric) nn brick           	--> 1492 (numeric) nn brick
+(numeric) nn brother         	--> 1493 (numeric) nn brother
+(numeric) nn build           	--> 1494 (numeric) nn build
+(numeric) nn burd            	--> 1495 (numeric) nn burd
+(numeric) nn c               	--> 1496 (numeric) nn c
+(numeric) nn campaign        	--> 1497 (numeric) nn campaign
+(numeric) nn cand            	--> 1498 (numeric) nn cand
+(numeric) nn car             	--> 1499 (numeric) nn car
+(numeric) nn cas             	--> 1500 (numeric) nn cas
+(numeric) nn categor         	--> 1501 (numeric) nn categor
+(numeric) nn centur          	--> 1502 (numeric) nn centur
+(numeric) nn chart           	--> 1503 (numeric) nn chart
+(numeric) nn chas            	--> 1504 (numeric) nn chas
+(numeric) nn chocol          	--> 1505 (numeric) nn chocol
+(numeric) nn choic           	--> 1506 (numeric) nn choic
+(numeric) nn chuck           	--> 1507 (numeric) nn chuck
+(numeric) nn church          	--> 1508 (numeric) nn church
+(numeric) nn classif         	--> 1509 (numeric) nn classif
+(numeric) nn club            	--> 1510 (numeric) nn club
+(numeric) nn comed           	--> 1511 (numeric) nn comed
+(numeric) nn committe        	--> 1512 (numeric) nn committe
+(numeric) nn compan          	--> 1513 (numeric) nn compan
+(numeric) nn compon          	--> 1514 (numeric) nn compon
+(numeric) nn computer        	--> 1515 (numeric) nn computer
+(numeric) nn congreg         	--> 1516 (numeric) nn congreg
+(numeric) nn convent         	--> 1517 (numeric) nn convent
+(numeric) nn corrupt         	--> 1518 (numeric) nn corrupt
+(numeric) nn countr          	--> 1519 (numeric) nn countr
+(numeric) nn coupl           	--> 1520 (numeric) nn coupl
+(numeric) nn court           	--> 1521 (numeric) nn court
+(numeric) nn credit          	--> 1522 (numeric) nn credit
+(numeric) nn crim            	--> 1523 (numeric) nn crim
+(numeric) nn crit            	--> 1524 (numeric) nn crit
+(numeric) nn crowd           	--> 1525 (numeric) nn crowd
+(numeric) nn cum             	--> 1526 (numeric) nn cum
+(numeric) nn da              	--> 1527 (numeric) nn da
+(numeric) nn danger          	--> 1528 (numeric) nn danger
+(numeric) nn daughter        	--> 1529 (numeric) nn daughter
+(numeric) nn death           	--> 1530 (numeric) nn death
+(numeric) nn debt            	--> 1531 (numeric) nn debt
+(numeric) nn decis           	--> 1532 (numeric) nn decis
+(numeric) nn defens          	--> 1533 (numeric) nn defens
+(numeric) nn degre           	--> 1534 (numeric) nn degre
+(numeric) nn differ          	--> 1535 (numeric) nn differ
+(numeric) nn diplom          	--> 1536 (numeric) nn diplom
+(numeric) nn direct          	--> 1537 (numeric) nn direct
+(numeric) nn dorm            	--> 1538 (numeric) nn dorm
+(numeric) nn dream           	--> 1539 (numeric) nn dream
+(numeric) nn dril            	--> 1540 (numeric) nn dril
+(numeric) nn driver          	--> 1541 (numeric) nn driver
+(numeric) nn emerg           	--> 1542 (numeric) nn emerg
+(numeric) nn enem            	--> 1543 (numeric) nn enem
+(numeric) nn est             	--> 1544 (numeric) nn est
+(numeric) nn ev              	--> 1545 (numeric) nn ev
+(numeric) nn exchang         	--> 1546 (numeric) nn exchang
+(numeric) nn exil            	--> 1547 (numeric) nn exil
+(numeric) nn fam             	--> 1548 (numeric) nn fam
+(numeric) nn fer             	--> 1549 (numeric) nn fer
+(numeric) nn festiv          	--> 1550 (numeric) nn festiv
+(numeric) nn field           	--> 1551 (numeric) nn field
+(numeric) nn fight           	--> 1552 (numeric) nn fight
+(numeric) nn film            	--> 1553 (numeric) nn film
+(numeric) nn fin             	--> 1554 (numeric) nn fin
+(numeric) nn firm            	--> 1555 (numeric) nn firm
+(numeric) nn fish            	--> 1556 (numeric) nn fish
+(numeric) nn front           	--> 1557 (numeric) nn front
+(numeric) nn fun             	--> 1558 (numeric) nn fun
+(numeric) nn funct           	--> 1559 (numeric) nn funct
+(numeric) nn gard            	--> 1560 (numeric) nn gard
+(numeric) nn gear            	--> 1561 (numeric) nn gear
+(numeric) nn generos         	--> 1562 (numeric) nn generos
+(numeric) nn gift            	--> 1563 (numeric) nn gift
+(numeric) nn glob            	--> 1564 (numeric) nn glob
+(numeric) nn go              	--> 1565 (numeric) nn go
+(numeric) nn governm         	--> 1566 (numeric) nn governm
+(numeric) nn governor        	--> 1567 (numeric) nn governor
+(numeric) nn gradu           	--> 1568 (numeric) nn gradu
+(numeric) nn gras            	--> 1569 (numeric) nn gras
+(numeric) nn grip            	--> 1570 (numeric) nn grip
+(numeric) nn group           	--> 1571 (numeric) nn group
+(numeric) nn gu              	--> 1572 (numeric) nn gu
+(numeric) nn half            	--> 1573 (numeric) nn half
+(numeric) nn handan          	--> 1574 (numeric) nn handan
+(numeric) nn harassm         	--> 1575 (numeric) nn harassm
+(numeric) nn healer          	--> 1576 (numeric) nn healer
+(numeric) nn help            	--> 1577 (numeric) nn help
+(numeric) nn hilltop         	--> 1578 (numeric) nn hilltop
+(numeric) nn hom             	--> 1579 (numeric) nn hom
+(numeric) nn hos             	--> 1580 (numeric) nn hos
+(numeric) nn hospit          	--> 1581 (numeric) nn hospit
+(numeric) nn ide             	--> 1582 (numeric) nn ide
+(numeric) nn import          	--> 1583 (numeric) nn import
+(numeric) nn incom           	--> 1584 (numeric) nn incom
+(numeric) nn industr         	--> 1585 (numeric) nn industr
+(numeric) nn inhal           	--> 1586 (numeric) nn inhal
+(numeric) nn intercept       	--> 1587 (numeric) nn intercept
+(numeric) nn introduc        	--> 1588 (numeric) nn introduc
+(numeric) nn invent          	--> 1589 (numeric) nn invent
+(numeric) nn jose            	--> 1590 (numeric) nn jose
+(numeric) nn junk            	--> 1591 (numeric) nn junk
+(numeric) nn kind            	--> 1592 (numeric) nn kind
+(numeric) nn land            	--> 1593 (numeric) nn land
+(numeric) nn laud            	--> 1594 (numeric) nn laud
+(numeric) nn law             	--> 1595 (numeric) nn law
+(numeric) nn lecturer        	--> 1596 (numeric) nn lecturer
+(numeric) nn level           	--> 1597 (numeric) nn level
+(numeric) nn lieuten         	--> 1598 (numeric) nn lieuten
+(numeric) nn lif             	--> 1599 (numeric) nn lif
+(numeric) nn lifetim         	--> 1600 (numeric) nn lifetim
+(numeric) nn look            	--> 1601 (numeric) nn look
+(numeric) nn lov             	--> 1602 (numeric) nn lov
+(numeric) nn m2              	--> 1603 (numeric) nn m2
+(numeric) nn mail            	--> 1604 (numeric) nn mail
+(numeric) nn maj             	--> 1605 (numeric) nn maj
+(numeric) nn mark            	--> 1606 (numeric) nn mark
+(numeric) nn master          	--> 1607 (numeric) nn master
+(numeric) nn member          	--> 1608 (numeric) nn member
+(numeric) nn merger          	--> 1609 (numeric) nn merger
+(numeric) nn mes             	--> 1610 (numeric) nn mes
+(numeric) nn metal           	--> 1611 (numeric) nn metal
+(numeric) nn mom             	--> 1612 (numeric) nn mom
+(numeric) nn mot             	--> 1613 (numeric) nn mot
+(numeric) nn movi            	--> 1614 (numeric) nn movi
+(numeric) nn mus             	--> 1615 (numeric) nn mus
+(numeric) nn n               	--> 1616 (numeric) nn n
+(numeric) nn nam             	--> 1617 (numeric) nn nam
+(numeric) nn neighbor        	--> 1618 (numeric) nn neighbor
+(numeric) nn nemes           	--> 1619 (numeric) nn nemes
+(numeric) nn number          	--> 1620 (numeric) nn number
+(numeric) nn nur             	--> 1621 (numeric) nn nur
+(numeric) nn opinion         	--> 1622 (numeric) nn opinion
+(numeric) nn order           	--> 1623 (numeric) nn order
+(numeric) nn pack            	--> 1624 (numeric) nn pack
+(numeric) nn part            	--> 1625 (numeric) nn part
+(numeric) nn pens            	--> 1626 (numeric) nn pens
+(numeric) nn perc            	--> 1627 (numeric) nn perc
+(numeric) nn pil             	--> 1628 (numeric) nn pil
+(numeric) nn pistol          	--> 1629 (numeric) nn pistol
+(numeric) nn plac            	--> 1630 (numeric) nn plac
+(numeric) nn pm              	--> 1631 (numeric) nn pm
+(numeric) nn prevent         	--> 1632 (numeric) nn prevent
+(numeric) nn pric            	--> 1633 (numeric) nn pric
+(numeric) nn prisoner        	--> 1634 (numeric) nn prisoner
+(numeric) nn produc          	--> 1635 (numeric) nn produc
+(numeric) nn program         	--> 1636 (numeric) nn program
+(numeric) nn prospect        	--> 1637 (numeric) nn prospect
+(numeric) nn prostitut       	--> 1638 (numeric) nn prostitut
+(numeric) nn publ            	--> 1639 (numeric) nn publ
+(numeric) nn quant           	--> 1640 (numeric) nn quant
+(numeric) nn quarter         	--> 1641 (numeric) nn quarter
+(numeric) nn r               	--> 1642 (numeric) nn r
+(numeric) nn rackes          	--> 1643 (numeric) nn rackes
+(numeric) nn regim           	--> 1644 (numeric) nn regim
+(numeric) nn reminder        	--> 1645 (numeric) nn reminder
+(numeric) nn report          	--> 1646 (numeric) nn report
+(numeric) nn reporter        	--> 1647 (numeric) nn reporter
+(numeric) nn republ          	--> 1648 (numeric) nn republ
+(numeric) nn reserv          	--> 1649 (numeric) nn reserv
+(numeric) nn resid           	--> 1650 (numeric) nn resid
+(numeric) nn resolut         	--> 1651 (numeric) nn resolut
+(numeric) nn retir           	--> 1652 (numeric) nn retir
+(numeric) nn right           	--> 1653 (numeric) nn right
+(numeric) nn rl              	--> 1654 (numeric) nn rl
+(numeric) nn room            	--> 1655 (numeric) nn room
+(numeric) nn roster          	--> 1656 (numeric) nn roster
+(numeric) nn rout            	--> 1657 (numeric) nn rout
+(numeric) nn sal             	--> 1658 (numeric) nn sal
+(numeric) nn school          	--> 1659 (numeric) nn school
+(numeric) nn seat            	--> 1660 (numeric) nn seat
+(numeric) nn secur           	--> 1661 (numeric) nn secur
+(numeric) nn sens            	--> 1662 (numeric) nn sens
+(numeric) nn ser             	--> 1663 (numeric) nn ser
+(numeric) nn servic          	--> 1664 (numeric) nn servic
+(numeric) nn shaman          	--> 1665 (numeric) nn shaman
+(numeric) nn shar            	--> 1666 (numeric) nn shar
+(numeric) nn shoebox         	--> 1667 (numeric) nn shoebox
+(numeric) nn show            	--> 1668 (numeric) nn show
+(numeric) nn sieg            	--> 1669 (numeric) nn sieg
+(numeric) nn sign            	--> 1670 (numeric) nn sign
+(numeric) nn songwriter      	--> 1671 (numeric) nn songwriter
+(numeric) nn sourc           	--> 1672 (numeric) nn sourc
+(numeric) nn speech          	--> 1673 (numeric) nn speech
+(numeric) nn speed           	--> 1674 (numeric) nn speed
+(numeric) nn st              	--> 1675 (numeric) nn st
+(numeric) nn stepdaughter    	--> 1676 (numeric) nn stepdaughter
+(numeric) nn strees          	--> 1677 (numeric) nn strees
+(numeric) nn structur        	--> 1678 (numeric) nn structur
+(numeric) nn su              	--> 1679 (numeric) nn su
+(numeric) nn succes          	--> 1680 (numeric) nn succes
+(numeric) nn suit            	--> 1681 (numeric) nn suit
+(numeric) nn sum             	--> 1682 (numeric) nn sum
+(numeric) nn support         	--> 1683 (numeric) nn support
+(numeric) nn tank            	--> 1684 (numeric) nn tank
+(numeric) nn targes          	--> 1685 (numeric) nn targes
+(numeric) nn televis         	--> 1686 (numeric) nn televis
+(numeric) nn ten             	--> 1687 (numeric) nn ten
+(numeric) nn terrar          	--> 1688 (numeric) nn terrar
+(numeric) nn textur          	--> 1689 (numeric) nn textur
+(numeric) nn tim             	--> 1690 (numeric) nn tim
+(numeric) nn tip             	--> 1691 (numeric) nn tip
+(numeric) nn toda            	--> 1692 (numeric) nn toda
+(numeric) nn tongu           	--> 1693 (numeric) nn tongu
+(numeric) nn tr              	--> 1694 (numeric) nn tr
+(numeric) nn trail           	--> 1695 (numeric) nn trail
+(numeric) nn trip            	--> 1696 (numeric) nn trip
+(numeric) nn tuberculos      	--> 1697 (numeric) nn tuberculos
+(numeric) nn turf            	--> 1698 (numeric) nn turf
+(numeric) nn ultimatum       	--> 1699 (numeric) nn ultimatum
+(numeric) nn unemploym       	--> 1700 (numeric) nn unemploym
+(numeric) nn univers         	--> 1701 (numeric) nn univers
+(numeric) nn valu            	--> 1702 (numeric) nn valu
+(numeric) nn victor          	--> 1703 (numeric) nn victor
+(numeric) nn viol            	--> 1704 (numeric) nn viol
+(numeric) nn wa              	--> 1705 (numeric) nn wa
+(numeric) nn wal             	--> 1706 (numeric) nn wal
+(numeric) nn war             	--> 1707 (numeric) nn war
+(numeric) nn weather         	--> 1708 (numeric) nn weather
+(numeric) nn wif             	--> 1709 (numeric) nn wif
+(numeric) nn woman           	--> 1710 (numeric) nn woman
+(numeric) nn world           	--> 1711 (numeric) nn world
+(numeric) nn writer          	--> 1712 (numeric) nn writer
+(numeric) nn yard            	--> 1713 (numeric) nn yard
+(numeric) nn year            	--> 1714 (numeric) nn year
+(numeric) nn yield           	--> 1715 (numeric) nn yield
+(numeric) nnp                	--> 1716 (numeric) nnp
+(numeric) nnp aberdeen       	--> 1717 (numeric) nnp aberdeen
+(numeric) nnp abkhaz         	--> 1718 (numeric) nnp abkhaz
+(numeric) nnp aid            	--> 1719 (numeric) nnp aid
+(numeric) nnp air            	--> 1720 (numeric) nnp air
+(numeric) nnp an             	--> 1721 (numeric) nnp an
+(numeric) nnp angel          	--> 1722 (numeric) nnp angel
+(numeric) nnp appl           	--> 1723 (numeric) nnp appl
+(numeric) nnp arizon         	--> 1724 (numeric) nnp arizon
+(numeric) nnp artur          	--> 1725 (numeric) nnp artur
+(numeric) nnp assad          	--> 1726 (numeric) nnp assad
+(numeric) nnp athlon         	--> 1727 (numeric) nnp athlon
+(numeric) nnp austral        	--> 1728 (numeric) nnp austral
+(numeric) nnp ba             	--> 1729 (numeric) nnp ba
+(numeric) nnp baido          	--> 1730 (numeric) nnp baido
+(numeric) nnp bank           	--> 1731 (numeric) nnp bank
+(numeric) nnp barnard        	--> 1732 (numeric) nnp barnard
+(numeric) nnp bart           	--> 1733 (numeric) nnp bart
+(numeric) nnp bensonhurst    	--> 1734 (numeric) nnp bensonhurst
+(numeric) nnp bhut           	--> 1735 (numeric) nnp bhut
+(numeric) nnp billboard      	--> 1736 (numeric) nnp billboard
+(numeric) nnp birmingham     	--> 1737 (numeric) nnp birmingham
+(numeric) nnp blevin         	--> 1738 (numeric) nnp blevin
+(numeric) nnp bob            	--> 1739 (numeric) nnp bob
+(numeric) nnp boern          	--> 1740 (numeric) nnp boern
+(numeric) nnp bonil          	--> 1741 (numeric) nnp bonil
+(numeric) nnp bost           	--> 1742 (numeric) nnp bost
+(numeric) nnp boynt          	--> 1743 (numeric) nnp boynt
+(numeric) nnp brown          	--> 1744 (numeric) nnp brown
+(numeric) nnp bry            	--> 1745 (numeric) nnp bry
+(numeric) nnp burkhart       	--> 1746 (numeric) nnp burkhart
+(numeric) nnp bush           	--> 1747 (numeric) nnp bush
+(numeric) nnp by             	--> 1748 (numeric) nnp by
+(numeric) nnp californ       	--> 1749 (numeric) nnp californ
+(numeric) nnp casanov        	--> 1750 (numeric) nnp casanov
+(numeric) nnp centr          	--> 1751 (numeric) nnp centr
+(numeric) nnp chiaverin      	--> 1752 (numeric) nnp chiaverin
+(numeric) nnp chicag         	--> 1753 (numeric) nnp chicag
+(numeric) nnp chin           	--> 1754 (numeric) nnp chin
+(numeric) nnp choler         	--> 1755 (numeric) nnp choler
+(numeric) nnp christ         	--> 1756 (numeric) nnp christ
+(numeric) nnp club           	--> 1757 (numeric) nnp club
+(numeric) nnp coalit         	--> 1758 (numeric) nnp coalit
+(numeric) nnp colin          	--> 1759 (numeric) nnp colin
+(numeric) nnp commander      	--> 1760 (numeric) nnp commander
+(numeric) nnp computer       	--> 1761 (numeric) nnp computer
+(numeric) nnp conni          	--> 1762 (numeric) nnp conni
+(numeric) nnp cooper         	--> 1763 (numeric) nnp cooper
+(numeric) nnp council        	--> 1764 (numeric) nnp council
+(numeric) nnp count          	--> 1765 (numeric) nnp count
+(numeric) nnp crick          	--> 1766 (numeric) nnp crick
+(numeric) nnp da             	--> 1767 (numeric) nnp da
+(numeric) nnp days           	--> 1768 (numeric) nnp days
+(numeric) nnp democrat       	--> 1769 (numeric) nnp democrat
+(numeric) nnp departm        	--> 1770 (numeric) nnp departm
+(numeric) nnp dickenson      	--> 1771 (numeric) nnp dickenson
+(numeric) nnp dickinson      	--> 1772 (numeric) nnp dickinson
+(numeric) nnp dinsoor        	--> 1773 (numeric) nnp dinsoor
+(numeric) nnp donald         	--> 1774 (numeric) nnp donald
+(numeric) nnp doy            	--> 1775 (numeric) nnp doy
+(numeric) nnp draene         	--> 1776 (numeric) nnp draene
+(numeric) nnp dufresn        	--> 1777 (numeric) nnp dufresn
+(numeric) nnp edn            	--> 1778 (numeric) nnp edn
+(numeric) nnp edward         	--> 1779 (numeric) nnp edward
+(numeric) nnp edwin          	--> 1780 (numeric) nnp edwin
+(numeric) nnp el             	--> 1781 (numeric) nnp el
+(numeric) nnp em             	--> 1782 (numeric) nnp em
+(numeric) nnp europ          	--> 1783 (numeric) nnp europ
+(numeric) nnp festiv         	--> 1784 (numeric) nnp festiv
+(numeric) nnp film           	--> 1785 (numeric) nnp film
+(numeric) nnp fir            	--> 1786 (numeric) nnp fir
+(numeric) nnp first          	--> 1787 (numeric) nnp first
+(numeric) nnp fishes         	--> 1788 (numeric) nnp fishes
+(numeric) nnp flori          	--> 1789 (numeric) nnp flori
+(numeric) nnp florid         	--> 1790 (numeric) nnp florid
+(numeric) nnp forb           	--> 1791 (numeric) nnp forb
+(numeric) nnp forc           	--> 1792 (numeric) nnp forc
+(numeric) nnp franc          	--> 1793 (numeric) nnp franc
+(numeric) nnp francisc       	--> 1794 (numeric) nnp francisc
+(numeric) nnp frank          	--> 1795 (numeric) nnp frank
+(numeric) nnp g              	--> 1796 (numeric) nnp g
+(numeric) nnp gal            	--> 1797 (numeric) nnp gal
+(numeric) nnp gener          	--> 1798 (numeric) nnp gener
+(numeric) nnp georg          	--> 1799 (numeric) nnp georg
+(numeric) nnp girard         	--> 1800 (numeric) nnp girard
+(numeric) nnp goggin         	--> 1801 (numeric) nnp goggin
+(numeric) nnp golan          	--> 1802 (numeric) nnp golan
+(numeric) nnp governor       	--> 1803 (numeric) nnp governor
+(numeric) nnp graham         	--> 1804 (numeric) nnp graham
+(numeric) nnp grbac          	--> 1805 (numeric) nnp grbac
+(numeric) nnp hafez          	--> 1806 (numeric) nnp hafez
+(numeric) nnp har            	--> 1807 (numeric) nnp har
+(numeric) nnp hard           	--> 1808 (numeric) nnp hard
+(numeric) nnp hatle          	--> 1809 (numeric) nnp hatle
+(numeric) nnp heart          	--> 1810 (numeric) nnp heart
+(numeric) nnp height         	--> 1811 (numeric) nnp height
+(numeric) nnp henr           	--> 1812 (numeric) nnp henr
+(numeric) nnp heuvel         	--> 1813 (numeric) nnp heuvel
+(numeric) nnp hil            	--> 1814 (numeric) nnp hil
+(numeric) nnp hobok          	--> 1815 (numeric) nnp hobok
+(numeric) nnp homebrew       	--> 1816 (numeric) nnp homebrew
+(numeric) nnp hoon           	--> 1817 (numeric) nnp hoon
+(numeric) nnp hous           	--> 1818 (numeric) nnp hous
+(numeric) nnp iidal          	--> 1819 (numeric) nnp iidal
+(numeric) nnp intern         	--> 1820 (numeric) nnp intern
+(numeric) nnp iraq           	--> 1821 (numeric) nnp iraq
+(numeric) nnp iron           	--> 1822 (numeric) nnp iron
+(numeric) nnp island         	--> 1823 (numeric) nnp island
+(numeric) nnp israel         	--> 1824 (numeric) nnp israel
+(numeric) nnp jaffn          	--> 1825 (numeric) nnp jaffn
+(numeric) nnp jan            	--> 1826 (numeric) nnp jan
+(numeric) nnp japan          	--> 1827 (numeric) nnp japan
+(numeric) nnp jerse          	--> 1828 (numeric) nnp jerse
+(numeric) nnp job            	--> 1829 (numeric) nnp job
+(numeric) nnp john           	--> 1830 (numeric) nnp john
+(numeric) nnp ju             	--> 1831 (numeric) nnp ju
+(numeric) nnp jung           	--> 1832 (numeric) nnp jung
+(numeric) nnp kathryn        	--> 1833 (numeric) nnp kathryn
+(numeric) nnp kurdistan      	--> 1834 (numeric) nnp kurdistan
+(numeric) nnp l              	--> 1835 (numeric) nnp l
+(numeric) nnp labor          	--> 1836 (numeric) nnp labor
+(numeric) nnp labrocc        	--> 1837 (numeric) nnp labrocc
+(numeric) nnp lawson         	--> 1838 (numeric) nnp lawson
+(numeric) nnp le             	--> 1839 (numeric) nnp le
+(numeric) nnp lemelson       	--> 1840 (numeric) nnp lemelson
+(numeric) nnp lo             	--> 1841 (numeric) nnp lo
+(numeric) nnp london         	--> 1842 (numeric) nnp london
+(numeric) nnp luc            	--> 1843 (numeric) nnp luc
+(numeric) nnp m              	--> 1844 (numeric) nnp m
+(numeric) nnp ma             	--> 1845 (numeric) nnp ma
+(numeric) nnp mack           	--> 1846 (numeric) nnp mack
+(numeric) nnp manhattan      	--> 1847 (numeric) nnp manhattan
+(numeric) nnp mar            	--> 1848 (numeric) nnp mar
+(numeric) nnp massachuses    	--> 1849 (numeric) nnp massachuses
+(numeric) nnp mayor          	--> 1850 (numeric) nnp mayor
+(numeric) nnp mccart         	--> 1851 (numeric) nnp mccart
+(numeric) nnp mcdaniel       	--> 1852 (numeric) nnp mcdaniel
+(numeric) nnp mercedes-benz  	--> 1853 (numeric) nnp mercedes-benz
+(numeric) nnp miam           	--> 1854 (numeric) nnp miam
+(numeric) nnp michigan       	--> 1855 (numeric) nnp michigan
+(numeric) nnp middlesec      	--> 1856 (numeric) nnp middlesec
+(numeric) nnp montre         	--> 1857 (numeric) nnp montre
+(numeric) nnp morgan         	--> 1858 (numeric) nnp morgan
+(numeric) nnp mr.            	--> 1859 (numeric) nnp mr.
+(numeric) nnp mrs.           	--> 1860 (numeric) nnp mrs.
+(numeric) nnp musharraf      	--> 1861 (numeric) nnp musharraf
+(numeric) nnp n              	--> 1862 (numeric) nnp n
+(numeric) nnp new            	--> 1863 (numeric) nnp new
+(numeric) nnp nin            	--> 1864 (numeric) nnp nin
+(numeric) nnp officer        	--> 1865 (numeric) nnp officer
+(numeric) nnp oliver         	--> 1866 (numeric) nnp oliver
+(numeric) nnp ottoman        	--> 1867 (numeric) nnp ottoman
+(numeric) nnp outpost        	--> 1868 (numeric) nnp outpost
+(numeric) nnp part           	--> 1869 (numeric) nnp part
+(numeric) nnp pavl           	--> 1870 (numeric) nnp pavl
+(numeric) nnp peninsl        	--> 1871 (numeric) nnp peninsl
+(numeric) nnp powel          	--> 1872 (numeric) nnp powel
+(numeric) nnp prem           	--> 1873 (numeric) nnp prem
+(numeric) nnp pres           	--> 1874 (numeric) nnp pres
+(numeric) nnp presid         	--> 1875 (numeric) nnp presid
+(numeric) nnp princes        	--> 1876 (numeric) nnp princes
+(numeric) nnp purpl          	--> 1877 (numeric) nnp purpl
+(numeric) nnp reil           	--> 1878 (numeric) nnp reil
+(numeric) nnp richard        	--> 1879 (numeric) nnp richard
+(numeric) nnp rile           	--> 1880 (numeric) nnp rile
+(numeric) nnp robers         	--> 1881 (numeric) nnp robers
+(numeric) nnp rus            	--> 1882 (numeric) nnp rus
+(numeric) nnp san            	--> 1883 (numeric) nnp san
+(numeric) nnp seattl         	--> 1884 (numeric) nnp seattl
+(numeric) nnp secres         	--> 1885 (numeric) nnp secres
+(numeric) nnp secur          	--> 1886 (numeric) nnp secur
+(numeric) nnp sen            	--> 1887 (numeric) nnp sen
+(numeric) nnp simmon         	--> 1888 (numeric) nnp simmon
+(numeric) nnp simpson        	--> 1889 (numeric) nnp simpson
+(numeric) nnp snyder         	--> 1890 (numeric) nnp snyder
+(numeric) nnp son            	--> 1891 (numeric) nnp son
+(numeric) nnp soubr          	--> 1892 (numeric) nnp soubr
+(numeric) nnp speaker        	--> 1893 (numeric) nnp speaker
+(numeric) nnp st             	--> 1894 (numeric) nnp st
+(numeric) nnp sterl          	--> 1895 (numeric) nnp sterl
+(numeric) nnp stev           	--> 1896 (numeric) nnp stev
+(numeric) nnp sulaiman       	--> 1897 (numeric) nnp sulaiman
+(numeric) nnp sulaymaniyah   	--> 1898 (numeric) nnp sulaymaniyah
+(numeric) nnp t              	--> 1899 (numeric) nnp t
+(numeric) nnp teng-hu        	--> 1900 (numeric) nnp teng-hu
+(numeric) nnp teres          	--> 1901 (numeric) nnp teres
+(numeric) nnp theater        	--> 1902 (numeric) nnp theater
+(numeric) nnp tic            	--> 1903 (numeric) nnp tic
+(numeric) nnp tin            	--> 1904 (numeric) nnp tin
+(numeric) nnp triangl        	--> 1905 (numeric) nnp triangl
+(numeric) nnp tv             	--> 1906 (numeric) nnp tv
+(numeric) nnp un             	--> 1907 (numeric) nnp un
+(numeric) nnp union          	--> 1908 (numeric) nnp union
+(numeric) nnp unit           	--> 1909 (numeric) nnp unit
+(numeric) nnp univers        	--> 1910 (numeric) nnp univers
+(numeric) nnp universit      	--> 1911 (numeric) nnp universit
+(numeric) nnp v              	--> 1912 (numeric) nnp v
+(numeric) nnp venic          	--> 1913 (numeric) nnp venic
+(numeric) nnp war            	--> 1914 (numeric) nnp war
+(numeric) nnp washingt       	--> 1915 (numeric) nnp washingt
+(numeric) nnp watterson      	--> 1916 (numeric) nnp watterson
+(numeric) nnp weihaiwe       	--> 1917 (numeric) nnp weihaiwe
+(numeric) nnp woman          	--> 1918 (numeric) nnp woman
+(numeric) nnp woodson        	--> 1919 (numeric) nnp woodson
+(numeric) nnp wozniak        	--> 1920 (numeric) nnp wozniak
+(numeric) nnp wright         	--> 1921 (numeric) nnp wright
+(numeric) nnp wu             	--> 1922 (numeric) nnp wu
+(numeric) nnp yogeswaran     	--> 1923 (numeric) nnp yogeswaran
+(numeric) nnp yun            	--> 1924 (numeric) nnp yun
+(numeric) nnp zimmer         	--> 1925 (numeric) nnp zimmer
+(numeric) nnps madon         	--> 1926 (numeric) nnps madon
+(numeric) nnps st            	--> 1927 (numeric) nnps st
+(numeric) nnps worker        	--> 1928 (numeric) nnps worker
+(numeric) nns                	--> 1929 (numeric) nns 
+(numeric) nns achief         	--> 1930 (numeric) nns achief
+(numeric) nns airport        	--> 1931 (numeric) nns airport
+(numeric) nns applic         	--> 1932 (numeric) nns applic
+(numeric) nns appointe       	--> 1933 (numeric) nns appointe
+(numeric) nns bag            	--> 1934 (numeric) nns bag
+(numeric) nns bank           	--> 1935 (numeric) nns bank
+(numeric) nns bidder         	--> 1936 (numeric) nns bidder
+(numeric) nns bil            	--> 1937 (numeric) nns bil
+(numeric) nns box            	--> 1938 (numeric) nns box
+(numeric) nns cd             	--> 1939 (numeric) nns cd
+(numeric) nns chang          	--> 1940 (numeric) nns chang
+(numeric) nns child          	--> 1941 (numeric) nns child
+(numeric) nns collabor       	--> 1942 (numeric) nns collabor
+(numeric) nns cupcak         	--> 1943 (numeric) nns cupcak
+(numeric) nns detect         	--> 1944 (numeric) nns detect
+(numeric) nns door           	--> 1945 (numeric) nns door
+(numeric) nns elect          	--> 1946 (numeric) nns elect
+(numeric) nns eth            	--> 1947 (numeric) nns eth
+(numeric) nns flag           	--> 1948 (numeric) nns flag
+(numeric) nns forc           	--> 1949 (numeric) nns forc
+(numeric) nns form           	--> 1950 (numeric) nns form
+(numeric) nns founder        	--> 1951 (numeric) nns founder
+(numeric) nns front          	--> 1952 (numeric) nns front
+(numeric) nns fund           	--> 1953 (numeric) nns fund
+(numeric) nns gras           	--> 1954 (numeric) nns gras
+(numeric) nns guidel         	--> 1955 (numeric) nns guidel
+(numeric) nns helicopter     	--> 1956 (numeric) nns helicopter
+(numeric) nns hillock        	--> 1957 (numeric) nns hillock
+(numeric) nns hobby          	--> 1958 (numeric) nns hobby
+(numeric) nns hol            	--> 1959 (numeric) nns hol
+(numeric) nns hom            	--> 1960 (numeric) nns hom
+(numeric) nns honour         	--> 1961 (numeric) nns honour
+(numeric) nns hotel          	--> 1962 (numeric) nns hotel
+(numeric) nns hour           	--> 1963 (numeric) nns hour
+(numeric) nns kid            	--> 1964 (numeric) nns kid
+(numeric) nns kilometer      	--> 1965 (numeric) nns kilometer
+(numeric) nns lawmaker       	--> 1966 (numeric) nns lawmaker
+(numeric) nns legens         	--> 1967 (numeric) nns legens
+(numeric) nns method         	--> 1968 (numeric) nns method
+(numeric) nns notebook       	--> 1969 (numeric) nns notebook
+(numeric) nns obstacl        	--> 1970 (numeric) nns obstacl
+(numeric) nns on             	--> 1971 (numeric) nns on
+(numeric) nns part           	--> 1972 (numeric) nns part
+(numeric) nns pat            	--> 1973 (numeric) nns pat
+(numeric) nns pathwa         	--> 1974 (numeric) nns pathwa
+(numeric) nns peopl          	--> 1975 (numeric) nns peopl
+(numeric) nns phenomenon     	--> 1976 (numeric) nns phenomenon
+(numeric) nns photograph     	--> 1977 (numeric) nns photograph
+(numeric) nns photographer   	--> 1978 (numeric) nns photographer
+(numeric) nns point          	--> 1979 (numeric) nns point
+(numeric) nns polit          	--> 1980 (numeric) nns polit
+(numeric) nns program        	--> 1981 (numeric) nns program
+(numeric) nns protocol       	--> 1982 (numeric) nns protocol
+(numeric) nns reg            	--> 1983 (numeric) nns reg
+(numeric) nns rel            	--> 1984 (numeric) nns rel
+(numeric) nns repar          	--> 1985 (numeric) nns repar
+(numeric) nns rl             	--> 1986 (numeric) nns rl
+(numeric) nns sci            	--> 1987 (numeric) nns sci
+(numeric) nns shirt          	--> 1988 (numeric) nns shirt
+(numeric) nns sock           	--> 1989 (numeric) nns sock
+(numeric) nns stud           	--> 1990 (numeric) nns stud
+(numeric) nns techniqu       	--> 1991 (numeric) nns techniqu
+(numeric) nns tim            	--> 1992 (numeric) nns tim
+(numeric) nns troop          	--> 1993 (numeric) nns troop
+(numeric) nns week           	--> 1994 (numeric) nns week
+(numeric) nns wildflower     	--> 1995 (numeric) nns wildflower
+(numeric) nns year           	--> 1996 (numeric) nns year
+(numeric) nonslip            	--> 1997 (numeric) nonslip
+(numeric) nonslip )          	--> 1998 (numeric) nonslip )
+(numeric) not                	--> 1999 (numeric) not
+(numeric) not )              	--> 2000 (numeric) not )
+(numeric) notebook           	--> 2001 (numeric) notebook
+(numeric) notebook )         	--> 2002 (numeric) notebook )
+(numeric) notfail            	--> 2003 (numeric) notfail
+(numeric) notfailed )        	--> 2004 (numeric) notfailed )
+(numeric) now                	--> 2005 (numeric) now
+(numeric) now )              	--> 2006 (numeric) now )
+(numeric) np                 	--> 2007 (numeric) np
+(numeric) np (               	--> 2008 (numeric) np (
+(numeric) number             	--> 2009 (numeric) number
+(numeric) number )           	--> 2010 (numeric) number )
+(numeric) nur                	--> 2011 (numeric) nur
+(numeric) nurse )            	--> 2012 (numeric) nurse )
+(numeric) nurtur             	--> 2013 (numeric) nurtur
+(numeric) nurture )          	--> 2014 (numeric) nurture )
+(numeric) nx                 	--> 2015 (numeric) nx
+(numeric) nx (               	--> 2016 (numeric) nx (
+(numeric) obstacl            	--> 2017 (numeric) obstacl
+(numeric) obstacle )         	--> 2018 (numeric) obstacle )
+(numeric) of                 	--> 2019 (numeric) of
+(numeric) of )               	--> 2020 (numeric) of )
+(numeric) off                	--> 2021 (numeric) off
+(numeric) off )              	--> 2022 (numeric) off )
+(numeric) officer            	--> 2023 (numeric) officer
+(numeric) officer )          	--> 2024 (numeric) officer )
+(numeric) old                	--> 2025 (numeric) old
+(numeric) old )              	--> 2026 (numeric) old )
+(numeric) older              	--> 2027 (numeric) older
+(numeric) older )            	--> 2028 (numeric) older )
+(numeric) oldest             	--> 2029 (numeric) oldest
+(numeric) oldest )           	--> 2030 (numeric) oldest )
+(numeric) oliver             	--> 2031 (numeric) oliver
+(numeric) oliver )           	--> 2032 (numeric) oliver )
+(numeric) on                 	--> 2033 (numeric) on
+(numeric) on )               	--> 2034 (numeric) on )
+(numeric) one )              	--> 2035 (numeric) one )
+(numeric) one-year           	--> 2036 (numeric) one-year
+(numeric) one-year )         	--> 2037 (numeric) one-year )
+(numeric) onl                	--> 2038 (numeric) onl
+(numeric) online )           	--> 2039 (numeric) online )
+(numeric) opinion            	--> 2040 (numeric) opinion
+(numeric) opinion )          	--> 2041 (numeric) opinion )
+(numeric) or                 	--> 2042 (numeric) or
+(numeric) or )               	--> 2043 (numeric) or )
+(numeric) order              	--> 2044 (numeric) order
+(numeric) order )            	--> 2045 (numeric) order )
+(numeric) organis            	--> 2046 (numeric) organis
+(numeric) organisational )   	--> 2047 (numeric) organisational )
+(numeric) other              	--> 2048 (numeric) other
+(numeric) other )            	--> 2049 (numeric) other )
+(numeric) ottoman            	--> 2050 (numeric) ottoman
+(numeric) ottoman )          	--> 2051 (numeric) ottoman )
+(numeric) out                	--> 2052 (numeric) out
+(numeric) out )              	--> 2053 (numeric) out )
+(numeric) outpost            	--> 2054 (numeric) outpost
+(numeric) outpost )          	--> 2055 (numeric) outpost )
+(numeric) outstand           	--> 2056 (numeric) outstand
+(numeric) outstanding )      	--> 2057 (numeric) outstanding )
+(numeric) over               	--> 2058 (numeric) over
+(numeric) over )             	--> 2059 (numeric) over )
+(numeric) overse             	--> 2060 (numeric) overse
+(numeric) overseas )         	--> 2061 (numeric) overseas )
+(numeric) own                	--> 2062 (numeric) own
+(numeric) own )              	--> 2063 (numeric) own )
+(numeric) pack               	--> 2064 (numeric) pack
+(numeric) package )          	--> 2065 (numeric) package )
+(numeric) paid               	--> 2066 (numeric) paid
+(numeric) paid )             	--> 2067 (numeric) paid )
+(numeric) parliament         	--> 2068 (numeric) parliament
+(numeric) parliamentary )    	--> 2069 (numeric) parliamentary )
+(numeric) part               	--> 2070 (numeric) part
+(numeric) part )             	--> 2071 (numeric) part )
+(numeric) particl            	--> 2072 (numeric) particl
+(numeric) particularly )     	--> 2073 (numeric) particularly )
+(numeric) partly )           	--> 2074 (numeric) partly )
+(numeric) party )            	--> 2075 (numeric) party )
+(numeric) pas                	--> 2076 (numeric) pas
+(numeric) passing )          	--> 2077 (numeric) passing )
+(numeric) patent             	--> 2078 (numeric) patent
+(numeric) patent )           	--> 2079 (numeric) patent )
+(numeric) pathwa             	--> 2080 (numeric) pathwa
+(numeric) pathway )          	--> 2081 (numeric) pathway )
+(numeric) pavl               	--> 2082 (numeric) pavl
+(numeric) pavlic )           	--> 2083 (numeric) pavlic )
+(numeric) pdt                	--> 2084 (numeric) pdt
+(numeric) pdt al             	--> 2085 (numeric) pdt al
+(numeric) pending )          	--> 2086 (numeric) pending )
+(numeric) peninsl            	--> 2087 (numeric) peninsl
+(numeric) peninsula )        	--> 2088 (numeric) peninsula )
+(numeric) pens               	--> 2089 (numeric) pens
+(numeric) pension )          	--> 2090 (numeric) pension )
+(numeric) peopl              	--> 2091 (numeric) peopl
+(numeric) people )           	--> 2092 (numeric) people )
+(numeric) per                	--> 2093 (numeric) per
+(numeric) per )              	--> 2094 (numeric) per )
+(numeric) perc               	--> 2095 (numeric) perc
+(numeric) percent )          	--> 2096 (numeric) percent )
+(numeric) phenomenon         	--> 2097 (numeric) phenomenon
+(numeric) phenomenon )       	--> 2098 (numeric) phenomenon )
+(numeric) photograph         	--> 2099 (numeric) photograph
+(numeric) photograph )       	--> 2100 (numeric) photograph )
+(numeric) photographer       	--> 2101 (numeric) photographer
+(numeric) photographer )     	--> 2102 (numeric) photographer )
+(numeric) pil                	--> 2103 (numeric) pil
+(numeric) pillar )           	--> 2104 (numeric) pillar )
+(numeric) pistol             	--> 2105 (numeric) pistol
+(numeric) pistol )           	--> 2106 (numeric) pistol )
+(numeric) plac               	--> 2107 (numeric) plac
+(numeric) place )            	--> 2108 (numeric) place )
+(numeric) play               	--> 2109 (numeric) play
+(numeric) played )           	--> 2110 (numeric) played )
+(numeric) plays )            	--> 2111 (numeric) plays )
+(numeric) pm                 	--> 2112 (numeric) pm
+(numeric) pm )               	--> 2113 (numeric) pm )
+(numeric) po                 	--> 2114 (numeric) po
+(numeric) point              	--> 2115 (numeric) point
+(numeric) point )            	--> 2116 (numeric) point )
+(numeric) pok                	--> 2117 (numeric) pok
+(numeric) poked )            	--> 2118 (numeric) poked )
+(numeric) polit              	--> 2119 (numeric) polit
+(numeric) political )        	--> 2120 (numeric) political )
+(numeric) politics )         	--> 2121 (numeric) politics )
+(numeric) pos                	--> 2123 (numeric) pos 
+(numeric) pos                	--> 2123 (numeric) pos 
+(numeric) pos )              	--> 2124 (numeric) pos )
+(numeric) posed )            	--> 2125 (numeric) posed )
+(numeric) posthum            	--> 2126 (numeric) posthum
+(numeric) posthumously )     	--> 2127 (numeric) posthumously )
+(numeric) postpon            	--> 2128 (numeric) postpon
+(numeric) postponed )        	--> 2129 (numeric) postponed )
+(numeric) powel              	--> 2130 (numeric) powel
+(numeric) powell )           	--> 2131 (numeric) powell )
+(numeric) pp                 	--> 2132 (numeric) pp
+(numeric) pp (               	--> 2133 (numeric) pp (
+(numeric) preced             	--> 2134 (numeric) preced
+(numeric) preceding )        	--> 2135 (numeric) preceding )
+(numeric) prem               	--> 2136 (numeric) prem
+(numeric) premier )          	--> 2137 (numeric) premier )
+(numeric) pres               	--> 2138 (numeric) pres
+(numeric) presid             	--> 2139 (numeric) presid
+(numeric) president )        	--> 2140 (numeric) president )
+(numeric) press )            	--> 2141 (numeric) press )
+(numeric) pressur            	--> 2142 (numeric) pressur
+(numeric) pressure )         	--> 2143 (numeric) pressure )
+(numeric) prevent            	--> 2144 (numeric) prevent
+(numeric) prevention )       	--> 2145 (numeric) prevention )
+(numeric) pric               	--> 2146 (numeric) pric
+(numeric) price )            	--> 2147 (numeric) price )
+(numeric) princes            	--> 2148 (numeric) princes
+(numeric) princeton )        	--> 2149 (numeric) princeton )
+(numeric) prisoner           	--> 2150 (numeric) prisoner
+(numeric) prisoner )         	--> 2151 (numeric) prisoner )
+(numeric) prn                	--> 2152 (numeric) prn
+(numeric) prn (              	--> 2153 (numeric) prn (
+(numeric) prob               	--> 2154 (numeric) prob
+(numeric) probe )            	--> 2155 (numeric) probe )
+(numeric) produc             	--> 2156 (numeric) produc
+(numeric) produce )          	--> 2157 (numeric) produce )
+(numeric) production )       	--> 2158 (numeric) production )
+(numeric) program            	--> 2159 (numeric) program
+(numeric) program )          	--> 2160 (numeric) program )
+(numeric) propos             	--> 2161 (numeric) propos
+(numeric) proposed )         	--> 2162 (numeric) proposed )
+(numeric) prospect           	--> 2163 (numeric) prospect
+(numeric) prospect )         	--> 2164 (numeric) prospect )
+(numeric) prostitut          	--> 2165 (numeric) prostitut
+(numeric) prostitute )       	--> 2166 (numeric) prostitute )
+(numeric) protocol           	--> 2167 (numeric) protocol
+(numeric) protocol )         	--> 2168 (numeric) protocol )
+(numeric) prov               	--> 2169 (numeric) prov
+(numeric) provide )          	--> 2170 (numeric) provide )
+(numeric) prp                	--> 2172 (numeric) prp 
+(numeric) prp                	--> 2172 (numeric) prp 
+(numeric) prp h              	--> 2173 (numeric) prp h
+(numeric) prp him            	--> 2174 (numeric) prp him
+(numeric) prp it             	--> 2175 (numeric) prp it
+(numeric) prp sh             	--> 2176 (numeric) prp sh
+(numeric) prp the            	--> 2177 (numeric) prp the
+(numeric) prp w              	--> 2178 (numeric) prp w
+(numeric) prp$               	--> 2179 (numeric) prp$
+(numeric) prp$ h             	--> 2180 (numeric) prp$ h
+(numeric) prp$ hes           	--> 2181 (numeric) prp$ hes
+(numeric) prp$ it            	--> 2182 (numeric) prp$ it
+(numeric) prp$ m             	--> 2183 (numeric) prp$ m
+(numeric) prt                	--> 2184 (numeric) prt
+(numeric) prt (              	--> 2185 (numeric) prt (
+(numeric) publ               	--> 2186 (numeric) publ
+(numeric) public )           	--> 2187 (numeric) public )
+(numeric) publicity )        	--> 2188 (numeric) publicity )
+(numeric) purpl              	--> 2189 (numeric) purpl
+(numeric) purple )           	--> 2190 (numeric) purple )
+(numeric) push               	--> 2191 (numeric) push
+(numeric) pushed )           	--> 2192 (numeric) pushed )
+(numeric) pushing )          	--> 2193 (numeric) pushing )
+(numeric) qp                 	--> 2194 (numeric) qp
+(numeric) qp (               	--> 2195 (numeric) qp (
+(numeric) quant              	--> 2196 (numeric) quant
+(numeric) quantity )         	--> 2197 (numeric) quantity )
+(numeric) quarter            	--> 2198 (numeric) quarter
+(numeric) quarter )          	--> 2199 (numeric) quarter )
+(numeric) quarterly )        	--> 2200 (numeric) quarterly )
+(numeric) quizz              	--> 2201 (numeric) quizz
+(numeric) quizzical )        	--> 2202 (numeric) quizzical )
+(numeric) rackes             	--> 2203 (numeric) rackes
+(numeric) racket )           	--> 2204 (numeric) racket )
+(numeric) ran                	--> 2205 (numeric) ran
+(numeric) ran )              	--> 2206 (numeric) ran )
+(numeric) rat                	--> 2207 (numeric) rat
+(numeric) rate )             	--> 2208 (numeric) rate )
+(numeric) rb                 	--> 2210 (numeric) rb 
+(numeric) rb                 	--> 2210 (numeric) rb 
+(numeric) rb a.m.            	--> 2211 (numeric) rb a.m.
+(numeric) rb ag              	--> 2212 (numeric) rb ag
+(numeric) rb als             	--> 2213 (numeric) rb als
+(numeric) rb approxim        	--> 2214 (numeric) rb approxim
+(numeric) rb bas             	--> 2215 (numeric) rb bas
+(numeric) rb clos            	--> 2216 (numeric) rb clos
+(numeric) rb common          	--> 2217 (numeric) rb common
+(numeric) rb comples         	--> 2218 (numeric) rb comples
+(numeric) rb da              	--> 2219 (numeric) rb da
+(numeric) rb down            	--> 2220 (numeric) rb down
+(numeric) rb els             	--> 2221 (numeric) rb els
+(numeric) rb enough          	--> 2222 (numeric) rb enough
+(numeric) rb ev              	--> 2223 (numeric) rb ev
+(numeric) rb ever            	--> 2224 (numeric) rb ever
+(numeric) rb exact           	--> 2225 (numeric) rb exact
+(numeric) rb for             	--> 2226 (numeric) rb for
+(numeric) rb mayb            	--> 2227 (numeric) rb mayb
+(numeric) rb microscop       	--> 2228 (numeric) rb microscop
+(numeric) rb near            	--> 2229 (numeric) rb near
+(numeric) rb nearb           	--> 2230 (numeric) rb nearb
+(numeric) rb not             	--> 2231 (numeric) rb not
+(numeric) rb now             	--> 2232 (numeric) rb now
+(numeric) rb overse          	--> 2233 (numeric) rb overse
+(numeric) rb part            	--> 2234 (numeric) rb part
+(numeric) rb particl         	--> 2235 (numeric) rb particl
+(numeric) rb posthum         	--> 2236 (numeric) rb posthum
+(numeric) rb respect         	--> 2237 (numeric) rb respect
+(numeric) rb s               	--> 2238 (numeric) rb s
+(numeric) rb sharp           	--> 2239 (numeric) rb sharp
+(numeric) rb south           	--> 2240 (numeric) rb south
+(numeric) rb stil            	--> 2241 (numeric) rb stil
+(numeric) rb tru             	--> 2242 (numeric) rb tru
+(numeric) rb up              	--> 2243 (numeric) rb up
+(numeric) rb vagu            	--> 2244 (numeric) rb vagu
+(numeric) rb wel             	--> 2245 (numeric) rb wel
+(numeric) rbr                	--> 2246 (numeric) rbr
+(numeric) rbr mor            	--> 2247 (numeric) rbr mor
+(numeric) rbs most           	--> 2248 (numeric) rbs most
+(numeric) reach              	--> 2249 (numeric) reach
+(numeric) reached )          	--> 2250 (numeric) reached )
+(numeric) read               	--> 2251 (numeric) read
+(numeric) readied )          	--> 2252 (numeric) readied )
+(numeric) rece               	--> 2253 (numeric) rece
+(numeric) receiv             	--> 2254 (numeric) receiv
+(numeric) receive )          	--> 2255 (numeric) receive )
+(numeric) received )         	--> 2256 (numeric) received )
+(numeric) refer              	--> 2257 (numeric) refer
+(numeric) referred )         	--> 2258 (numeric) referred )
+(numeric) reg                	--> 2259 (numeric) reg
+(numeric) regard             	--> 2260 (numeric) regard
+(numeric) regards )          	--> 2261 (numeric) regards )
+(numeric) regim              	--> 2262 (numeric) regim
+(numeric) regiment )         	--> 2263 (numeric) regiment )
+(numeric) region )           	--> 2264 (numeric) region )
+(numeric) reil               	--> 2265 (numeric) reil
+(numeric) reilly )           	--> 2266 (numeric) reilly )
+(numeric) rel                	--> 2267 (numeric) rel
+(numeric) relations )        	--> 2268 (numeric) relations )
+(numeric) relinquish         	--> 2269 (numeric) relinquish
+(numeric) relinquishing )    	--> 2270 (numeric) relinquishing )
+(numeric) remember           	--> 2271 (numeric) remember
+(numeric) remember )         	--> 2272 (numeric) remember )
+(numeric) reminder           	--> 2273 (numeric) reminder
+(numeric) reminder )         	--> 2274 (numeric) reminder )
+(numeric) remot              	--> 2275 (numeric) remot
+(numeric) remote )           	--> 2276 (numeric) remote )
+(numeric) rent               	--> 2277 (numeric) rent
+(numeric) rented )           	--> 2278 (numeric) rented )
+(numeric) repar              	--> 2279 (numeric) repar
+(numeric) reparation )       	--> 2280 (numeric) reparation )
+(numeric) replac             	--> 2281 (numeric) replac
+(numeric) replacing )        	--> 2282 (numeric) replacing )
+(numeric) report             	--> 2283 (numeric) report
+(numeric) report )           	--> 2284 (numeric) report )
+(numeric) reporter           	--> 2285 (numeric) reporter
+(numeric) reporter )         	--> 2286 (numeric) reporter )
+(numeric) repres             	--> 2287 (numeric) repres
+(numeric) represented )      	--> 2288 (numeric) represented )
+(numeric) republ             	--> 2289 (numeric) republ
+(numeric) republic )         	--> 2290 (numeric) republic )
+(numeric) republican         	--> 2291 (numeric) republican
+(numeric) republican )       	--> 2292 (numeric) republican )
+(numeric) reserv             	--> 2293 (numeric) reserv
+(numeric) reserve )          	--> 2294 (numeric) reserve )
+(numeric) resid              	--> 2295 (numeric) resid
+(numeric) residence )        	--> 2296 (numeric) residence )
+(numeric) resolut            	--> 2297 (numeric) resolut
+(numeric) resolution )       	--> 2298 (numeric) resolution )
+(numeric) respect            	--> 2299 (numeric) respect
+(numeric) respectively )     	--> 2300 (numeric) respectively )
+(numeric) retail             	--> 2301 (numeric) retail
+(numeric) retails )          	--> 2302 (numeric) retails )
+(numeric) retir              	--> 2303 (numeric) retir
+(numeric) retirement )       	--> 2304 (numeric) retirement )
+(numeric) return             	--> 2305 (numeric) return
+(numeric) returning )        	--> 2306 (numeric) returning )
+(numeric) reve               	--> 2307 (numeric) reve
+(numeric) reveal )           	--> 2308 (numeric) reveal )
+(numeric) richard            	--> 2309 (numeric) richard
+(numeric) richard )          	--> 2310 (numeric) richard )
+(numeric) rid                	--> 2311 (numeric) rid
+(numeric) ride )             	--> 2312 (numeric) ride )
+(numeric) riding )           	--> 2313 (numeric) riding )
+(numeric) right              	--> 2314 (numeric) right
+(numeric) right )            	--> 2315 (numeric) right )
+(numeric) rile               	--> 2316 (numeric) rile
+(numeric) riley )            	--> 2317 (numeric) riley )
+(numeric) rl                 	--> 2318 (numeric) rl
+(numeric) robers             	--> 2319 (numeric) robers
+(numeric) robert )           	--> 2320 (numeric) robert )
+(numeric) room               	--> 2321 (numeric) room
+(numeric) room )             	--> 2322 (numeric) room )
+(numeric) root               	--> 2323 (numeric) root
+(numeric) root (             	--> 2324 (numeric) root (
+(numeric) ros                	--> 2325 (numeric) ros
+(numeric) rose )             	--> 2326 (numeric) rose )
+(numeric) roster             	--> 2327 (numeric) roster
+(numeric) roster )           	--> 2328 (numeric) roster )
+(numeric) rout               	--> 2329 (numeric) rout
+(numeric) route )            	--> 2330 (numeric) route )
+(numeric) rp                 	--> 2331 (numeric) rp
+(numeric) rp off             	--> 2332 (numeric) rp off
+(numeric) rp out             	--> 2333 (numeric) rp out
+(numeric) rp up              	--> 2334 (numeric) rp up
+(numeric) rule )             	--> 2335 (numeric) rule )
+(numeric) ruling )           	--> 2336 (numeric) ruling )
+(numeric) rus                	--> 2337 (numeric) rus
+(numeric) russia )           	--> 2338 (numeric) russia )
+(numeric) s                  	--> 2339 (numeric) s
+(numeric) s (                	--> 2340 (numeric) s (
+(numeric) s )                	--> 2341 (numeric) s )
+(numeric) said               	--> 2342 (numeric) said
+(numeric) said )             	--> 2343 (numeric) said )
+(numeric) sal                	--> 2344 (numeric) sal
+(numeric) sale )             	--> 2345 (numeric) sale )
+(numeric) sam                	--> 2346 (numeric) sam
+(numeric) same )             	--> 2347 (numeric) same )
+(numeric) san                	--> 2348 (numeric) san
+(numeric) san )              	--> 2349 (numeric) san )
+(numeric) say                	--> 2350 (numeric) say
+(numeric) say )              	--> 2351 (numeric) say )
+(numeric) sbar               	--> 2352 (numeric) sbar
+(numeric) sbar (             	--> 2353 (numeric) sbar (
+(numeric) school             	--> 2354 (numeric) school
+(numeric) school )           	--> 2355 (numeric) school )
+(numeric) sci                	--> 2356 (numeric) sci
+(numeric) science )          	--> 2357 (numeric) science )
+(numeric) scor               	--> 2358 (numeric) scor
+(numeric) scored )           	--> 2359 (numeric) scored )
+(numeric) seat               	--> 2360 (numeric) seat
+(numeric) seat )             	--> 2361 (numeric) seat )
+(numeric) seattl             	--> 2362 (numeric) seattl
+(numeric) seattle )          	--> 2363 (numeric) seattle )
+(numeric) secres             	--> 2364 (numeric) secres
+(numeric) secretary )        	--> 2365 (numeric) secretary )
+(numeric) secretary/mus      	--> 2366 (numeric) secretary/mus
+(numeric) secretary/music )  	--> 2367 (numeric) secretary/music )
+(numeric) secur              	--> 2368 (numeric) secur
+(numeric) security )         	--> 2369 (numeric) security )
+(numeric) seek               	--> 2370 (numeric) seek
+(numeric) seek )             	--> 2371 (numeric) seek )
+(numeric) sen                	--> 2372 (numeric) sen
+(numeric) senate )           	--> 2373 (numeric) senate )
+(numeric) senior             	--> 2374 (numeric) senior
+(numeric) senior )           	--> 2375 (numeric) senior )
+(numeric) sens               	--> 2376 (numeric) sens
+(numeric) sens )             	--> 2377 (numeric) sens )
+(numeric) sense )            	--> 2378 (numeric) sense )
+(numeric) ser                	--> 2379 (numeric) ser
+(numeric) series )           	--> 2380 (numeric) series )
+(numeric) serv               	--> 2381 (numeric) serv
+(numeric) servic             	--> 2382 (numeric) servic
+(numeric) service )          	--> 2383 (numeric) service )
+(numeric) serving )          	--> 2384 (numeric) serving )
+(numeric) ses                	--> 2385 (numeric) ses
+(numeric) set )              	--> 2386 (numeric) set )
+(numeric) sh                 	--> 2387 (numeric) sh
+(numeric) shaman             	--> 2388 (numeric) shaman
+(numeric) shaman )           	--> 2389 (numeric) shaman )
+(numeric) shar               	--> 2390 (numeric) shar
+(numeric) share )            	--> 2391 (numeric) share )
+(numeric) sharp              	--> 2392 (numeric) sharp
+(numeric) sharply )          	--> 2393 (numeric) sharply )
+(numeric) she )              	--> 2394 (numeric) she )
+(numeric) shirt              	--> 2395 (numeric) shirt
+(numeric) shirt )            	--> 2396 (numeric) shirt )
+(numeric) shoebox            	--> 2397 (numeric) shoebox
+(numeric) shoebox )          	--> 2398 (numeric) shoebox )
+(numeric) shot               	--> 2399 (numeric) shot
+(numeric) shot )             	--> 2400 (numeric) shot )
+(numeric) should             	--> 2401 (numeric) should
+(numeric) should )           	--> 2402 (numeric) should )
+(numeric) show               	--> 2403 (numeric) show
+(numeric) show )             	--> 2404 (numeric) show )
+(numeric) showed )           	--> 2405 (numeric) showed )
+(numeric) sieg               	--> 2406 (numeric) sieg
+(numeric) siege )            	--> 2407 (numeric) siege )
+(numeric) sign               	--> 2408 (numeric) sign
+(numeric) sign )             	--> 2409 (numeric) sign )
+(numeric) silent             	--> 2410 (numeric) silent
+(numeric) silent )           	--> 2411 (numeric) silent )
+(numeric) simil              	--> 2412 (numeric) simil
+(numeric) similar )          	--> 2413 (numeric) similar )
+(numeric) simmon             	--> 2414 (numeric) simmon
+(numeric) simmons )          	--> 2415 (numeric) simmons )
+(numeric) simpson            	--> 2416 (numeric) simpson
+(numeric) simpson )          	--> 2417 (numeric) simpson )
+(numeric) sinc               	--> 2418 (numeric) sinc
+(numeric) since )            	--> 2419 (numeric) since )
+(numeric) six-month          	--> 2420 (numeric) six-month
+(numeric) six-month )        	--> 2421 (numeric) six-month )
+(numeric) smal               	--> 2422 (numeric) smal
+(numeric) small )            	--> 2423 (numeric) small )
+(numeric) snap               	--> 2424 (numeric) snap
+(numeric) snapping )         	--> 2425 (numeric) snapping )
+(numeric) snyder             	--> 2426 (numeric) snyder
+(numeric) snyder )           	--> 2427 (numeric) snyder )
+(numeric) so                 	--> 2428 (numeric) so
+(numeric) so )               	--> 2429 (numeric) so )
+(numeric) sock               	--> 2430 (numeric) sock
+(numeric) sock )             	--> 2431 (numeric) sock )
+(numeric) sol                	--> 2432 (numeric) sol
+(numeric) sole )             	--> 2433 (numeric) sole )
+(numeric) solut              	--> 2434 (numeric) solut
+(numeric) solvent )          	--> 2435 (numeric) solvent )
+(numeric) som                	--> 2436 (numeric) som
+(numeric) some )             	--> 2437 (numeric) some )
+(numeric) son                	--> 2438 (numeric) son
+(numeric) songwriter         	--> 2439 (numeric) songwriter
+(numeric) songwriter )       	--> 2440 (numeric) songwriter )
+(numeric) sony )             	--> 2441 (numeric) sony )
+(numeric) soubr              	--> 2442 (numeric) soubr
+(numeric) soubry )           	--> 2443 (numeric) soubry )
+(numeric) sourc              	--> 2444 (numeric) sourc
+(numeric) source )           	--> 2445 (numeric) source )
+(numeric) south              	--> 2446 (numeric) south
+(numeric) south )            	--> 2447 (numeric) south )
+(numeric) speak              	--> 2448 (numeric) speak
+(numeric) speak )            	--> 2449 (numeric) speak )
+(numeric) speaker            	--> 2450 (numeric) speaker
+(numeric) speaker )          	--> 2451 (numeric) speaker )
+(numeric) spec               	--> 2452 (numeric) spec
+(numeric) special )          	--> 2453 (numeric) special )
+(numeric) speech             	--> 2454 (numeric) speech
+(numeric) speech )           	--> 2455 (numeric) speech )
+(numeric) speed              	--> 2456 (numeric) speed
+(numeric) speed )            	--> 2457 (numeric) speed )
+(numeric) sponsor            	--> 2458 (numeric) sponsor
+(numeric) sponsored )        	--> 2459 (numeric) sponsored )
+(numeric) st                 	--> 2460 (numeric) st
+(numeric) stag               	--> 2461 (numeric) stag
+(numeric) stage )            	--> 2462 (numeric) stage )
+(numeric) stand              	--> 2463 (numeric) stand
+(numeric) stands )           	--> 2464 (numeric) stands )
+(numeric) star               	--> 2465 (numeric) star
+(numeric) starring )         	--> 2466 (numeric) starring )
+(numeric) stat               	--> 2467 (numeric) stat
+(numeric) state )            	--> 2468 (numeric) state )
+(numeric) station )          	--> 2469 (numeric) station )
+(numeric) stepdaughter       	--> 2470 (numeric) stepdaughter
+(numeric) stepdaughter )     	--> 2471 (numeric) stepdaughter )
+(numeric) sterl              	--> 2472 (numeric) sterl
+(numeric) sterling )         	--> 2473 (numeric) sterling )
+(numeric) stev               	--> 2474 (numeric) stev
+(numeric) steve )            	--> 2475 (numeric) steve )
+(numeric) stil               	--> 2476 (numeric) stil
+(numeric) still )            	--> 2477 (numeric) still )
+(numeric) straight           	--> 2478 (numeric) straight
+(numeric) straight )         	--> 2479 (numeric) straight )
+(numeric) strees             	--> 2480 (numeric) strees
+(numeric) street )           	--> 2481 (numeric) street )
+(numeric) strength           	--> 2482 (numeric) strength
+(numeric) strengthening )    	--> 2483 (numeric) strengthening )
+(numeric) stres              	--> 2484 (numeric) stres
+(numeric) stressed )         	--> 2485 (numeric) stressed )
+(numeric) strik              	--> 2486 (numeric) strik
+(numeric) strike )           	--> 2487 (numeric) strike )
+(numeric) string             	--> 2488 (numeric) string
+(numeric) stringent )        	--> 2489 (numeric) stringent )
+(numeric) structur           	--> 2490 (numeric) structur
+(numeric) structure )        	--> 2491 (numeric) structure )
+(numeric) stud               	--> 2492 (numeric) stud
+(numeric) study )            	--> 2493 (numeric) study )
+(numeric) stuff              	--> 2494 (numeric) stuff
+(numeric) stuffed )          	--> 2495 (numeric) stuffed )
+(numeric) su                 	--> 2496 (numeric) su
+(numeric) submis             	--> 2497 (numeric) submis
+(numeric) submitted )        	--> 2498 (numeric) submitted )
+(numeric) subvers            	--> 2499 (numeric) subvers
+(numeric) subversive )       	--> 2500 (numeric) subversive )
+(numeric) succes             	--> 2501 (numeric) succes
+(numeric) success )          	--> 2502 (numeric) success )
+(numeric) suicide )          	--> 2503 (numeric) suicide )
+(numeric) suit               	--> 2504 (numeric) suit
+(numeric) suit )             	--> 2505 (numeric) suit )
+(numeric) sulaiman           	--> 2506 (numeric) sulaiman
+(numeric) sulaimani )        	--> 2507 (numeric) sulaimani )
+(numeric) sulaymaniyah       	--> 2508 (numeric) sulaymaniyah
+(numeric) sulaymaniyah )     	--> 2509 (numeric) sulaymaniyah )
+(numeric) sum                	--> 2510 (numeric) sum
+(numeric) summa )            	--> 2511 (numeric) summa )
+(numeric) super-hyp          	--> 2512 (numeric) super-hyp
+(numeric) super-hype )       	--> 2513 (numeric) super-hype )
+(numeric) suppl              	--> 2514 (numeric) suppl
+(numeric) supplying )        	--> 2515 (numeric) supplying )
+(numeric) support            	--> 2516 (numeric) support
+(numeric) support )          	--> 2517 (numeric) support )
+(numeric) syr                	--> 2518 (numeric) syr
+(numeric) syrian )           	--> 2519 (numeric) syrian )
+(numeric) t                  	--> 2520 (numeric) t
+(numeric) t )                	--> 2521 (numeric) t )
+(numeric) tak                	--> 2522 (numeric) tak
+(numeric) takes )            	--> 2523 (numeric) takes )
+(numeric) taking )           	--> 2524 (numeric) taking )
+(numeric) tank               	--> 2525 (numeric) tank
+(numeric) tank )             	--> 2526 (numeric) tank )
+(numeric) targes             	--> 2527 (numeric) targes
+(numeric) target )           	--> 2528 (numeric) target )
+(numeric) tear               	--> 2529 (numeric) tear
+(numeric) tearing )          	--> 2530 (numeric) tearing )
+(numeric) techniqu           	--> 2531 (numeric) techniqu
+(numeric) technique )        	--> 2532 (numeric) technique )
+(numeric) televis            	--> 2533 (numeric) televis
+(numeric) television )       	--> 2534 (numeric) television )
+(numeric) ten                	--> 2535 (numeric) ten
+(numeric) ten )              	--> 2536 (numeric) ten )
+(numeric) teng-hu            	--> 2537 (numeric) teng-hu
+(numeric) teng-hui )         	--> 2538 (numeric) teng-hui )
+(numeric) tennis )           	--> 2539 (numeric) tennis )
+(numeric) teres              	--> 2540 (numeric) teres
+(numeric) teresa )           	--> 2541 (numeric) teresa )
+(numeric) terrar             	--> 2542 (numeric) terrar
+(numeric) terrarium )        	--> 2543 (numeric) terrarium )
+(numeric) texas )            	--> 2544 (numeric) texas )
+(numeric) textur             	--> 2545 (numeric) textur
+(numeric) texturing )        	--> 2546 (numeric) texturing )
+(numeric) th                 	--> 2547 (numeric) th
+(numeric) than               	--> 2548 (numeric) than
+(numeric) than )             	--> 2549 (numeric) than )
+(numeric) that               	--> 2550 (numeric) that
+(numeric) that )             	--> 2551 (numeric) that )
+(numeric) the                	--> 2552 (numeric) the
+(numeric) the )              	--> 2553 (numeric) the )
+(numeric) theater            	--> 2554 (numeric) theater
+(numeric) theater )          	--> 2555 (numeric) theater )
+(numeric) they )             	--> 2556 (numeric) they )
+(numeric) this )             	--> 2557 (numeric) this )
+(numeric) thril              	--> 2558 (numeric) thril
+(numeric) thrilling )        	--> 2559 (numeric) thrilling )
+(numeric) through            	--> 2560 (numeric) through
+(numeric) through )          	--> 2561 (numeric) through )
+(numeric) tic                	--> 2562 (numeric) tic
+(numeric) tid                	--> 2563 (numeric) tid
+(numeric) tidy )             	--> 2564 (numeric) tidy )
+(numeric) tim                	--> 2565 (numeric) tim
+(numeric) time )             	--> 2566 (numeric) time )
+(numeric) times )            	--> 2567 (numeric) times )
+(numeric) tin                	--> 2568 (numeric) tin
+(numeric) tina )             	--> 2569 (numeric) tina )
+(numeric) tiny )             	--> 2570 (numeric) tiny )
+(numeric) tip                	--> 2571 (numeric) tip
+(numeric) tip )              	--> 2572 (numeric) tip )
+(numeric) to                 	--> 2573 (numeric) to
+(numeric) to )               	--> 2574 (numeric) to )
+(numeric) to t               	--> 2575 (numeric) to t
+(numeric) toda               	--> 2576 (numeric) toda
+(numeric) today )            	--> 2577 (numeric) today )
+(numeric) tongu              	--> 2578 (numeric) tongu
+(numeric) tongue )           	--> 2579 (numeric) tongue )
+(numeric) took               	--> 2580 (numeric) took
+(numeric) took )             	--> 2581 (numeric) took )
+(numeric) tr                 	--> 2582 (numeric) tr
+(numeric) trail              	--> 2583 (numeric) trail
+(numeric) trail )            	--> 2584 (numeric) trail )
+(numeric) train              	--> 2585 (numeric) train
+(numeric) training )         	--> 2586 (numeric) training )
+(numeric) transfer           	--> 2587 (numeric) transfer
+(numeric) transferred )      	--> 2588 (numeric) transferred )
+(numeric) trial )            	--> 2589 (numeric) trial )
+(numeric) triangl            	--> 2590 (numeric) triangl
+(numeric) triangle )         	--> 2591 (numeric) triangle )
+(numeric) trip               	--> 2592 (numeric) trip
+(numeric) trip )             	--> 2593 (numeric) trip )
+(numeric) troop              	--> 2594 (numeric) troop
+(numeric) troops )           	--> 2595 (numeric) troops )
+(numeric) tru                	--> 2596 (numeric) tru
+(numeric) true )             	--> 2597 (numeric) true )
+(numeric) truly )            	--> 2598 (numeric) truly )
+(numeric) try                	--> 2599 (numeric) try
+(numeric) trying )           	--> 2600 (numeric) trying )
+(numeric) tuberculos         	--> 2601 (numeric) tuberculos
+(numeric) tuberculosis )     	--> 2602 (numeric) tuberculosis )
+(numeric) turf               	--> 2603 (numeric) turf
+(numeric) turf )             	--> 2604 (numeric) turf )
+(numeric) turn               	--> 2605 (numeric) turn
+(numeric) turned )           	--> 2606 (numeric) turned )
+(numeric) tv                 	--> 2607 (numeric) tv
+(numeric) tv )               	--> 2608 (numeric) tv )
+(numeric) two-fam            	--> 2609 (numeric) two-fam
+(numeric) two-family )       	--> 2610 (numeric) two-family )
+(numeric) ucp                	--> 2611 (numeric) ucp
+(numeric) ucp (              	--> 2612 (numeric) ucp (
+(numeric) ultimatum          	--> 2613 (numeric) ultimatum
+(numeric) ultimatum )        	--> 2614 (numeric) ultimatum )
+(numeric) un                 	--> 2615 (numeric) un
+(numeric) un )               	--> 2616 (numeric) un )
+(numeric) under              	--> 2617 (numeric) under
+(numeric) under )            	--> 2618 (numeric) under )
+(numeric) underground        	--> 2619 (numeric) underground
+(numeric) underground )      	--> 2620 (numeric) underground )
+(numeric) understood         	--> 2621 (numeric) understood
+(numeric) understood )       	--> 2622 (numeric) understood )
+(numeric) unemploym          	--> 2623 (numeric) unemploym
+(numeric) unemployment )     	--> 2624 (numeric) unemployment )
+(numeric) union              	--> 2625 (numeric) union
+(numeric) union )            	--> 2626 (numeric) union )
+(numeric) unit               	--> 2627 (numeric) unit
+(numeric) united )           	--> 2628 (numeric) united )
+(numeric) univers            	--> 2629 (numeric) univers
+(numeric) universit          	--> 2630 (numeric) universit
+(numeric) universite )       	--> 2631 (numeric) universite )
+(numeric) university )       	--> 2632 (numeric) university )
+(numeric) unknown            	--> 2633 (numeric) unknown
+(numeric) unknown )          	--> 2634 (numeric) unknown )
+(numeric) unlaw              	--> 2635 (numeric) unlaw
+(numeric) unlawful )         	--> 2636 (numeric) unlawful )
+(numeric) until              	--> 2637 (numeric) until
+(numeric) until )            	--> 2638 (numeric) until )
+(numeric) up                 	--> 2639 (numeric) up
+(numeric) up )               	--> 2640 (numeric) up )
+(numeric) va                 	--> 2641 (numeric) va
+(numeric) va )               	--> 2642 (numeric) va )
+(numeric) vagu               	--> 2643 (numeric) vagu
+(numeric) vaguely )          	--> 2644 (numeric) vaguely )
+(numeric) valu               	--> 2645 (numeric) valu
+(numeric) value )            	--> 2646 (numeric) value )
+(numeric) vb                 	--> 2647 (numeric) vb
+(numeric) vb amount          	--> 2648 (numeric) vb amount
+(numeric) vb ap              	--> 2649 (numeric) vb ap
+(numeric) vb av              	--> 2650 (numeric) vb av
+(numeric) vb b               	--> 2651 (numeric) vb b
+(numeric) vb ban             	--> 2652 (numeric) vb ban
+(numeric) vb begin           	--> 2653 (numeric) vb begin
+(numeric) vb com             	--> 2654 (numeric) vb com
+(numeric) vb comp            	--> 2655 (numeric) vb comp
+(numeric) vb drop            	--> 2656 (numeric) vb drop
+(numeric) vb encour          	--> 2657 (numeric) vb encour
+(numeric) vb entic           	--> 2658 (numeric) vb entic
+(numeric) vb establ          	--> 2659 (numeric) vb establ
+(numeric) vb fac             	--> 2660 (numeric) vb fac
+(numeric) vb feel            	--> 2661 (numeric) vb feel
+(numeric) vb g               	--> 2662 (numeric) vb g
+(numeric) vb ges             	--> 2663 (numeric) vb ges
+(numeric) vb grow            	--> 2664 (numeric) vb grow
+(numeric) vb hear            	--> 2665 (numeric) vb hear
+(numeric) vb hur             	--> 2666 (numeric) vb hur
+(numeric) vb influ           	--> 2667 (numeric) vb influ
+(numeric) vb keep            	--> 2668 (numeric) vb keep
+(numeric) vb leav            	--> 2669 (numeric) vb leav
+(numeric) vb look            	--> 2670 (numeric) vb look
+(numeric) vb mov             	--> 2671 (numeric) vb mov
+(numeric) vb nurtur          	--> 2672 (numeric) vb nurtur
+(numeric) vb pressur         	--> 2673 (numeric) vb pressur
+(numeric) vb prob            	--> 2674 (numeric) vb prob
+(numeric) vb produc          	--> 2675 (numeric) vb produc
+(numeric) vb prov            	--> 2676 (numeric) vb prov
+(numeric) vb rece            	--> 2677 (numeric) vb rece
+(numeric) vb remember        	--> 2678 (numeric) vb remember
+(numeric) vb reve            	--> 2679 (numeric) vb reve
+(numeric) vb sa              	--> 2680 (numeric) vb sa
+(numeric) vb speak           	--> 2681 (numeric) vb speak
+(numeric) vb strik           	--> 2682 (numeric) vb strik
+(numeric) vbd                	--> 2683 (numeric) vbd
+(numeric) vbd agreed         	--> 2684 (numeric) vbd agreed
+(numeric) vbd ask            	--> 2685 (numeric) vbd ask
+(numeric) vbd b              	--> 2686 (numeric) vbd b
+(numeric) vbd beg            	--> 2687 (numeric) vbd beg
+(numeric) vbd captur         	--> 2688 (numeric) vbd captur
+(numeric) vbd commis         	--> 2689 (numeric) vbd commis
+(numeric) vbd continu        	--> 2690 (numeric) vbd continu
+(numeric) vbd contract       	--> 2691 (numeric) vbd contract
+(numeric) vbd crash          	--> 2692 (numeric) vbd crash
+(numeric) vbd creat          	--> 2693 (numeric) vbd creat
+(numeric) vbd d              	--> 2694 (numeric) vbd d
+(numeric) vbd defens         	--> 2695 (numeric) vbd defens
+(numeric) vbd did            	--> 2696 (numeric) vbd did
+(numeric) vbd drown          	--> 2697 (numeric) vbd drown
+(numeric) vbd fail           	--> 2698 (numeric) vbd fail
+(numeric) vbd father         	--> 2699 (numeric) vbd father
+(numeric) vbd felt           	--> 2700 (numeric) vbd felt
+(numeric) vbd follow         	--> 2701 (numeric) vbd follow
+(numeric) vbd gav            	--> 2702 (numeric) vbd gav
+(numeric) vbd gradu          	--> 2703 (numeric) vbd gradu
+(numeric) vbd had            	--> 2704 (numeric) vbd had
+(numeric) vbd heard          	--> 2705 (numeric) vbd heard
+(numeric) vbd held           	--> 2706 (numeric) vbd held
+(numeric) vbd hesit          	--> 2707 (numeric) vbd hesit
+(numeric) vbd instruc        	--> 2708 (numeric) vbd instruc
+(numeric) vbd join           	--> 2709 (numeric) vbd join
+(numeric) vbd kept           	--> 2710 (numeric) vbd kept
+(numeric) vbd learn          	--> 2711 (numeric) vbd learn
+(numeric) vbd liv            	--> 2712 (numeric) vbd liv
+(numeric) vbd lov            	--> 2713 (numeric) vbd lov
+(numeric) vbd lurk           	--> 2714 (numeric) vbd lurk
+(numeric) vbd mad            	--> 2715 (numeric) vbd mad
+(numeric) vbd mov            	--> 2716 (numeric) vbd mov
+(numeric) vbd notfail        	--> 2717 (numeric) vbd notfail
+(numeric) vbd paid           	--> 2718 (numeric) vbd paid
+(numeric) vbd play           	--> 2719 (numeric) vbd play
+(numeric) vbd pos            	--> 2720 (numeric) vbd pos
+(numeric) vbd postpon        	--> 2721 (numeric) vbd postpon
+(numeric) vbd propos         	--> 2722 (numeric) vbd propos
+(numeric) vbd push           	--> 2723 (numeric) vbd push
+(numeric) vbd ran            	--> 2724 (numeric) vbd ran
+(numeric) vbd reach          	--> 2725 (numeric) vbd reach
+(numeric) vbd read           	--> 2726 (numeric) vbd read
+(numeric) vbd receiv         	--> 2727 (numeric) vbd receiv
+(numeric) vbd repres         	--> 2728 (numeric) vbd repres
+(numeric) vbd ros            	--> 2729 (numeric) vbd ros
+(numeric) vbd said           	--> 2730 (numeric) vbd said
+(numeric) vbd scor           	--> 2731 (numeric) vbd scor
+(numeric) vbd ses            	--> 2732 (numeric) vbd ses
+(numeric) vbd show           	--> 2733 (numeric) vbd show
+(numeric) vbd stres          	--> 2734 (numeric) vbd stres
+(numeric) vbd submis         	--> 2735 (numeric) vbd submis
+(numeric) vbd took           	--> 2736 (numeric) vbd took
+(numeric) vbd transfer       	--> 2737 (numeric) vbd transfer
+(numeric) vbd turn           	--> 2738 (numeric) vbd turn
+(numeric) vbd w              	--> 2739 (numeric) vbd w
+(numeric) vbd want           	--> 2740 (numeric) vbd want
+(numeric) vbd won            	--> 2741 (numeric) vbd won
+(numeric) vbd wor            	--> 2742 (numeric) vbd wor
+(numeric) vbd work           	--> 2743 (numeric) vbd work
+(numeric) vbg                	--> 2744 (numeric) vbg
+(numeric) vbg allow          	--> 2745 (numeric) vbg allow
+(numeric) vbg continu        	--> 2746 (numeric) vbg continu
+(numeric) vbg craft          	--> 2747 (numeric) vbg craft
+(numeric) vbg dril           	--> 2748 (numeric) vbg dril
+(numeric) vbg fal            	--> 2749 (numeric) vbg fal
+(numeric) vbg featur         	--> 2750 (numeric) vbg featur
+(numeric) vbg find           	--> 2751 (numeric) vbg find
+(numeric) vbg fundrais       	--> 2752 (numeric) vbg fundrais
+(numeric) vbg handl          	--> 2753 (numeric) vbg handl
+(numeric) vbg inclus         	--> 2754 (numeric) vbg inclus
+(numeric) vbg increas        	--> 2755 (numeric) vbg increas
+(numeric) vbg leap           	--> 2756 (numeric) vbg leap
+(numeric) vbg liv            	--> 2757 (numeric) vbg liv
+(numeric) vbg look           	--> 2758 (numeric) vbg look
+(numeric) vbg pas            	--> 2759 (numeric) vbg pas
+(numeric) vbg pens           	--> 2760 (numeric) vbg pens
+(numeric) vbg preced         	--> 2761 (numeric) vbg preced
+(numeric) vbg push           	--> 2762 (numeric) vbg push
+(numeric) vbg relinquish     	--> 2763 (numeric) vbg relinquish
+(numeric) vbg replac         	--> 2764 (numeric) vbg replac
+(numeric) vbg return         	--> 2765 (numeric) vbg return
+(numeric) vbg rid            	--> 2766 (numeric) vbg rid
+(numeric) vbg serv           	--> 2767 (numeric) vbg serv
+(numeric) vbg snap           	--> 2768 (numeric) vbg snap
+(numeric) vbg star           	--> 2769 (numeric) vbg star
+(numeric) vbg strength       	--> 2770 (numeric) vbg strength
+(numeric) vbg suppl          	--> 2771 (numeric) vbg suppl
+(numeric) vbg tak            	--> 2772 (numeric) vbg tak
+(numeric) vbg tear           	--> 2773 (numeric) vbg tear
+(numeric) vbg tr             	--> 2774 (numeric) vbg tr
+(numeric) vbg train          	--> 2775 (numeric) vbg train
+(numeric) vbg writ           	--> 2776 (numeric) vbg writ
+(numeric) vbn                	--> 2777 (numeric) vbn
+(numeric) vbn adorn          	--> 2778 (numeric) vbn adorn
+(numeric) vbn aim            	--> 2779 (numeric) vbn aim
+(numeric) vbn announc        	--> 2780 (numeric) vbn announc
+(numeric) vbn bal            	--> 2781 (numeric) vbn bal
+(numeric) vbn bas            	--> 2782 (numeric) vbn bas
+(numeric) vbn charg          	--> 2783 (numeric) vbn charg
+(numeric) vbn encourag       	--> 2784 (numeric) vbn encourag
+(numeric) vbn fail           	--> 2785 (numeric) vbn fail
+(numeric) vbn giv            	--> 2786 (numeric) vbn giv
+(numeric) vbn grant          	--> 2787 (numeric) vbn grant
+(numeric) vbn height         	--> 2788 (numeric) vbn height
+(numeric) vbn held           	--> 2789 (numeric) vbn held
+(numeric) vbn inhabit        	--> 2790 (numeric) vbn inhabit
+(numeric) vbn inspir         	--> 2791 (numeric) vbn inspir
+(numeric) vbn intens         	--> 2792 (numeric) vbn intens
+(numeric) vbn mad            	--> 2793 (numeric) vbn mad
+(numeric) vbn pok            	--> 2794 (numeric) vbn pok
+(numeric) vbn r              	--> 2795 (numeric) vbn r
+(numeric) vbn receiv         	--> 2796 (numeric) vbn receiv
+(numeric) vbn refer          	--> 2797 (numeric) vbn refer
+(numeric) vbn shot           	--> 2798 (numeric) vbn shot
+(numeric) vbn sponsor        	--> 2799 (numeric) vbn sponsor
+(numeric) vbn stuff          	--> 2800 (numeric) vbn stuff
+(numeric) vbn understood     	--> 2801 (numeric) vbn understood
+(numeric) vbp                	--> 2802 (numeric) vbp
+(numeric) vbp affect         	--> 2803 (numeric) vbp affect
+(numeric) vbp b              	--> 2804 (numeric) vbp b
+(numeric) vbp seek           	--> 2805 (numeric) vbp seek
+(numeric) vbz                	--> 2807 (numeric) vbz 
+(numeric) vbz                	--> 2807 (numeric) vbz 
+(numeric) vbz accus          	--> 2808 (numeric) vbz accus
+(numeric) vbz arriv          	--> 2809 (numeric) vbz arriv
+(numeric) vbz b              	--> 2810 (numeric) vbz b
+(numeric) vbz begin          	--> 2811 (numeric) vbz begin
+(numeric) vbz continu        	--> 2812 (numeric) vbz continu
+(numeric) vbz deserv         	--> 2813 (numeric) vbz deserv
+(numeric) vbz draw           	--> 2814 (numeric) vbz draw
+(numeric) vbz expect         	--> 2815 (numeric) vbz expect
+(numeric) vbz go             	--> 2816 (numeric) vbz go
+(numeric) vbz h              	--> 2817 (numeric) vbz h
+(numeric) vbz hop            	--> 2818 (numeric) vbz hop
+(numeric) vbz play           	--> 2819 (numeric) vbz play
+(numeric) vbz regard         	--> 2820 (numeric) vbz regard
+(numeric) vbz retail         	--> 2821 (numeric) vbz retail
+(numeric) vbz stand          	--> 2822 (numeric) vbz stand
+(numeric) vbz tak            	--> 2823 (numeric) vbz tak
+(numeric) vbz work           	--> 2824 (numeric) vbz work
+(numeric) vbz writ           	--> 2825 (numeric) vbz writ
+(numeric) venic              	--> 2826 (numeric) venic
+(numeric) venice )           	--> 2827 (numeric) venice )
+(numeric) victor             	--> 2828 (numeric) victor
+(numeric) victory )          	--> 2829 (numeric) victory )
+(numeric) vint               	--> 2830 (numeric) vint
+(numeric) vintage )          	--> 2831 (numeric) vintage )
+(numeric) viol               	--> 2832 (numeric) viol
+(numeric) violence )         	--> 2833 (numeric) violence )
+(numeric) vp                 	--> 2834 (numeric) vp
+(numeric) vp (               	--> 2835 (numeric) vp (
+(numeric) vs.                	--> 2836 (numeric) vs.
+(numeric) vs. )              	--> 2837 (numeric) vs. )
+(numeric) wal                	--> 2838 (numeric) wal
+(numeric) wall )             	--> 2839 (numeric) wall )
+(numeric) want               	--> 2840 (numeric) want
+(numeric) wanted )           	--> 2841 (numeric) wanted )
+(numeric) war                	--> 2842 (numeric) war
+(numeric) war )              	--> 2843 (numeric) war )
+(numeric) wary )             	--> 2844 (numeric) wary )
+(numeric) washingt           	--> 2845 (numeric) washingt
+(numeric) washington )       	--> 2846 (numeric) washington )
+(numeric) watterson          	--> 2847 (numeric) watterson
+(numeric) watterson )        	--> 2848 (numeric) watterson )
+(numeric) way                	--> 2849 (numeric) way
+(numeric) way )              	--> 2850 (numeric) way )
+(numeric) wdt                	--> 2851 (numeric) wdt
+(numeric) wdt that           	--> 2852 (numeric) wdt that
+(numeric) wdt which          	--> 2853 (numeric) wdt which
+(numeric) we                 	--> 2854 (numeric) we
+(numeric) we )               	--> 2855 (numeric) we )
+(numeric) weather            	--> 2856 (numeric) weather
+(numeric) weather )          	--> 2857 (numeric) weather )
+(numeric) week               	--> 2858 (numeric) week
+(numeric) week )             	--> 2859 (numeric) week )
+(numeric) weihaiwe           	--> 2860 (numeric) weihaiwe
+(numeric) weihaiwei )        	--> 2861 (numeric) weihaiwei )
+(numeric) wel                	--> 2862 (numeric) wel
+(numeric) well )             	--> 2863 (numeric) well )
+(numeric) went               	--> 2864 (numeric) went
+(numeric) went )             	--> 2865 (numeric) went )
+(numeric) wh                 	--> 2866 (numeric) wh
+(numeric) whadjp             	--> 2867 (numeric) whadjp
+(numeric) whadjp (           	--> 2868 (numeric) whadjp (
+(numeric) whadvp             	--> 2869 (numeric) whadvp
+(numeric) whadvp (           	--> 2870 (numeric) whadvp (
+(numeric) what               	--> 2871 (numeric) what
+(numeric) what )             	--> 2872 (numeric) what )
+(numeric) when               	--> 2873 (numeric) when
+(numeric) when )             	--> 2874 (numeric) when )
+(numeric) where )            	--> 2875 (numeric) where )
+(numeric) whes               	--> 2876 (numeric) whes
+(numeric) whether            	--> 2877 (numeric) whether
+(numeric) whether )          	--> 2878 (numeric) whether )
+(numeric) which              	--> 2879 (numeric) which
+(numeric) which )            	--> 2880 (numeric) which )
+(numeric) whil               	--> 2881 (numeric) whil
+(numeric) while )            	--> 2882 (numeric) while )
+(numeric) whnp               	--> 2883 (numeric) whnp
+(numeric) whnp (             	--> 2884 (numeric) whnp (
+(numeric) who )              	--> 2885 (numeric) who )
+(numeric) whol               	--> 2886 (numeric) whol
+(numeric) whole )            	--> 2887 (numeric) whole )
+(numeric) whos               	--> 2888 (numeric) whos
+(numeric) whose )            	--> 2889 (numeric) whose )
+(numeric) whp                	--> 2890 (numeric) whp
+(numeric) whpp (             	--> 2891 (numeric) whpp (
+(numeric) wif                	--> 2892 (numeric) wif
+(numeric) wife )             	--> 2893 (numeric) wife )
+(numeric) wil                	--> 2894 (numeric) wil
+(numeric) wild               	--> 2895 (numeric) wild
+(numeric) wild )             	--> 2896 (numeric) wild )
+(numeric) wildflower         	--> 2897 (numeric) wildflower
+(numeric) wildflower )       	--> 2898 (numeric) wildflower )
+(numeric) will )             	--> 2899 (numeric) will )
+(numeric) with               	--> 2900 (numeric) with
+(numeric) with )             	--> 2901 (numeric) with )
+(numeric) woman              	--> 2902 (numeric) woman
+(numeric) woman )            	--> 2903 (numeric) woman )
+(numeric) won                	--> 2904 (numeric) won
+(numeric) won )              	--> 2905 (numeric) won )
+(numeric) wonder             	--> 2906 (numeric) wonder
+(numeric) wonderful )        	--> 2907 (numeric) wonderful )
+(numeric) woodson            	--> 2908 (numeric) woodson
+(numeric) woodson )          	--> 2909 (numeric) woodson )
+(numeric) wor                	--> 2910 (numeric) wor
+(numeric) wore )             	--> 2911 (numeric) wore )
+(numeric) work               	--> 2912 (numeric) work
+(numeric) worked )           	--> 2913 (numeric) worked )
+(numeric) worker             	--> 2914 (numeric) worker
+(numeric) worker )           	--> 2915 (numeric) worker )
+(numeric) works )            	--> 2916 (numeric) works )
+(numeric) world              	--> 2917 (numeric) world
+(numeric) world )            	--> 2918 (numeric) world )
+(numeric) worst              	--> 2919 (numeric) worst
+(numeric) worst )            	--> 2920 (numeric) worst )
+(numeric) would              	--> 2921 (numeric) would
+(numeric) would )            	--> 2922 (numeric) would )
+(numeric) wozniak            	--> 2923 (numeric) wozniak
+(numeric) wozniak )          	--> 2924 (numeric) wozniak )
+(numeric) wp                 	--> 2925 (numeric) wp
+(numeric) wp wh              	--> 2926 (numeric) wp wh
+(numeric) wp what            	--> 2927 (numeric) wp what
+(numeric) wp$                	--> 2928 (numeric) wp$
+(numeric) wp$ whos           	--> 2929 (numeric) wp$ whos
+(numeric) wrb                	--> 2930 (numeric) wrb
+(numeric) wrb how            	--> 2931 (numeric) wrb how
+(numeric) wrb wh             	--> 2932 (numeric) wrb wh
+(numeric) wrb whes           	--> 2933 (numeric) wrb whes
+(numeric) wright             	--> 2934 (numeric) wright
+(numeric) wright )           	--> 2935 (numeric) wright )
+(numeric) writ               	--> 2936 (numeric) writ
+(numeric) writer             	--> 2937 (numeric) writer
+(numeric) writer )           	--> 2938 (numeric) writer )
+(numeric) writes )           	--> 2939 (numeric) writes )
+(numeric) writing )          	--> 2940 (numeric) writing )
+(numeric) wu                 	--> 2941 (numeric) wu
+(numeric) wu )               	--> 2942 (numeric) wu )
+(numeric) yard               	--> 2943 (numeric) yard
+(numeric) yard )             	--> 2944 (numeric) yard )
+(numeric) year               	--> 2945 (numeric) year
+(numeric) year )             	--> 2946 (numeric) year )
+(numeric) years )            	--> 2947 (numeric) years )
+(numeric) yield              	--> 2948 (numeric) yield
+(numeric) yield )            	--> 2949 (numeric) yield )
+(numeric) yogeswaran         	--> 2950 (numeric) yogeswaran
+(numeric) yogeswaran )       	--> 2951 (numeric) yogeswaran )
+(numeric) yun                	--> 2952 (numeric) yun
+(numeric) yun )              	--> 2953 (numeric) yun )
+(numeric) zimmer             	--> 2954 (numeric) zimmer
+(numeric) zimmer )           	--> 2955 (numeric) zimmer )
+
+
+Time taken to build model: 141.43 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         241               98.7705 %
+Incorrectly Classified Instances         3                1.2295 %
+Kappa statistic                          0.9754
+K&B Relative Info Score              21838.7794 %
+K&B Information Score                  218.3878 bits      0.895  bits/instance
+Class complexity | order 0             244.0276 bits      1.0001 bits/instance
+Class complexity | scheme               29.5588 bits      0.1211 bits/instance
+Complexity improvement     (Sf)        214.4688 bits      0.879  bits/instance
+Mean absolute error                      0.0646
+Root mean squared error                  0.1225
+Relative absolute error                 12.9166 %
+Root relative squared error             24.4919 %
+Coverage of cases (0.95 level)          99.5902 %
+Mean rel. region size (0.95 level)      69.4672 %
+Total Number of Instances              244     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,992    0,016    0,984      0,992    0,988      0,975    0,997     0,998     0
+                 0,984    0,008    0,992      0,984    0,988      0,975    0,997     0,997     1
+Weighted Avg.    0,988    0,012    0,988      0,988    0,988      0,975    0,997     0,997     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 121   1 |   a = 0
+   2 120 |   b = 1
+

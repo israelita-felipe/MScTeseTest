@@ -28,6 +28,9 @@ public class TestesMestradoUfpeApplicationTests {
 		Detail _1_3gram = null;
 
 		for (File f : cngram.listFiles()) {
+			if (f.isDirectory()) {
+				continue;
+			}
 			String name = f.getName().toUpperCase();
 
 			BufferedReader s = new BufferedReader(new FileReader(f));
@@ -40,9 +43,11 @@ public class TestesMestradoUfpeApplicationTests {
 					line = s.readLine();
 				} else if (line.startsWith(measures)) {
 					String[] values = line.split("(\\s\\s|\\s\\s\\s)+");
-					precision = Double.parseDouble(values[3].trim().replace(",", "."));
-					recall = Double.parseDouble(values[4].trim().replace(",", "."));
-					fmeasure = Double.parseDouble(values[5].trim().replace(",", "."));
+					if (!line.contains("?")) {
+						precision = Double.parseDouble(values[3].trim().replace(",", "."));
+						recall = Double.parseDouble(values[4].trim().replace(",", "."));
+						fmeasure = Double.parseDouble(values[5].trim().replace(",", "."));
+					}
 					break;
 				} else {
 					line = s.readLine();
@@ -57,6 +62,10 @@ public class TestesMestradoUfpeApplicationTests {
 					Detail _tmp1gram = new Detail(fmeasure, recall, precision, rmse, name);
 					if (_tmp1gram.getMean() > _1gram.getMean()) {
 						_1gram = _tmp1gram;
+					} else if (_tmp1gram.getMean() == _1gram.getMean()) {
+						if (_tmp1gram.getTitle().length() < _1gram.getTitle().length()) {
+							_1gram = _tmp1gram;
+						}
 					}
 				}
 			} else if (name.startsWith("1-2GRAM")) {
@@ -66,6 +75,10 @@ public class TestesMestradoUfpeApplicationTests {
 					Detail _tmp1_2gram = new Detail(fmeasure, recall, precision, rmse, name);
 					if (_tmp1_2gram.getMean() > _1_2gram.getMean()) {
 						_1_2gram = _tmp1_2gram;
+					} else if (_tmp1_2gram.getMean() == _1_2gram.getMean()) {
+						if (_tmp1_2gram.getTitle().length() < _1_2gram.getTitle().length()) {
+							_1_2gram = _tmp1_2gram;
+						}
 					}
 				}
 			} else if (name.startsWith("1-3GRAM")) {
@@ -75,6 +88,10 @@ public class TestesMestradoUfpeApplicationTests {
 					Detail _tmp1_3gram = new Detail(fmeasure, recall, precision, rmse, name);
 					if (_tmp1_3gram.getMean() > _1_3gram.getMean()) {
 						_1_3gram = _tmp1_3gram;
+					} else if (_tmp1_3gram.getMean() == _1_3gram.getMean()) {
+						if (_tmp1_3gram.getTitle().length() < _1_3gram.getTitle().length()) {
+							_1_3gram = _tmp1_3gram;
+						}
 					}
 				}
 			}
@@ -95,23 +112,28 @@ public class TestesMestradoUfpeApplicationTests {
 		Detail _1_3gram = null;
 
 		for (File f : cngram.listFiles()) {
+			if (f.isDirectory()) {
+				continue;
+			}
 			String name = f.getName().toUpperCase();
 
 			BufferedReader s = new BufferedReader(new FileReader(f));
 
 			double fmeasure = 0, precision = 0, recall = 0, rmse = 0;
 			String line = "";
-			while (true) {				
+			while (true) {
 				if (line.startsWith(rmsePattern)) {
 					rmse = Double.parseDouble(line.split("(\\s\\s|\\s\\s\\s)+")[1].trim());
 					line = s.readLine();
 				} else if (line.startsWith(measures)) {
 					String[] values = line.split("(\\s\\s|\\s\\s\\s)+");
-					precision = Double.parseDouble(values[3].trim().replace(",", "."));
-					recall = Double.parseDouble(values[4].trim().replace(",", "."));
-					fmeasure = Double.parseDouble(values[5].trim().replace(",", "."));
+					if (!line.contains("?")) {
+						precision = Double.parseDouble(values[3].trim().replace(",", "."));
+						recall = Double.parseDouble(values[4].trim().replace(",", "."));
+						fmeasure = Double.parseDouble(values[5].trim().replace(",", "."));
+					}
 					break;
-				}else {
+				} else {
 					line = s.readLine();
 				}
 			}
@@ -124,6 +146,10 @@ public class TestesMestradoUfpeApplicationTests {
 					Detail _tmp1gram = new Detail(fmeasure, recall, precision, rmse, name);
 					if (_tmp1gram.getMean() > _1gram.getMean()) {
 						_1gram = _tmp1gram;
+					} else if (_tmp1gram.getMean() == _1gram.getMean()) {
+						if (_tmp1gram.getTitle().length() < _1gram.getTitle().length()) {
+							_1gram = _tmp1gram;
+						}
 					}
 				}
 			} else if (name.startsWith("1-2GRAM")) {
@@ -133,6 +159,10 @@ public class TestesMestradoUfpeApplicationTests {
 					Detail _tmp1_2gram = new Detail(fmeasure, recall, precision, rmse, name);
 					if (_tmp1_2gram.getMean() > _1_2gram.getMean()) {
 						_1_2gram = _tmp1_2gram;
+					} else if (_tmp1_2gram.getMean() == _1_2gram.getMean()) {
+						if (_tmp1_2gram.getTitle().length() < _1_2gram.getTitle().length()) {
+							_1_2gram = _tmp1_2gram;
+						}
 					}
 				}
 			} else if (name.startsWith("1-3GRAM")) {
@@ -142,6 +172,10 @@ public class TestesMestradoUfpeApplicationTests {
 					Detail _tmp1_3gram = new Detail(fmeasure, recall, precision, rmse, name);
 					if (_tmp1_3gram.getMean() > _1_3gram.getMean()) {
 						_1_3gram = _tmp1_3gram;
+					} else if (_tmp1_3gram.getMean() == _1_3gram.getMean()) {
+						if (_tmp1_3gram.getTitle().length() < _1_3gram.getTitle().length()) {
+							_1_3gram = _tmp1_3gram;
+						}
 					}
 				}
 			}
