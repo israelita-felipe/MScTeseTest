@@ -1,0 +1,50 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.GridSearch -E ACC -y-property gamma -y-min -5.0 -y-max -1.0 -y-step 0.5 -y-base 10.0 -y-expression 5*pow(BASE,I) -x-property cost -x-min 0.0 -x-max 10.0 -x-step 0.25 -x-base 1.0 -x-expression (BASE+I) -sample-size 100.0 -traversal COLUMN-WISE -log-file "C:\\Program Files\\Weka-3-8" -num-slots 1 -S 1 -W weka.classifiers.functions.LibSVM -- -S 0 -K 2 -D 3 -G 0.005 -R 0.0 -N 0.5 -M 40.0 -C 6.0 -E 0.5 -P 0.05 -B -model "C:\\Program Files\\Weka-3-8" -seed 1
+Relation:     rillof.triples.sentences.txt-weka.filters.unsupervised.attribute.NumericToBinary-R5-weka.filters.unsupervised.attribute.StringToWordVector-R1,2,3,4-W100000-prune-rate-1.0-C-T-N0-L-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-O-tokenizerweka.core.tokenizers.NGramTokenizer -max 1 -min 1 -delimiters " \r \t"
+Instances:    104
+Attributes:   809
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+weka.classifiers.meta.GridSearch:
+Classifier: weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.005 -R 0.0 -N 0.5 -M 40.0 -C 9.5 -E 0.5 -P 0.05 -B -model "C:\\Program Files\\Weka-3-8" -seed 1
+
+X property: cost
+Y property: gamma
+
+Evaluation: Accuracy
+Coordinates: [8.5, -3.0]
+Values: 9.5 (X coordinate), 0.005 (Y coordinate)
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 6.92 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          94               90.3846 %
+Incorrectly Classified Instances        10                9.6154 %
+Kappa statistic                          0.8077
+Mean absolute error                      0.1393
+Root mean squared error                  0.2477
+Relative absolute error                 27.8566 %
+Root relative squared error             49.525  %
+Total Number of Instances              104     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,885    0,077    0,920      0,885    0,902      0,808    0,973     0,977     0
+                 0,923    0,115    0,889      0,923    0,906      0,808    0,973     0,972     1
+Weighted Avg.    0,904    0,096    0,904      0,904    0,904      0,808    0,973     0,975     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 46  6 |  a = 0
+  4 48 |  b = 1
+
