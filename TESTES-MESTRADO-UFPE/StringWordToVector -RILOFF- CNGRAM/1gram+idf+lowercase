@@ -1,24 +1,24 @@
 
-Correctly Classified Instances          79               75.9615 %
-Incorrectly Classified Instances        25               24.0385 %
-Kappa statistic                          0.5192
-Mean absolute error                      0.3616
-Root mean squared error                  0.4198
-Relative absolute error                 72.281  %
-Root relative squared error             83.9312 %
+Correctly Classified Instances          89               85.5769 %
+Incorrectly Classified Instances        15               14.4231 %
+Kappa statistic                          0.7115
+Mean absolute error                      0.2821
+Root mean squared error                  0.3729
+Relative absolute error                 56.4021 %
+Root relative squared error             74.5406 %
 Coverage of cases (0.95 level)          99.0385 %
-Mean rel. region size (0.95 level)      99.0385 %
+Mean rel. region size (0.95 level)      90.3846 %
 Total Number of Instances              104     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0,712    0,192    0,787      0,712    0,747      0,522    0,819     0,772     0
-                 0,808    0,288    0,737      0,808    0,771      0,522    0,819     0,801     1
-Weighted Avg.    0,760    0,240    0,762      0,760    0,759      0,522    0,819     0,786     
+                 0,750    0,038    0,951      0,750    0,839      0,728    0,863     0,900     0
+                 0,962    0,250    0,794      0,962    0,870      0,728    0,863     0,797     1
+Weighted Avg.    0,856    0,144    0,872      0,856    0,854      0,728    0,863     0,849     
 
 === Confusion Matrix ===
 
   a  b   <-- classified as
- 37 15 |  a = 0
- 10 42 |  b = 1
+ 39 13 |  a = 0
+  2 50 |  b = 1

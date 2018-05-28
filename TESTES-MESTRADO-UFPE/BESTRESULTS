@@ -3,17 +3,17 @@ Detail [fscore=0,9960, recall=0,9960, precision=0,9960, rmse=0,0708, mean=0,9614
 Detail [fscore=0,9960, recall=0,9960, precision=0,9960, rmse=0,0788, mean=0,9571, title=1-2GRAM+TF+IDF+STEMMING]
 Detail [fscore=0,9960, recall=0,9960, precision=0,9960, rmse=0,0739, mean=0,9598, title=1-3GRAM+TF+IDF+STEMMING]
 _CNGRAM_
-Detail [fscore=0,9710, recall=0,9710, precision=0,9710, rmse=0,1640, mean=0,8985, title=1GRAM+STEMMING]
-Detail [fscore=0,9880, recall=0,9880, precision=0,9880, rmse=0,0951, mean=0,9446, title=1-2GRAM+TF+IDF+STEMMING]
-Detail [fscore=0,9960, recall=0,9960, precision=0,9960, rmse=0,1043, mean=0,9432, title=1-3GRAM+TF+IDF+LOWERCASE+STOPWORD]
+DESCARTADO -> Detail [fscore=0,9710, recall=0,9710, precision=0,9710, rmse=0,1640, mean=0,8985, title=1GRAM+STEMMING]
+DESCARTADO -> Detail [fscore=0,9880, recall=0,9880, precision=0,9880, rmse=0,0951, mean=0,9446, title=1-2GRAM+TF+IDF+STEMMING]
+DESCARTADO -> Detail [fscore=0,9960, recall=0,9960, precision=0,9960, rmse=0,1043, mean=0,9432, title=1-3GRAM+TF+IDF+LOWERCASE+STOPWORD]
 _RILOFF_NGRAM_
-Detail [fscore=0,9130, recall=0,9130, precision=0,9150, rmse=0,2435, mean=0,8274, title=1GRAM+TF+LOWERCASE]
-Detail [fscore=0,9230, recall=0,9230, precision=0,9260, rmse=0,2471, mean=0,8293, title=1-2GRAM+TF]
+DESCARTADO -> Detail [fscore=0,9130, recall=0,9130, precision=0,9150, rmse=0,2435, mean=0,8274, title=1GRAM+TF+LOWERCASE]
+DESCARTADO -> Detail [fscore=0,9230, recall=0,9230, precision=0,9260, rmse=0,2471, mean=0,8293, title=1-2GRAM+TF]
 Detail [fscore=0,9040, recall=0,9040, precision=0,9090, rmse=0,2744, mean=0,8050, title=1-3GRAM+TF+LOWERCASE]
 _RILOFF_CNGRAM_
-Detail [fscore=0,8270, recall=0,8270, precision=0,8270, rmse=0,3648, mean=0,7185, title=1GRAM+TF+STEMMING]
-Detail [fscore=0,8650, recall=0,8650, precision=0,8740, rmse=0,3220, mean=0,7602, title=1-2GRAM+TF+IDF+STEMMING]
-Detail [fscore=0,8530, recall=0,8560, precision=0,8790, rmse=0,3595, mean=0,7316, title=1-3GRAM+TF+IDF+LOWERCASE+STEMMING+STOPWORD]
+DESCARTADO -> Detail [fscore=0,8270, recall=0,8270, precision=0,8270, rmse=0,3648, mean=0,7185, title=1GRAM+TF+STEMMING]
+DESCARTADO -> Detail [fscore=0,8650, recall=0,8650, precision=0,8740, rmse=0,3220, mean=0,7602, title=1-2GRAM+TF+IDF+STEMMING]
+DESCARTADO -> Detail [fscore=0,8530, recall=0,8560, precision=0,8790, rmse=0,3595, mean=0,7316, title=1-3GRAM+TF+IDF+LOWERCASE+STEMMING+STOPWORD]
 
 
 ///////////////////////////////////////////////////////////////////
@@ -27,14 +27,29 @@ Detail [fscore=0,9960, recall=0,9960, precision=0,9960, rmse=0,0708, mean=0,9614
 Detail [fscore=0,9960, recall=0,9960, precision=0,9960, rmse=0,0788, mean=0,9571, title=1-2GRAM+TF+IDF+STEMMING]
 Detail [fscore=0,9960, recall=0,9960, precision=0,9960, rmse=0,0739, mean=0,9598, title=1-3GRAM+TF+IDF+STEMMING]
 _CNGRAM_
-Detail [fscore=0,9710, recall=0,9710, precision=0,9710, rmse=0,1640, mean=0,8985, title=1GRAM+STEMMING]
-Detail [fscore=0,9880, recall=0,9880, precision=0,9880, rmse=0,0951, mean=0,9446, title=1-2GRAM+TF+IDF+STEMMING]
-Detail [fscore=0,9960, recall=0,9960, precision=0,9960, rmse=0,1043, mean=0,9432, title=1-3GRAM+TF+IDF+LOWERCASE+STOPWORD]
+DESCARTADO -> Detail [fscore=0,9710, recall=0,9710, precision=0,9710, rmse=0,1640, mean=0,8985, title=1GRAM+STEMMING]
+DESCARTADO -> Detail [fscore=0,9880, recall=0,9880, precision=0,9880, rmse=0,0951, mean=0,9446, title=1-2GRAM+TF+IDF+STEMMING]
+DESCARTADO -> Detail [fscore=0,9960, recall=0,9960, precision=0,9960, rmse=0,1043, mean=0,9432, title=1-3GRAM+TF+IDF+LOWERCASE+STOPWORD]
 _RILOFF_NGRAM_
 Detail [fscore=0,9520, recall=0,9520, precision=0,9530, rmse=0,2386, mean=0,8461, title=1GRAM+TF+IDF+LOWERCASE+STOPWORD+NORMALIZED]
 Detail [fscore=0,9330, recall=0,9330, precision=0,9340, rmse=0,2528, mean=0,8298, title=1-2GRAM+TF+IDF+LOWERCASE+STOPWORD+NORMALIZED]
 Detail [fscore=0,9040, recall=0,9040, precision=0,9090, rmse=0,2744, mean=0,8050, title=1-3GRAM+TF+LOWERCASE]
 _RILOFF_CNGRAM_
-Detail [fscore=0,8270, recall=0,8270, precision=0,8270, rmse=0,3648, mean=0,7185, title=1GRAM+TF+STEMMING]
-Detail [fscore=0,8840, recall=0,8850, precision=0,8870, rmse=0,2868, mean=0,7895, title=1-2GRAM+IDF+STEMMING+NORMALIZED]
-Detail [fscore=0,8940, recall=0,8940, precision=0,9020, rmse=0,2935, mean=0,7893, title=1-3GRAM+IDF+STEMMING+NORMALIZED]
+DESCARTADO -> Detail [fscore=0,8270, recall=0,8270, precision=0,8270, rmse=0,3648, mean=0,7185, title=1GRAM+TF+STEMMING]
+DESCARTADO -> Detail [fscore=0,8840, recall=0,8850, precision=0,8870, rmse=0,2868, mean=0,7895, title=1-2GRAM+IDF+STEMMING+NORMALIZED]
+DESCARTADO -> Detail [fscore=0,8940, recall=0,8940, precision=0,9020, rmse=0,2935, mean=0,7893, title=1-3GRAM+IDF+STEMMING+NORMALIZED]
+
+
+////////////////////////////////////////////////////////////////////
+//
+// CONFIGURAÇES APROVADAS PARA TESTE NO WORDNET
+//
+////////////////////////////////////////////////////////////////////
+_NGRAM_
+Detail [fscore=0,9960, recall=0,9960, precision=0,9960, rmse=0,0708, mean=0,9614, title=1GRAM+IDF+STEMMING]
+Detail [fscore=0,9960, recall=0,9960, precision=0,9960, rmse=0,0788, mean=0,9571, title=1-2GRAM+TF+IDF+STEMMING]
+Detail [fscore=0,9960, recall=0,9960, precision=0,9960, rmse=0,0739, mean=0,9598, title=1-3GRAM+TF+IDF+STEMMING]
+_RILOFF_NGRAM_
+Detail [fscore=0,9520, recall=0,9520, precision=0,9530, rmse=0,2386, mean=0,8461, title=1GRAM+TF+IDF+LOWERCASE+STOPWORD+NORMALIZED]
+Detail [fscore=0,9330, recall=0,9330, precision=0,9340, rmse=0,2528, mean=0,8298, title=1-2GRAM+TF+IDF+LOWERCASE+STOPWORD+NORMALIZED]
+Detail [fscore=0,9040, recall=0,9040, precision=0,9090, rmse=0,2744, mean=0,8050, title=1-3GRAM+TF+LOWERCASE]

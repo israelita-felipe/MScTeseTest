@@ -8,6 +8,9 @@ import java.util.Random;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
+import org.junit.runner.RunWith;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
@@ -16,6 +19,8 @@ import weka.core.SerializationHelper;
 import weka.core.converters.ArffLoader;
 import weka.filters.Filter;
 
+@Category(JUnitTest.class)
+@RunWith(MockitoJUnitRunner.class)
 public class FoldCrossValidation {
 
 	private final String fileNGramPath = "filters/NGram";
@@ -68,7 +73,53 @@ public class FoldCrossValidation {
 		}
 	}
 
-//	@Test
+	
+//	@Test 1
+	public void CharNGramSintatic() throws FileNotFoundException, Exception {
+		File path = new File(fileCharNGramPath);
+		for (File f : path.listFiles()) {
+			Filter filter = getFilter(new FileInputStream(f));
+			filter.setInputFormat(dataset);
+			Instances instances = Filter.useFilter(dataset, filter);
+			Evaluation ev = new Evaluation(instances);
+			ev.setMetricsToDisplay(Evaluation.getAllEvaluationMetricNames());
+			ev.crossValidateModel(classifier, instances, 10, new Random(1));
+			FileWriter fw = new FileWriter(new File("StringWordToVector - CNGRAM/" + f.getName()));
+			fw.write(ev.toSummaryString());
+			fw.write("\n");
+			fw.write(ev.toClassDetailsString());
+			fw.write("\n");
+			fw.write(ev.toMatrixString());
+			fw.close();
+		}
+	}
+
+//	@Test 2
+	public void CharNGramNormalizedSintatic() throws FileNotFoundException, Exception {
+		File path = new File(fileCharNGramPath);
+		for (File f : path.listFiles()) {
+			Filter filter = getFilter(new FileInputStream(f));
+			filter.setInputFormat(dataset);
+			Instances instances = Filter.useFilter(dataset, filter);
+
+			filter = getFilter(new FileInputStream("filters/normalize"));
+			filter.setInputFormat(instances);
+			instances = Filter.useFilter(instances, filter);
+
+			Evaluation ev = new Evaluation(instances);
+			ev.setMetricsToDisplay(Evaluation.getAllEvaluationMetricNames());
+			ev.crossValidateModel(classifier, instances, 10, new Random(1));
+			FileWriter fw = new FileWriter(new File("StringWordToVector - CNGRAM/" + f.getName() + "+normalized"));
+			fw.write(ev.toSummaryString());
+			fw.write("\n");
+			fw.write(ev.toClassDetailsString());
+			fw.write("\n");
+			fw.write(ev.toMatrixString());
+			fw.close();
+		}
+	}
+	
+	@Test
 	public void NGramNormalizedSintatic() throws FileNotFoundException, Exception {
 		File path = new File(fileNGramPath);
 		for (File f : path.listFiles()) {
@@ -93,50 +144,6 @@ public class FoldCrossValidation {
 		}
 	}
 
-//	@Test
-	public void CharNGramSintatic() throws FileNotFoundException, Exception {
-		File path = new File(fileCharNGramPath);
-		for (File f : path.listFiles()) {
-			Filter filter = getFilter(new FileInputStream(f));
-			filter.setInputFormat(dataset);
-			Instances instances = Filter.useFilter(dataset, filter);
-			Evaluation ev = new Evaluation(instances);
-			ev.setMetricsToDisplay(Evaluation.getAllEvaluationMetricNames());
-			ev.crossValidateModel(classifier, instances, 10, new Random(1));
-			FileWriter fw = new FileWriter(new File("StringWordToVector - CNGRAM/" + f.getName()));
-			fw.write(ev.toSummaryString());
-			fw.write("\n");
-			fw.write(ev.toClassDetailsString());
-			fw.write("\n");
-			fw.write(ev.toMatrixString());
-			fw.close();
-		}
-	}
-
-//	@Test
-	public void CharNGramNormalizedSintatic() throws FileNotFoundException, Exception {
-		File path = new File(fileCharNGramPath);
-		for (File f : path.listFiles()) {
-			Filter filter = getFilter(new FileInputStream(f));
-			filter.setInputFormat(dataset);
-			Instances instances = Filter.useFilter(dataset, filter);
-
-			filter = getFilter(new FileInputStream("filters/normalize"));
-			filter.setInputFormat(instances);
-			instances = Filter.useFilter(instances, filter);
-
-			Evaluation ev = new Evaluation(instances);
-			ev.setMetricsToDisplay(Evaluation.getAllEvaluationMetricNames());
-			ev.crossValidateModel(classifier, instances, 10, new Random(1));
-			FileWriter fw = new FileWriter(new File("StringWordToVector - CNGRAM/" + f.getName() + "+normalized"));
-			fw.write(ev.toSummaryString());
-			fw.write("\n");
-			fw.write(ev.toClassDetailsString());
-			fw.write("\n");
-			fw.write(ev.toMatrixString());
-			fw.close();
-		}
-	}
 
 	/////////////////////////////////////////////////////////
 	//
