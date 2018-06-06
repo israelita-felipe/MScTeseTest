@@ -53,7 +53,7 @@ public class FoldCrossValidation {
 		return (Classifier) SerializationHelper.read(file);
 	}
 
-//	@Test
+	@Test
 	public void NGramSintatic() throws FileNotFoundException, Exception {
 		File path = new File(fileNGramPath);
 		for (File f : path.listFiles()) {
@@ -64,6 +64,8 @@ public class FoldCrossValidation {
 			ev.setMetricsToDisplay(Evaluation.getAllEvaluationMetricNames());
 			ev.crossValidateModel(classifier, instances, 10, new Random(1));
 			FileWriter fw = new FileWriter(new File("StringWordToVector - NGRAM/" + f.getName()));
+			fw.write(classifier.toString());
+			fw.write("\n");
 			fw.write(ev.toSummaryString());
 			fw.write("\n");
 			fw.write(ev.toClassDetailsString());
@@ -73,8 +75,7 @@ public class FoldCrossValidation {
 		}
 	}
 
-	
-//	@Test 1
+	@Test
 	public void CharNGramSintatic() throws FileNotFoundException, Exception {
 		File path = new File(fileCharNGramPath);
 		for (File f : path.listFiles()) {
@@ -85,6 +86,8 @@ public class FoldCrossValidation {
 			ev.setMetricsToDisplay(Evaluation.getAllEvaluationMetricNames());
 			ev.crossValidateModel(classifier, instances, 10, new Random(1));
 			FileWriter fw = new FileWriter(new File("StringWordToVector - CNGRAM/" + f.getName()));
+			fw.write(classifier.toString());
+			fw.write("\n");
 			fw.write(ev.toSummaryString());
 			fw.write("\n");
 			fw.write(ev.toClassDetailsString());
@@ -94,7 +97,7 @@ public class FoldCrossValidation {
 		}
 	}
 
-//	@Test 2
+	@Test
 	public void CharNGramNormalizedSintatic() throws FileNotFoundException, Exception {
 		File path = new File(fileCharNGramPath);
 		for (File f : path.listFiles()) {
@@ -110,6 +113,8 @@ public class FoldCrossValidation {
 			ev.setMetricsToDisplay(Evaluation.getAllEvaluationMetricNames());
 			ev.crossValidateModel(classifier, instances, 10, new Random(1));
 			FileWriter fw = new FileWriter(new File("StringWordToVector - CNGRAM/" + f.getName() + "+normalized"));
+			fw.write(classifier.toString());
+			fw.write("\n");
 			fw.write(ev.toSummaryString());
 			fw.write("\n");
 			fw.write(ev.toClassDetailsString());
@@ -118,7 +123,7 @@ public class FoldCrossValidation {
 			fw.close();
 		}
 	}
-	
+
 	@Test
 	public void NGramNormalizedSintatic() throws FileNotFoundException, Exception {
 		File path = new File(fileNGramPath);
@@ -135,6 +140,8 @@ public class FoldCrossValidation {
 			ev.setMetricsToDisplay(Evaluation.getAllEvaluationMetricNames());
 			ev.crossValidateModel(classifier, instances, 10, new Random(1));
 			FileWriter fw = new FileWriter(new File("StringWordToVector - NGRAM/" + f.getName() + "+normalized"));
+			fw.write(classifier.toString());
+			fw.write("\n");
 			fw.write(ev.toSummaryString());
 			fw.write("\n");
 			fw.write(ev.toClassDetailsString());
@@ -144,14 +151,13 @@ public class FoldCrossValidation {
 		}
 	}
 
-
 	/////////////////////////////////////////////////////////
 	//
 	// RILOFF
 	//
 	/////////////////////////////////////////////////////////
 
-//	@Test
+	@Test
 	public void NGramNormalizedRiloff() throws FileNotFoundException, Exception {
 		File path = new File(fileNGramPath);
 		for (File f : path.listFiles()) {
@@ -168,6 +174,8 @@ public class FoldCrossValidation {
 			ev.crossValidateModel(classifier, instances, 10, new Random(1));
 			FileWriter fw = new FileWriter(
 					new File("StringWordToVector -RILOFF- NGRAM/" + f.getName() + "+normalized"));
+			fw.write(classifier.toString());
+			fw.write("\n");
 			fw.write(ev.toSummaryString());
 			fw.write("\n");
 			fw.write(ev.toClassDetailsString());
@@ -177,7 +185,7 @@ public class FoldCrossValidation {
 		}
 	}
 
-//	@Test
+	@Test
 	public void NGramRiloff() throws FileNotFoundException, Exception {
 		File path = new File(fileNGramPath);
 		for (File f : path.listFiles()) {
@@ -188,6 +196,8 @@ public class FoldCrossValidation {
 			ev.setMetricsToDisplay(Evaluation.getAllEvaluationMetricNames());
 			ev.crossValidateModel(classifier, instances, 10, new Random(1));
 			FileWriter fw = new FileWriter(new File("StringWordToVector -RILOFF- NGRAM/" + f.getName()));
+			fw.write(classifier.toString());
+			fw.write("\n");
 			fw.write(ev.toSummaryString());
 			fw.write("\n");
 			fw.write(ev.toClassDetailsString());
@@ -197,7 +207,7 @@ public class FoldCrossValidation {
 		}
 	}
 
-//	@Test
+	@Test
 	public void CharNGramNormalizedRiloff() throws FileNotFoundException, Exception {
 		File path = new File(fileCharNGramPath);
 		for (File f : path.listFiles()) {
@@ -214,6 +224,8 @@ public class FoldCrossValidation {
 			ev.crossValidateModel(classifier, instances, 10, new Random(1));
 			FileWriter fw = new FileWriter(
 					new File("StringWordToVector -RILOFF- CNGRAM/" + f.getName() + "+normalized"));
+			fw.write(classifier.toString());
+			fw.write("\n");
 			fw.write(ev.toSummaryString());
 			fw.write("\n");
 			fw.write(ev.toClassDetailsString());
@@ -223,7 +235,7 @@ public class FoldCrossValidation {
 		}
 	}
 
-//	@Test
+	@Test
 	public void CharNGramRiloff() throws FileNotFoundException, Exception {
 		File path = new File(fileCharNGramPath);
 		for (File f : path.listFiles()) {
@@ -234,6 +246,8 @@ public class FoldCrossValidation {
 			ev.setMetricsToDisplay(Evaluation.getAllEvaluationMetricNames());
 			ev.crossValidateModel(classifier, instances, 10, new Random(1));
 			FileWriter fw = new FileWriter(new File("StringWordToVector -RILOFF- CNGRAM/" + f.getName()));
+			fw.write(classifier.toString());
+			fw.write("\n");
 			fw.write(ev.toSummaryString());
 			fw.write("\n");
 			fw.write(ev.toClassDetailsString());
